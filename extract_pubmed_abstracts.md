@@ -282,5 +282,87 @@ Knowing this, we can construct a data frame in which each row represents an abst
 
 There were 56 total abstracts corresponding to the keyword search P2RY8. We have only processed the first 20. In order to obtain all of the abstracts, we can construct a loop that will call ```efetch``` while incrementing ```retstart``` by 20 each iteration, until all the abstracts have been downloaded and added to the table.
 
+
+```python
+query = "P2RY8"
+
+# common settings between esearch and efetch
+base_url = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/'
+db = 'db=pubmed'
+
+# esearch settings
+search_eutil = 'esearch.fcgi?'
+search_term = '&term=' + query
+search_usehistory = '&usehistory=y'
+search_rettype = '&rettype=json'
+
+search_url = base_url+search_eutil+db+search_term+search_usehistory+search_rettype
+print(search_url)
+f = urllib.request.urlopen (search_url)
+search_data = f.read().decode('utf-8')
+    
+total_abstract_count = int(re.findall("<Count>(\d+?)</Count>",search_data)[0])
+
+# efetch settings
+fetch_eutil = 'efetch.fcgi?'
+retmax = 25
+retstart = 0
+fetch_retmode = "&retmode=text"
+fetch_rettype = "&rettype=abstract"
+# obtain webenv and querykey settings from the esearch results
+fetch_webenv = "&WebEnv=" + re.findall ("<WebEnv>(\S+)<\/WebEnv>", search_data)[0]
+fetch_querykey = "&query_key=" + re.findall("<QueryKey>(\d+?)</QueryKey>",search_data)[0]
+
+
+run = True
+all_abstracts = list()
+loop_counter = 1
+while run:
+    print("this is run number " + str(loop_counter))
+    loop_counter += 1
+
+    fetch_retstart = "&retstart=" + str(retstart)
+    fetch_retmax = "&retmax=" + str(retmax)
+    
+    fetch_url = base_url+fetch_eutil+db+fetch_querykey+fetch_webenv+fetch_retstart+fetch_retmax+fetch_retmode+fetch_rettype
+    print(fetch_url)
+    sleep(2)
+    
+    f = urllib.request.urlopen (fetch_url)
+    fetch_data = f.read().decode('utf-8')
+    
+    abstracts = fetch_data.split("\n\n\n")
+    
+    all_abstracts = all_abstracts+abstracts
+    
+    sleep(2)
+    retstart = retstart + retmax
+    if retstart > total_abstract_count:
+        run = False
+    
+    
+```
+
+    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=P2RY8&usehistory=y&rettype=json
+    this is run number 1
+    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_75523455_130.14.22.33_9001_1580020945_657320164_0MetA0_S_MegaStore&retstart=0&retmax=25&retmode=text&rettype=abstract
+    this is run number 2
+    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_75523455_130.14.22.33_9001_1580020945_657320164_0MetA0_S_MegaStore&retstart=25&retmax=25&retmode=text&rettype=abstract
+    this is run number 3
+    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_75523455_130.14.22.33_9001_1580020945_657320164_0MetA0_S_MegaStore&retstart=50&retmax=25&retmode=text&rettype=abstract
+
+
+
+```python
+len(all_abstracts)
+```
+
+
+
+
+    56
+
+
+
 ### References
 Sayers E. The E-utilities In-Depth: Parameters, Syntax and More. 2009 May 29. In: Entrez Programming Utilities Help. Bethesda (MD): National Center for Biotechnology Information (US); 2010-.Available from: http://www.ncbi.nlm.nih.gov/books/NBK25499/
