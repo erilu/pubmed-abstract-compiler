@@ -66,22 +66,22 @@ Below, I show you how to perform this process in Python.
 
 ## Using the tools in Python
 
+The packages that you will need include ```csv``` to write to a csv file, ```re``` in order to use regular expressions to extract information from esearch results, ```urllib``` to open and read urls, and ```time``` in order to sleep for a couple seconds between requests so we don't get blocked.
+
 
 ```python
 import csv
 import re
 import urllib
-import os
 from time import sleep
 ```
+
+Now, we need to specify our parameters for the esearch and efetch calls. We can store each of the settings in their own individual variables in order to make it easy to customize the calls in the future.
 
 
 ```python
 query = 'P2RY8'
-```
 
-
-```python
 # common settings between esearch and efetch
 base_url = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/'
 db = 'db=pubmed'
@@ -91,22 +91,24 @@ search_eutil = 'esearch.fcgi?'
 search_term = '&term=' + query
 search_usehistory = '&usehistory=y'
 search_rettype = '&rettype=json'
-
-search_url = base_url+search_eutil+db+search_term+search_usehistory+search_rettype
-
 ```
+
+We can construct the search url by simply combining together each of the variables into a long string:
 
 
 ```python
+search_url = base_url+search_eutil+db+search_term+search_usehistory+search_rettype
 print(search_url)
 ```
 
     http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=P2RY8&usehistory=y&rettype=json
 
 
+Now that we have the full esearch url constructed, we can open the url using ```urllib.request.urlopen()```:
+
 
 ```python
-f = urllib.request.urlopen (search_url)
+f = urllib.request.urlopen(search_url)
 search_data = f.read().decode('utf-8')
 ```
 
@@ -122,8 +124,11 @@ search_data
 
 
 
+Above, you can compare the raw text output of the esearch result with the image of what it looks like in the browser. You can see that the same syntax is used for the webenv and query key sections. We will also need the total number of abstracts corresponding to the query, if we want to be able to retrieve all the abstracts. We can extract these items from the output using the regexes below:
+
 
 ```python
+# obtain total abstract count
 total_abstract_count = int(re.findall("<Count>(\d+?)</Count>",search_data)[0])
 
 # obtain webenv and querykey settings for efetch command
@@ -167,6 +172,8 @@ fetch_querykey
 
 
 
+Now, we can run an efetch command. In order to do so, we must assign values to each of the parameters in a similar manner as we did above for esearch.
+
 
 ```python
 # other efetch settings
@@ -178,30 +185,39 @@ fetch_retmax = "&retmax=" + str(retmax)
 fetch_retmode = "&retmode=text"
 fetch_rettype = "&rettype=abstract"
 
+
+```
+
+The fully constructed efetch command using the above parameters is below:
+
+
+```python
 fetch_url = base_url+fetch_eutil+db+fetch_querykey+fetch_webenv+fetch_retstart+fetch_retmax+fetch_retmode+fetch_rettype
 print(fetch_url)
 ```
 
-    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_5579798_130.14.18.48_9001_1579842017_1501765481_0MetA0_S_MegaStore&retstart=0&retmax=50&retmode=text&rettype=abstract
+    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_62178618_130.14.18.48_9001_1580542065_2057246523_0MetA0_S_MegaStore&retstart=0&retmax=50&retmode=text&rettype=abstract
 
+
+Now, we can open the url the same way we did for esearch:
 
 
 ```python
 f = urllib.request.urlopen (fetch_url)
 fetch_data = f.read().decode('utf-8')
+
 ```
 
 
-    ---------------------------------------------------------------------------
-
-    NameError                                 Traceback (most recent call last)
-
-    <ipython-input-3-1dc35124822e> in <module>()
-    ----> 1 f = urllib.request.urlopen (fetch_url)
-          2 fetch_data = f.read().decode('utf-8')
+```python
+fetch_data[1:3000]
+```
 
 
-    NameError: name 'urllib' is not defined
+
+
+    "1. Cancer Manag Res. 2019 Aug 6;11:7455-7472. doi: 10.2147/CMAR.S201177. eCollection\n2019.\n\nThe relevance between the immune response-related gene module and clinical traits\nin head and neck squamous cell carcinoma.\n\nSong Y(#)(1), Pan Y(#)(1), Liu J(1).\n\nAuthor information: \n(1)State Key Laboratory of Oral Diseases, National Clinical Research Center for\nOral Diseases, Department of Orthodontics, West China Hospital of Stomatology,\nSichuan University, Chengdu, 610041, People's Republic of China.\n(#)Contributed equally\n\nPurpose: Head and neck squamous cell carcinoma (HNSCC) is the sixth most\nprevalent cancer in the world, accounting for more than 90% of head and neck\nmalignant tumors. However, its molecular mechanism is largely unknown. To help\nelucidate the potential mechanism of HNSCC tumorigenesis, we investigated the\ngene interaction patterns associated with tumorigenesis.\nMethods: Weighted gene co-expression network analysis (WGCNA) can help us to\npredict the intrinsic relationship or correlation between gene expression.\nAdditionally, we further explored the combination of clinical information and\nmodule construction.\nResults: Sixteen modules were constructed, among which the key module most\nclosely associated with clinical information was identified. By analyzing the\ngenes in this module, we found that the latter may be related to the immune\nresponse, inflammatory response and formation of the tumor microenvironment.\nSixteen hub genes were identified-ARHGAP9, SASH3, CORO1A, ITGAL, PPP1R16B,\nTBC1D10C, IL10RA, ITK, AKNA, PRKCB, TRAF3IP3, GIMAP4, CCR7, P2RY8, GIMAP7, and\nSP140. We further validated these genes at the transcriptional and translation\nlevels.\nConclusion: The innovative use of a weighted network to analyze HNSCC samples\nprovides new insights into the molecular mechanism and prognosis of HNSCC.\nAdditionally, the hub genes we identified can be used as biomarkers and\ntherapeutic targets of HNSCC, laying the foundation for the accurate diagnosis\nand treatment of HNSCC in clinical and research in the future.\n\nDOI: 10.2147/CMAR.S201177 \nPMCID: PMC6689548\nPMID: 31496804 \n\nConflict of interest statement: The authors report no conflicts of interest in\nthis work.\n\n\n2. Immunol Rev. 2019 May;289(1):158-172. doi: 10.1111/imr.12743.\n\nG-protein coupled receptors and ligands that organize humoral immune responses.\n\nLu E(1), Cyster JG(1).\n\nAuthor information: \n(1)Howard Hughes Medical Institute and Department of Microbiology and Immunology,\nUniversity of California San Francisco, San Francisco, California.\n\nB-cell responses are dynamic processes that depend on multiple types of\ninteractions. Rare antigen-specific B cells must encounter antigen and\nspecialized systems are needed-unique to each lymphoid tissue type-to ensure this\nhappens efficiently. Lymphoid tissue barrier cells act to ensure that pathogens, \nwhile being permitted entry for B-cell recognition, are blocked from replication \nor dissemination. T follicular helper (Tfh) cells often need"
+
 
 
 Examining the text output, we see that individual abstracts are separated by 3 new lines (```\n\n\n```). We can therefore use split() to generate a list in which each item is a separate abstract.
@@ -209,18 +225,15 @@ Examining the text output, we see that individual abstracts are separated by 3 n
 
 ```python
 abstracts = fetch_data.split("\n\n\n")
+abstracts[0:2]
 ```
 
 
-    ---------------------------------------------------------------------------
 
-    NameError                                 Traceback (most recent call last)
 
-    <ipython-input-2-aa056db78887> in <module>()
-    ----> 1 abstracts = fetch_data.split("\n\n\n")
-    
+    ["\n1. Cancer Manag Res. 2019 Aug 6;11:7455-7472. doi: 10.2147/CMAR.S201177. eCollection\n2019.\n\nThe relevance between the immune response-related gene module and clinical traits\nin head and neck squamous cell carcinoma.\n\nSong Y(#)(1), Pan Y(#)(1), Liu J(1).\n\nAuthor information: \n(1)State Key Laboratory of Oral Diseases, National Clinical Research Center for\nOral Diseases, Department of Orthodontics, West China Hospital of Stomatology,\nSichuan University, Chengdu, 610041, People's Republic of China.\n(#)Contributed equally\n\nPurpose: Head and neck squamous cell carcinoma (HNSCC) is the sixth most\nprevalent cancer in the world, accounting for more than 90% of head and neck\nmalignant tumors. However, its molecular mechanism is largely unknown. To help\nelucidate the potential mechanism of HNSCC tumorigenesis, we investigated the\ngene interaction patterns associated with tumorigenesis.\nMethods: Weighted gene co-expression network analysis (WGCNA) can help us to\npredict the intrinsic relationship or correlation between gene expression.\nAdditionally, we further explored the combination of clinical information and\nmodule construction.\nResults: Sixteen modules were constructed, among which the key module most\nclosely associated with clinical information was identified. By analyzing the\ngenes in this module, we found that the latter may be related to the immune\nresponse, inflammatory response and formation of the tumor microenvironment.\nSixteen hub genes were identified-ARHGAP9, SASH3, CORO1A, ITGAL, PPP1R16B,\nTBC1D10C, IL10RA, ITK, AKNA, PRKCB, TRAF3IP3, GIMAP4, CCR7, P2RY8, GIMAP7, and\nSP140. We further validated these genes at the transcriptional and translation\nlevels.\nConclusion: The innovative use of a weighted network to analyze HNSCC samples\nprovides new insights into the molecular mechanism and prognosis of HNSCC.\nAdditionally, the hub genes we identified can be used as biomarkers and\ntherapeutic targets of HNSCC, laying the foundation for the accurate diagnosis\nand treatment of HNSCC in clinical and research in the future.\n\nDOI: 10.2147/CMAR.S201177 \nPMCID: PMC6689548\nPMID: 31496804 \n\nConflict of interest statement: The authors report no conflicts of interest in\nthis work.",
+     '2. Immunol Rev. 2019 May;289(1):158-172. doi: 10.1111/imr.12743.\n\nG-protein coupled receptors and ligands that organize humoral immune responses.\n\nLu E(1), Cyster JG(1).\n\nAuthor information: \n(1)Howard Hughes Medical Institute and Department of Microbiology and Immunology,\nUniversity of California San Francisco, San Francisco, California.\n\nB-cell responses are dynamic processes that depend on multiple types of\ninteractions. Rare antigen-specific B cells must encounter antigen and\nspecialized systems are needed-unique to each lymphoid tissue type-to ensure this\nhappens efficiently. Lymphoid tissue barrier cells act to ensure that pathogens, \nwhile being permitted entry for B-cell recognition, are blocked from replication \nor dissemination. T follicular helper (Tfh) cells often need to be primed by\ndendritic cells before supporting B-cell responses. For most responses,\nantigen-specific helper T cells and B cells need to interact, first to initiate\nclonal expansion and the plasmablast response, and later to support the germinal \ncenter (GC) response. Newly formed plasma cells need to travel to supportive\nniches. GC B cells must become confined to the follicle center, organize into\ndark and light zones, and interact with Tfh cells. Memory B cells need to be\npositioned for rapid responses following reinfection. Each of these events\nrequires the actions of multiple G-protein coupled receptors (GPCRs) and their\nligands, including chemokines and lipid mediators. This review will focus on the \nguidance cue code underlying B-cell immunity, with an emphasis on findings from\nour laboratory and on newer advances in related areas. We will discuss our recent\nidentification of geranylgeranyl-glutathione as a ligand for P2RY8. Our goal is\nto provide the reader with a focused knowledge about the GPCRs guiding B-cell\nresponses and how they might be therapeutic targets, while also providing\nexamples of how multiple types of GPCRs can cooperate or act iteratively to\ncontrol cell behavior.\n\n© 2019 John Wiley & Sons A/S. Published by John Wiley & Sons Ltd.\n\nDOI: 10.1111/imr.12743 \nPMCID: PMC6464390 [Available on 2020-05-01]\nPMID: 30977196  [Indexed for MEDLINE]']
 
-    NameError: name 'fetch_data' is not defined
 
 
 
@@ -247,7 +260,7 @@ chunks[1]
 
     NameError                                 Traceback (most recent call last)
 
-    <ipython-input-1-5b16f7e8505c> in <module>()
+    <ipython-input-24-5b16f7e8505c> in <module>()
     ----> 1 chunks[1]
     
 
