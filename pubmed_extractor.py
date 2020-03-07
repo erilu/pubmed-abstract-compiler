@@ -1,163 +1,76 @@
-# Test edit
-# Erick Lu
-# pubmed_extractor.py
-
-# SAMPLE SEARCH FUNCTION:
-
-"""
-https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=P2RY8&usehistory=y&retmin=0&retmax=500
-"""
-
-# SAMPLE FETCH FUNCTION:
-
-'''
-http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&WebEnv=NCID_1_196289963_130.14.18.34_9001_1524513200_1515294449_0MetA0_S_MegaStore&query_key=1&retmode=json&rettype=abstract
-'''
-
-# Import the necessary packages.
 import csv
 import re
 import urllib
-import os
 from time import sleep
 
+# change this to what you want to search pubmed for
+query = "P2RY8"
 
-# Gather all the terms that you want to search Pubmed for.
-terms = ["P2RY8"]
+# common settings between esearch and efetch
+base_url = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/'
+db = 'db=pubmed'
 
-numfailed = 0
-for item in terms:
+# esearch settings
+search_eutil = 'esearch.fcgi?'
+search_term = '&term=' + query
+search_usehistory = '&usehistory=y'
+search_rettype = '&rettype=json'
 
-    	#Create the csv file that will hold the categorized abstracts.
+# call the esearch command for the query and read the web result
+search_url = base_url+search_eutil+db+search_term+search_usehistory+search_rettype
+print("this is the esearch command:\n" + search_url + "\n")
+f = urllib.request.urlopen (search_url)
+search_data = f.read().decode('utf-8')
 
-       # myfile = open ( str(item) + " abstracts.csv", 'wb')
-       # master_file = csv.writer(myfile, delimiter = ',')
-        datefile = open ('P2RY8abstracts.txt', 'w')
-       # errorfile = open("error2.txt", 'w')
-        #Write the names for each column in the CSV file.
-       # master_file.writerow(["Journal", "Title", "Authors", "Organization", "Abstract", "PMID" ])
+# extract the total abstract count
+total_abstract_count = int(re.findall("<Count>(\d+?)</Count>",search_data)[0])
 
-        #The set of static variables needed for the ESearch function:
-        baseURL = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/'
-        eutil_search = 'esearch.fcgi?'
-        db_setting = 'db=pubmed'
-        usehistory_setting = '&usehistory=y'
-        rettype = '&rettype=json'
-        eutil_fetch = 'efetch.fcgi?'
+# efetch settings
+fetch_eutil = 'efetch.fcgi?'
+retmax = 20
+retstart = 0
+fetch_retmode = "&retmode=text"
+fetch_rettype = "&rettype=abstract"
 
-
-        term_setting = '&term='+ str(item)
-        retmax = 500
-        retstart = 0
-        run = True
-        while run:
-
-                #Print the URL to check in terminal incase of error.
-                print (baseURL+eutil_search+db_setting+term_setting+usehistory_setting)
-
-
-                #Open the webpage that will run the ESearch Function.
-
-                f = urllib.urlopen (baseURL+eutil_search+db_setting+term_setting+usehistory_setting+rettype)
-                data = f.read().decode('utf-8')
-
-                #Print the search to the terminal (debugging purposes)
-                print (data)
-
-                #Extract the Web Env and querykey  (Tracking Search), and count (for iteration),
-                webenv = "&WebEnv=" + re.findall ("<WebEnv>(\S+)<\/WebEnv>", data)[0]
-                count = int(re.findall("<Count>(\d+?)</Count>",data)[0])
-                querykey = "&query_key=" + re.findall("<QueryKey>(\d+?)</QueryKey>",data)[0]
-
-                #webenv = 'NCID_1_811107105_130.14.22.33_5555_1351061178_277739021'
-
-                #retrieve the data. Retmax = the number of abstracts returned. Retstart =
-                # the index at which retmax begins.
+# obtain webenv and querykey settings from the esearch results
+fetch_webenv = "&WebEnv=" + re.findall ("<WebEnv>(\S+)<\/WebEnv>", search_data)[0]
+fetch_querykey = "&query_key=" + re.findall("<QueryKey>(\d+?)</QueryKey>",search_data)[0]
 
 
-                #Reset some parameters for the EFetch utility. many of parameters will be recycled from above.
+# call efetch commands using a loop until all abstracts are obtained
+run = True
+all_abstracts = list()
+loop_counter = 1
 
-                rettype = "&rettype=abstract"
-                str_retmax = "&retmax=" + str(retmax)
-                retmode = "&retmode=text"
+while run:
+    print("this is efetch run number " + str(loop_counter))
+    loop_counter += 1
+    fetch_retstart = "&retstart=" + str(retstart)
+    fetch_retmax = "&retmax=" + str(retmax)
+    # create the efetch url
+    fetch_url = base_url+fetch_eutil+db+fetch_querykey+fetch_webenv+fetch_retstart+fetch_retmax+fetch_retmode+fetch_rettype
+    print(fetch_url)
+    # open the efetch url
+    f = urllib.request.urlopen (fetch_url)
+    fetch_data = f.read().decode('utf-8')
+    # split the data into individual abstracts
+    abstracts = fetch_data.split("\n\n\n")
+    # append to the list all_abstracts
+    all_abstracts = all_abstracts+abstracts
+    print("a total of " + str(len(all_abstracts)) + " abstracts have been downloaded.\n")
+    # wait 2 seconds so we don't get blocked
+    sleep(2)
+    # update retstart to download the next chunk of abstracts
+    retstart = retstart + retmax
+    if retstart > total_abstract_count:
+        run = False
 
-
-                str_retstart = "&retstart=" + str(retstart)
-                fetch_url = baseURL+eutil_fetch+db_setting+querykey+webenv+str_retstart+str_retmax+retmode+rettype
-
-                #Print the url for debugging purposes.
-                print (fetch_url)
-
-                print ("sleeping for 5 seconds")
-                sleep(3)
-
-
-                #To ensure the program runs to completion, use a try/except clause.
-                #The program will try to extract from the KB, and write to the csv file.
-                #If there is an error in the extraction, a non-halting error will be thrown
-                #containing the index at which the extraction error occured.
-                try:
-                        #Open the webpage with the fetch utility.
-                        fetch = urllib.urlopen (fetch_url)
-                        failed = False
-                        #Decode the data returned by the fetch command.
-                        datam = fetch.read().decode('utf-8')
-                        #print(datam)
-                        #Strip off Unnecessary text.
-                        #chunk = datam[62:-20]
-
-                        #Split the data into individual abstracts.
-                        chunks = datam.split("[PubMed")
-                        if len(chunks) < 100:
-                                print(str(retstart))
-                                failed = True
-
-
-                        #print ((len(chunks)-4))
-                        #For each abstract, split the individual abstract and write it to the CSV file,
-                        #Categorized by Journal, Title, Author, Organization, Abstract, and PMID.
-                        for i in range(0, (len(chunks)-4)):
-                        #To obtain categories, split every double newline.
-                                splitchunk = chunks[i].split("\n\n")[1:2]
-                                #splitchunk = [f for f in splitchunk if f != ""]
-
-
-                                #Some of the abstracts returned either are incomplete or have no information.
-                                #A full abstract will have All six categories.
-                                #The abstracts that have less than 5 categories will be ignored because of
-                                #Insufficient information.
-                                #The abstracts with only 5 categories have been found to be missing information
-                                #on the organization from which they came from. I will add them to the CSV file
-                                datefile.write(" ".join(splitchunk))
-                                datefile.write("\n")
-
-
-                               # master_file.writerow(splitchunk)
-                                #print(splitchunk)
-                        if failed == True:
-                                datefile.write("\n Failed at " + str(retstart) + "\n\n")
-                        else:
-                                datefile.write("\n Success at " + str(retstart) + "\n\n")
-
-                #The except clause explained above.
-
-                except:
-                        print ("Error at retstart:", retstart)
-                        datefile.write("\n Failed at " + str(retstart) + "\n")
-                        numfailed = numfailed +1
-                #If the return index is higher than the total number of indexes, then break the loop and exit.
-                #break
-                if retstart > count:
-                        break
-                #If it is not, then update retstart and perform the actions again.
-                retstart = retstart+retmax
-                print ("sleeping for 3 seconds")
-                sleep(3)
-
-
-        #NOTE: EFETCH automatically cuts off if retmax is over the total number of articles remaining. It will not error.
-        datefile.close()
-        #errorfile.close()
-
-
-print (numfailed)
+# write all_abstracts to a csv file for downstream data analysis
+with open("abstracts.csv", "wt") as abstracts_file:
+    abstract_writer = csv.writer(abstracts_file)
+    abstract_writer.writerow(['Journal', 'Title', 'Authors', 'Author_Information', 'Abstract', 'DOI', 'Misc'])
+    #For each abstract, split into categories and write it to the csv file
+    for abstract in all_abstracts:
+        #To obtain categories, split every double newline.
+        split_abstract = abstract.split("\n\n")
+        abstract_writer.writerow(split_abstract)

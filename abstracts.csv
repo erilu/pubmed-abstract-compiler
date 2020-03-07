@@ -1,0 +1,1797 @@
+Journal,Title,Authors,Author_Information,Abstract,DOI,Misc
+"
+1. Cancer Manag Res. 2019 Aug 6;11:7455-7472. doi: 10.2147/CMAR.S201177. eCollection
+2019.","The relevance between the immune response-related gene module and clinical traits
+in head and neck squamous cell carcinoma.","Song Y(#)(1), Pan Y(#)(1), Liu J(1).","Author information: 
+(1)State Key Laboratory of Oral Diseases, National Clinical Research Center for
+Oral Diseases, Department of Orthodontics, West China Hospital of Stomatology,
+Sichuan University, Chengdu, 610041, People's Republic of China.
+(#)Contributed equally","Purpose: Head and neck squamous cell carcinoma (HNSCC) is the sixth most
+prevalent cancer in the world, accounting for more than 90% of head and neck
+malignant tumors. However, its molecular mechanism is largely unknown. To help
+elucidate the potential mechanism of HNSCC tumorigenesis, we investigated the
+gene interaction patterns associated with tumorigenesis.
+Methods: Weighted gene co-expression network analysis (WGCNA) can help us to
+predict the intrinsic relationship or correlation between gene expression.
+Additionally, we further explored the combination of clinical information and
+module construction.
+Results: Sixteen modules were constructed, among which the key module most
+closely associated with clinical information was identified. By analyzing the
+genes in this module, we found that the latter may be related to the immune
+response, inflammatory response and formation of the tumor microenvironment.
+Sixteen hub genes were identified-ARHGAP9, SASH3, CORO1A, ITGAL, PPP1R16B,
+TBC1D10C, IL10RA, ITK, AKNA, PRKCB, TRAF3IP3, GIMAP4, CCR7, P2RY8, GIMAP7, and
+SP140. We further validated these genes at the transcriptional and translation
+levels.
+Conclusion: The innovative use of a weighted network to analyze HNSCC samples
+provides new insights into the molecular mechanism and prognosis of HNSCC.
+Additionally, the hub genes we identified can be used as biomarkers and
+therapeutic targets of HNSCC, laying the foundation for the accurate diagnosis
+and treatment of HNSCC in clinical and research in the future.","DOI: 10.2147/CMAR.S201177 
+PMCID: PMC6689548
+PMID: 31496804 ","Conflict of interest statement: The authors report no conflicts of interest in
+this work."
+2. Immunol Rev. 2019 May;289(1):158-172. doi: 10.1111/imr.12743.,G-protein coupled receptors and ligands that organize humoral immune responses.,"Lu E(1), Cyster JG(1).","Author information: 
+(1)Howard Hughes Medical Institute and Department of Microbiology and Immunology,
+University of California San Francisco, San Francisco, California.","B-cell responses are dynamic processes that depend on multiple types of
+interactions. Rare antigen-specific B cells must encounter antigen and
+specialized systems are needed-unique to each lymphoid tissue type-to ensure this
+happens efficiently. Lymphoid tissue barrier cells act to ensure that pathogens, 
+while being permitted entry for B-cell recognition, are blocked from replication 
+or dissemination. T follicular helper (Tfh) cells often need to be primed by
+dendritic cells before supporting B-cell responses. For most responses,
+antigen-specific helper T cells and B cells need to interact, first to initiate
+clonal expansion and the plasmablast response, and later to support the germinal 
+center (GC) response. Newly formed plasma cells need to travel to supportive
+niches. GC B cells must become confined to the follicle center, organize into
+dark and light zones, and interact with Tfh cells. Memory B cells need to be
+positioned for rapid responses following reinfection. Each of these events
+requires the actions of multiple G-protein coupled receptors (GPCRs) and their
+ligands, including chemokines and lipid mediators. This review will focus on the 
+guidance cue code underlying B-cell immunity, with an emphasis on findings from
+our laboratory and on newer advances in related areas. We will discuss our recent
+identification of geranylgeranyl-glutathione as a ligand for P2RY8. Our goal is
+to provide the reader with a focused knowledge about the GPCRs guiding B-cell
+responses and how they might be therapeutic targets, while also providing
+examples of how multiple types of GPCRs can cooperate or act iteratively to
+control cell behavior.",© 2019 John Wiley & Sons A/S. Published by John Wiley & Sons Ltd.,"DOI: 10.1111/imr.12743 
+PMCID: PMC6464390 [Available on 2020-05-01]
+PMID: 30977196  [Indexed for MEDLINE]"
+"3. Genes Chromosomes Cancer. 2019 Sep;58(9):619-626. doi: 10.1002/gcc.22748. Epub
+2019 Apr 3.","GATA3 germline variant is associated with CRLF2 expression and predicts outcome
+in pediatric B-cell precursor acute lymphoblastic leukemia.","Madzio J(1)(2), Pastorczak A(1), Sedek L(3), Braun M(1)(2)(4), Taha J(1),
+Wypyszczak K(1), Trelinska J(1), Lejman M(5), Muszynska-Roslan K(6), Tomasik
+B(1)(2)(7), Derwich K(8), Koltan A(9), Kazanowska B(10), Irga-Jaworska N(11),
+Badowska W(12), Matysiak M(13), Kowalczyk J(5), Styczynski J(9), Fendler
+W(7)(14), Szczepanski T(15), Mlynarski W(1).","Author information: 
+(1)Department of Pediatrics, Oncology and Hematology, Medical University of Lodz,
+Lodz, Poland.
+(2)Postgraduate School of Molecular Medicine, Medical University of Warsaw,
+Warsaw, Poland.
+(3)Department of Microbiology and Immunology, Medical University of Silesia,
+Katowice, Poland.
+(4)Department of Pathology, Medical University of Lodz, Lodz, Poland.
+(5)Department of Pediatric Hematology and Oncology, Medical University of Lublin,
+Lublin, Poland.
+(6)Department of Pediatric Oncology and Hematology, Medical University of
+Bialystok, Bialystok, Poland.
+(7)Department of Biostatistics & Translational Medicine, Medical University of
+Lodz, Lodz, Poland.
+(8)Department of Pediatric Hematology, Oncology and Transplantology, University
+of Medical Sciences, Poznan, Poland.
+(9)Department of Pediatric Hematology and Oncology, Collegium Medicum, Nicolaus
+Copernicus University, Torun, Poland.
+(10)Department of Pediatric Hematology, Oncology and Transplantology, Medical
+University of Wroclaw, Wroclaw, Poland.
+(11)Department of Pediatric Hematology, Gdansk Medical University, Gdansk,
+Poland.
+(12)Department of Pediatric Hematology and Oncology, University of Warmia and
+Mazury, Olsztyn, Poland.
+(13)Department of Pediatric Hematology and Oncology, Medical University of
+Warsaw, Warsaw, Poland.
+(14)Department of Radiation Oncology, Dana-Farber Cancer Institute, Boston,
+Massachusetts.
+(15)Department of Pediatric Hematology and Oncology, Zabrze Medical University of
+Silesia, Katowice, Poland.","The germline variant at rs3824662 in GATA3 is a risk locus for Philadelphia-like 
+acute lymphoblastic leukemia (Ph-like ALL), the biological subtype of B-cell
+precursor (BCP)-ALL defined by a distinct gene expression profile and the
+presence of specific somatic aberrations including rearrangements of CRLF2. In
+this study, we investigated whether rs3824662 in GATA3 associates with CRLF2
+expression in leukemic cells and predicts prognosis in pediatric BCP-ALL patients
+treated according to the ALL Intercontinental Berlin-Frankfurt-Münster (IC BFM)
+2009 (n = 645) and the ALL IC BFM 2002 (n = 216) protocols. High expression of
+CRLF2 was observed at both protein and mRNA levels (fourfold higher in AA than in
+CA + CC) among GATA3 AA variant carriers, independent of the presence of
+P2RY8-CRLF2 fusion. Additionally, the AA variant at rs3824662 was a significant
+factor affecting minimal residual disease level at the end of induction phase and
+overall survival regardless of the risk group and the protocol. The germline
+variant at rs3824662 in GATA3 is a prognostic factor which associates with CRLF2 
+expression in leukemic cells supporting the hypothesis that GATA3 may have a
+regulatory effect on the CRLF2 pathway in pediatric BCP-ALL.","© 2019 Wiley Periodicals, Inc.","DOI: 10.1002/gcc.22748 
+PMID: 30859636  [Indexed for MEDLINE]"
+"4. Nature. 2019 Mar;567(7747):244-248. doi: 10.1038/s41586-019-1003-z. Epub 2019 Mar
+6.","S-Geranylgeranyl-L-glutathione is a ligand for human B cell-confinement receptor 
+P2RY8.","Lu E(1), Wolfreys FD(1), Muppidi JR(1)(2), Xu Y(1), Cyster JG(3).","Author information: 
+(1)Howard Hughes Medical Institute and Department of Microbiology and Immunology,
+University of California, San Francisco, CA, USA.
+(2)Lymphoid Malignancies Branch, National Cancer Institute, National Institutes
+of Health, Bethesda, MD, USA.
+(3)Howard Hughes Medical Institute and Department of Microbiology and Immunology,
+University of California, San Francisco, CA, USA. jason.cyster@ucsf.edu.","Germinal centres are important sites for antibody diversification and affinity
+maturation, and are also a common origin of B cell malignancies. Despite being
+made up of motile cells, germinal centres are tightly confined within B cell
+follicles. The cues that promote this confinement are incompletely understood.
+P2RY8 is a Gα13-coupled receptor that mediates the inhibition of migration and
+regulates the growth of B cells in lymphoid tissues1,2. P2RY8 is frequently
+mutated in germinal-centre B cell-like diffuse large B cell lymphoma (GCB-DLBCL) 
+and Burkitt lymphoma1,3-6, and the ligand for this receptor has not yet been
+identified. Here we perform a search for P2RY8 ligands and find P2RY8 bioactivity
+in bile and in culture supernatants of several mouse and human cell lines. Using 
+a seven-step biochemical fractionation procedure and a drop-out mass spectrometry
+approach, we show that a previously undescribed biomolecule,
+S-geranylgeranyl-L-glutathione (GGG), is a potent P2RY8 ligand that is detectable
+in lymphoid tissues at the nanomolar level. GGG inhibited the chemokine-mediated 
+migration of human germinal-centre B cells and T follicular helper cells, and
+antagonized the induction of phosphorylated AKT in germinal-centre B cells. We
+also found that the enzyme gamma-glutamyltransferase-5 (GGT5), which was highly
+expressed by follicular dendritic cells, metabolized GGG to a form that did not
+activate the receptor. Overexpression of GGT5 disrupted the ability of P2RY8 to
+promote B cell confinement to germinal centres, which indicates that GGT5
+establishes a GGG gradient in lymphoid tissues. This work defines GGG as an
+intercellular signalling molecule that is involved in organizing and controlling 
+germinal-centre responses. As the P2RY8 locus is modified in several other types 
+of cancer in addition to GCB-DLBCL and Burkitt lymphoma, we speculate that GGG
+might have organizing and growth-regulatory roles in multiple human tissues.","DOI: 10.1038/s41586-019-1003-z 
+PMCID: PMC6640153
+PMID: 30842656  [Indexed for MEDLINE]"
+"5. Leukemia. 2019 Apr;33(4):893-904. doi: 10.1038/s41375-018-0297-4. Epub 2018 Nov
+28.","Single-cell analysis identifies CRLF2 rearrangements as both early and late
+events in Down syndrome and non-Down syndrome acute lymphoblastic leukaemia.","Potter N(1), Jones L(2), Blair H(2), Strehl S(3), Harrison CJ(2), Greaves M(1),
+Kearney L(1), Russell LJ(4).","Author information: 
+(1)The Institute of Cancer Research, London, UK.
+(2)Northern Institute for Cancer Research, Newcastle University,
+Newcastle-upon-Tyne, UK.
+(3)CCRI, Children's Cancer Research Institute, St. Anna Kinderkrebsforschung,
+Vienna, Austria.
+(4)Northern Institute for Cancer Research, Newcastle University,
+Newcastle-upon-Tyne, UK. lisa.russell@newcastle.ac.uk.","Deregulated expression of the type I cytokine receptor, CRLF2, is observed in
+5-15% of precursor B-cell acute lymphoblastic leukaemia (B-ALL). We have
+previously reported the genomic landscape of patients with CRLF2 rearrangements
+(CRLF2-r) using both whole genome and exome sequencing, which identified a number
+of potential clonal and sub-clonal genomic alterations. In this study, we aimed
+to assess when the CRLF2-r; IGH-CRLF2 or P2RY8-CRLF2, arose during the evolution 
+of both Down syndrome-ALL (DS-ALL) and non-DS-ALL. Using fluorescence in situ
+hybridisation, we were able to track up to four structural variants in single
+cells from 47 CRLF2-r B-ALL patients, which in association with our multiplex
+single-cell analysis of a further four patients, permitted simultaneous tracking 
+of copy number alterations, structural and single nucleotide variants within
+individual cells. We observed CRLF2-r arising as both early and late events in DS
+and non-DS-ALL patients. Parallel evolution of discrete clones was observed in
+the development of CRLF2-r B-ALL, either involving the CRLF2-r or one of the
+other tracked abnormalities. In-depth single-cell analysis identified both linear
+and branching evolution with early clones harbouring a multitude of
+abnormalities, including the CRLF2-r in DS-ALL patients.","DOI: 10.1038/s41375-018-0297-4 
+PMCID: PMC6398588
+PMID: 30487598  [Indexed for MEDLINE]"
+6. Gigascience. 2018 Jul 1;7(7). doi: 10.1093/gigascience/giy079.,Clinker: visualizing fusion genes detected in RNA-seq data.,"Schmidt BM(1), Davidson NM(1)(2), Hawkins ADK(1), Bartolo R(1), Majewski
+IJ(3)(4), Ekert PG(1), Oshlack A(1)(2).","Author information: 
+(1)Murdoch Children's Research Institute, The Royal Children's Hospital,
+Flemington, Road, Parkville Vic 3052 Australia.
+(2)School of Biosciences, University of Melbourne, Parkivlle Vic 3010, Australia.
+(3)Division of Cancer and Haematology, The Walter and Eliza Hall Institute of
+Medical Research, Parkville Vic 3052, Australia.
+(4)Faculty of Medicine, Dentistry and Health Sciences, University of Melbourne,
+Parkville Vic 3010, Australia.","Background: Genomic profiling efforts have revealed a rich diversity of oncogenic
+fusion genes. While there are many methods for identifying fusion genes from
+RNA-sequencing (RNA-seq) data, visualizing these transcripts and their supporting
+reads remains challenging.
+Findings: Clinker is a bioinformatics tool written in Python, R, and Bpipe that
+leverages the superTranscript method to visualize fusion genes. We demonstrate
+the use of Clinker to obtain interpretable visualizations of the RNA-seq data
+that lead to fusion calls. In addition, we use Clinker to explore multiple fusion
+transcripts with novel breakpoints within the P2RY8-CRLF2 fusion gene in B-cell
+acute lymphoblastic leukemia.
+Conclusions: Clinker is freely available software that allows visualization of
+fusion genes and the RNA-seq data used in their discovery.","DOI: 10.1093/gigascience/giy079 
+PMCID: PMC6065480
+PMID: 29982439  [Indexed for MEDLINE]"
+"7. Int J Hematol. 2018 Sep;108(3):312-318. doi: 10.1007/s12185-018-2474-7. Epub 2018
+May 21.","Copy number abnormality of acute lymphoblastic leukemia cell lines based on their
+genetic subtypes.","Tomoyasu C(1)(2), Imamura T(3), Tomii T(1), Yano M(4), Asai D(5), Goto H(6),
+Shimada A(7), Sanada M(8), Iwamoto S(9), Takita J(10), Minegishi M(11), Inukai
+T(12), Sugita K(12), Hosoi H(1).","Author information: 
+(1)Department of Pediatrics, Graduate School of Medical Science, Kyoto
+Prefectural University of Medicine, 465 Kajii-cho, Hirokoji, Kamigyo-ku, Kyoto,
+602-8566, Japan.
+(2)Department of Pediatrics, National Hospital Organization Maizuru Medical
+Center, Maizuru, Japan.
+(3)Department of Pediatrics, Graduate School of Medical Science, Kyoto
+Prefectural University of Medicine, 465 Kajii-cho, Hirokoji, Kamigyo-ku, Kyoto,
+602-8566, Japan. imamura@koto.kpu-m.ac.jp.
+(4)Department of Pediatrics, Kyoto City Hospital, Kyoto, Japan.
+(5)Department of Pediatrics, Japanese Red Cross Kyoto Daini Hospital, Kyoto,
+Japan.
+(6)Division of Hemato-Oncology and Regenerative Medicine, Kanagawa Children's
+Medical Center, Yokohama, Japan.
+(7)Department of Pediatric Hematology/Oncology, Okayama University Hospital,
+Okayama, Japan.
+(8)Clinical Research Center, National Hospital Organization Nagoya Medical
+Center, Nagoya, Japan.
+(9)Department of Pediatrics, Mie University Graduate School of Medicine, Tsu,
+Japan.
+(10)Department of Pediatrics, Graduate School of Medicine, The University of
+Tokyo, Tokyo, Japan.
+(11)Japanese Red Cross Fukushima Blood Center, Okuma, Japan.
+(12)Department of Pediatrics, Yamanashi University, Kofu, Japan.","In this study, we performed genetic analysis of 83 B cell precursor acute
+lymphoblastic leukemia (B-ALL) cell lines. First, we performed multiplex
+ligation-dependent probe amplification analysis to identify copy number
+abnormalities (CNAs) in eight genes associated with B-ALL according to genetic
+subtype. In Ph+ B-ALL cell lines, the frequencies of IKZF1, CDKN2A/2B, BTG1, and 
+PAX5 deletion were significantly higher than those in Ph- B-ALL cell lines. The
+frequency of CDKN2A/2B deletion in KMT2A rearranged cell lines was significantly 
+lower than that in non-KMT2A rearranged cell lines. These findings suggest that
+CNAs are correlated with genetic subtype in B-ALL cell lines. In addition, we
+determined that three B-other ALL cell lines had IKZF1 deletions (YCUB-5, KOPN49,
+and KOPN75); we therefore performed comprehensive genetic analysis of these cell 
+lines. YCUB-5, KOPN49, and KOPN75 had P2RY8-CRLF2, IgH-CRLF2, and PAX5-ETV6
+fusions, respectively. Moreover, targeted capture sequencing revealed that YCUB-5
+had JAK2 R683I and KRAS G12D, and KOPN49 had JAK2 R683G and KRAS G13D mutations. 
+These data may contribute to progress in the field of leukemia research.","DOI: 10.1007/s12185-018-2474-7 
+PMID: 29786757  [Indexed for MEDLINE]"
+8. Blood Adv. 2018 Mar 13;2(5):529-533. doi: 10.1182/bloodadvances.2017014704.,"Prognostic impact of kinase-activating fusions and IKZF1 deletions in pediatric
+high-risk B-lineage acute lymphoblastic leukemia.","Tran TH(1)(2), Harris MH(3), Nguyen JV(2), Blonquist TM(4), Stevenson KE(4),
+Stonerock E(5), Asselin BL(6), Athale UH(7), Clavell LA(8), Cole PD(9), Kelly
+KM(10), Laverdiere C(1), Leclerc JM(1), Michon B(11), Schorin MA(12), Welch
+JJG(13), Reshmi SC(5), Neuberg DS(4), Sallan SE(14), Loh ML(2), Silverman LB(14).","Author information: 
+(1)Division of Pediatric Hematology-Oncology, Charles-Bruneau Cancer Center,
+Centre Hospitalier Universitaire Sainte-Justine Research Center, Montréal, QC,
+Canada.
+(2)Helen Diller Family Cancer Research Center, Department of Pediatrics, Benioff 
+Children's Hospital, University of California, San Francisco, San Francisco, CA.
+(3)Department of Pathology, Boston Children's Hospital, Boston, MA.
+(4)Department of Biostatistics and Computational Biology, Dana-Farber Cancer
+Institute, Boston, MA.
+(5)Department of Pathology and Laboratory Medicine, Nationwide Children's
+Hospital, Columbus, OH.
+(6)Department of Pediatrics, University of Rochester School of Medicine and
+Wilmot Cancer Institute, Rochester, NY.
+(7)Division of Hematology/Oncology, McMaster Children's Hospital, Hamilton Health
+Sciences, Hamilton, ON, Canada.
+(8)San Jorge Children's Hospital, San Juan, Puerto Rico.
+(9)Department of Pediatrics, Montefiore Medical Center, Albert Einstein College
+of Medicine, Bronx, NY.
+(10)Division of Pediatric Hematology/Oncology/Stem Cell Transplantation, Columbia
+University Medical Center, New York, NY.
+(11)Département de Pédiatrie, Centre Mère-Enfant Soleil, Centre Hospitalier
+Universitaire de l'Université Laval, Québec City, QC, Canada.
+(12)Inova Fairfax Hospital for Children, Falls Church, VA.
+(13)Division of Pediatric Hematology/Oncology, Hasbro Children's Hospital/Brown
+University, Providence, RI; and.
+(14)Department of Pediatric Oncology, Dana-Farber Cancer Institute and Boston
+Children's Hospital, Boston, MA.","Recurrent chromosomal rearrangements carry prognostic significance in pediatric
+B-lineage acute lymphoblastic leukemia (B-ALL). Recent genome-wide analyses
+identified a high-risk B-ALL subtype characterized by a diverse spectrum of
+genetic alterations activating kinases and cytokine receptor genes. This subtype 
+is associated with a poor prognosis when treated with conventional chemotherapy
+but has demonstrated sensitivity to the relevant tyrosine kinase inhibitors. We
+sought to determine the frequency of kinase-activating fusions among National
+Cancer Institute (NCI) high-risk, Ph-negative, B-ALL patients enrolled on
+Dana-Farber Cancer Institute ALL Consortium Protocol 05-001 and to describe their
+associated clinical characteristics and outcomes. Among the 105 patients
+screened, 16 (15%) harbored an ABL-class fusion (ETV6-ABL1: n = 1; FOXP1-ABL1: n 
+= 1; SFPQ-ABL1: n = 1; ZC3HAV1-ABL2: n = 1) or a fusion activating the JAK-STAT
+pathway (P2RY8-CRLF2: n = 8; PAX5-JAK2: n = 4). Sixty-nine percent of patients
+with an identified fusion had a concomitant IKZF1 deletion (n = 11). In
+univariate analysis, fusion-positivity and IKZF1 deletion were each associated
+with inferior event-free survival; IKZF1 deletion retained statistical
+significance in multivariable analysis (hazard ratio, 2.64; P = .019). Our
+findings support therapy intensification for IKZF1-altered patients, irrespective
+of the presence of a kinase-activating fusion.",© 2018 by The American Society of Hematology.,"DOI: 10.1182/bloodadvances.2017014704 
+PMCID: PMC5851421
+PMID: 29507076  [Indexed for MEDLINE]"
+9. Leuk Res. 2018 Mar;66:79-84. doi: 10.1016/j.leukres.2018.01.012. Epub 2018 Feb 3.,"High frequency of intermediate and poor risk copy number abnormalities in
+pediatric cohort of B-ALL correlate with high MRD post induction.","Singh M(1), Bhatia P(2), Trehan A(1), Varma N(3), Sachdeva MS(3), Bansal D(1),
+Jain R(1), Naseem S(3).","Author information: 
+(1)Paediatric Haematology-Oncology Unit, Post Graduate Institute of Medical
+Education and Research, Chandigarh, India.
+(2)Paediatric Haematology-Oncology Unit, Post Graduate Institute of Medical
+Education and Research, Chandigarh, India. Electronic address:
+bhatia.prateek@pgimer.edu.in.
+(3)Department of Haematology, Post Graduate Institute of Medical Education and
+Research, Chandigarh, India.","Copy number abnormalities (CNAs) and recurrent fusion transcripts are important
+genetic events which define and prognosticate B-Cell Acute Lymphoblastic Leukemia
+(B-ALL). We evaluated CNAs and fusion transcripts in 67 pediatric B-ALL cases and
+correlated the data with standard risk factors and early treatment outcome
+parameters. Common fusion transcripts ETV6-RUNX1, E2A-PBX, BCR-ABL1 and MLL-AF4
+were examined by RT-PCR and noted in 15%, 15%, 13% and 1.4% of all cases
+respectively. CNAs in IKZF1, PAX5, EBF1, BTG1, RB1, CDKN2A/B and genes from PAR1 
+region viz., CSF2RA, IL3RA,P2RY8, SHOX region and CRLF2 were analyzed by
+multiplex ligation dependent probe amplification assay and were detected in 70%
+(47/67) of cases, with predominantly deletions in CDKN2A/B (36%), PAX5 (18%) and 
+IKZF1 (16%). A statistically significant association of intermediate/poor risk
+CNAs was noted with high WBC count (p = 0.001), NCI group (p = 0.02) and minimal 
+residual disease at Day35 (p < 0.0001). IKZF1 and CDKN2A/B deletion revealed poor
+EFS of 56% at 24 months as compared to EFS of 80% in rest of the cases (p = 0.05)
+suggesting their potential role in early risk stratification.",Copyright © 2018 Elsevier Ltd. All rights reserved.,"DOI: 10.1016/j.leukres.2018.01.012 
+PMID: 29407587  [Indexed for MEDLINE]"
+"10. Oncotarget. 2017 Oct 26;8(57):96466-96467. doi: 10.18632/oncotarget.22098.
+eCollection 2017 Nov 14.",The enigmatic role(s) of P2RY8-CRLF2.,"Panzer-Grümayer R(1), Köhrer S(1), Haas OA(1).","Author information: 
+(1)Renate Panzer-Grümayer: Leukemia Biology Group, Children's Cancer Research
+Institute, Vienna, Austria.","DOI: 10.18632/oncotarget.22098 
+PMCID: PMC5722491
+PMID: 29228539 "
+11. Br J Haematol. 2018 Feb;180(4):550-562. doi: 10.1111/bjh.15056. Epub 2017 Nov 30.,"A risk score including microdeletions improves relapse prediction for standard
+and medium risk precursor B-cell acute lymphoblastic leukaemia in children.","Sutton R(1)(2), Venn NC(1), Law T(1), Boer JM(3)(4), Trahair TN(1)(2)(5), Ng
+A(6), Den Boer ML(3)(7), Dissanayake A(1), Giles JE(1), Dalzell P(8), Mayoh C(1),
+Barbaric D(5), Revesz T(9), Alvaro F(10), Pieters R(4)(7), Haber M(1)(2), Norris 
+MD(1)(11), Schrappe M(12), Dalla Pozza L(6), Marshall GM(1)(2)(5).","Author information: 
+(1)Children's Cancer Institute, Lowy Cancer Research Centre, UNSW, Sydney,
+Australia.
+(2)School of Women's and Children's Health, UNSW, Sydney, Australia.
+(3)Department of Paediatric Oncology/Haematology, Erasmus Medical Centre, Sophia 
+Children's Hospital, Rotterdam, The Netherlands.
+(4)Princess Máxima Centre for Paediatric Oncology, Utrecht, The Netherlands.
+(5)Kids Cancer Centre, Sydney Children's Hospital, Randwick, Australia.
+(6)Cancer Centre for Children, The Children's Hospital at Westmead, Westmead,
+Australia.
+(7)Dutch Childhood Oncology Group, The Hague, The Netherlands.
+(8)SEALS Genetics, NSW Health Pathology, Randwick, Australia.
+(9)Women's and Children's Hospital, SA Pathology, University of Adelaide,
+Adelaide, Australia.
+(10)John Hunter Children's Hospital, Newcastle, Australia.
+(11)UNSW Centre for Childhood Cancer Research, Kensington, Australia.
+(12)Christian-Albrechts-University Kiel and University Medical Centre
+Schleswig-Holstein, Kiel, Germany.","To prevent relapse, high risk paediatric acute lymphoblastic leukaemia (ALL) is
+treated very intensively. However, most patients who eventually relapse have
+standard or medium risk ALL with low minimal residual disease (MRD) levels. We
+analysed recurrent microdeletions and other clinical prognostic factors in a
+cohort of 475 uniformly treated non-high risk precursor B-cell ALL patients with 
+the aim of better predicting relapse and refining risk stratification. Lower
+relapse-free survival at 7 years (RFS) was associated with IKZF1 intragenic
+deletions (P < 0·0001); P2RY8-CRLF2 gene fusion (P < 0·0004); Day 33 MRD>5 × 10-5
+(P < 0·0001) and High National Cancer Institute (NCI) risk (P < 0·0001). We
+created a predictive model based on a risk score (RS) for deletions, MRD and NCI 
+risk, extending from an RS of 0 (RS0) for patients with no unfavourable factors
+to RS2 +  for patients with 2 or 3 high risk factors. RS0, RS1, and RS2 +  groups
+had RFS of 93%, 78% and 49%, respectively, and overall survival (OS) of 99%, 91% 
+and 71%. The RS provided greater discrimination than MRD-based risk
+stratification into standard (89% RFS, 96% OS) and medium risk groups (79% RFS,
+91% OS). We conclude that this RS may enable better early therapeutic
+stratification and thus improve cure rates for childhood ALL.",© 2017 John Wiley & Sons Ltd.,"DOI: 10.1111/bjh.15056 
+PMID: 29194562  [Indexed for MEDLINE]"
+12. Am J Clin Pathol. 2017 Nov 20;148(6):523-528. doi: 10.1093/ajcp/aqx111.,"Philadelphia Chromosome-like Mixed-Phenotype Acute Leukemia Demonstrating
+P2RY8-CRLF2 Fusion and JAK1 Mutation.","Choi SM(1), Frederiksen JK(1), Ross CW(1), Bixby DL(2), Shao L(1).","Author information: 
+(1)Departments of Pathology.
+(2)Internal Medicine, University of Michigan, Ann Arbor.","Objectives: Philadelphia chromosome-like (Ph-like) genetic alterations define a
+subset of B lymphoblastic leukemia/lymphoma (B-ALL), which represents a separate 
+provisional entity in the World Health Organization 2016 updated classification. 
+However, these alterations have not been described outside the context of B-ALL.
+Methods: Cytogenomic array and molecular analysis identified a Ph-like signature 
+in a mixed-phenotype acute leukemia (MPAL), B/myeloid, confirmed using
+conventional immunophenotypic and cytochemical analysis.
+Results: Flow cytometry identified a blast population demonstrating a B-cell
+lineage and myeloperoxidase positivity. A P2RY8-CRLF2 fusion and JAK1 mutation
+were detected, both of which are associated with Ph-like features.
+Conclusions: To our knowledge, this is the first report of Ph-like MPAL, which
+may represent a new diagnostic entity. We emphasize the need for refinement of
+diagnostic criteria for MPALs and highlight an opportunity for expansion of
+inclusion criteria in ongoing clinical trials studying the use of tyrosine kinase
+inhibitor therapy to include cases of Ph-like MPAL.","© American Society for Clinical Pathology, 2017. All rights reserved. For
+permissions, please e-mail: journals.permissions@oup.com","DOI: 10.1093/ajcp/aqx111 
+PMID: 29140408  [Indexed for MEDLINE]"
+"13. Cancer Lett. 2017 Nov 1;408:92-101. doi: 10.1016/j.canlet.2017.08.034. Epub 2017 
+Sep 1.","Differential expression of MUC4, GPR110 and IL2RA defines two groups of
+CRLF2-rearranged acute lymphoblastic leukemia patients with distinct secondary
+lesions.","Sadras T(1), Heatley SL(1), Kok CH(1), Dang P(2), Galbraith KM(2), McClure BJ(2),
+Muskovic W(3), Venn NC(3), Moore S(4), Osborn M(5), Revesz T(6), Moore AS(7),
+Hughes TP(8), Yeung D(9), Sutton R(10), White DL(11).","Author information: 
+(1)Cancer Theme, South Australian Health & Medical Research Institute, Adelaide, 
+SA, Australia; Discipline of Medicine, University of Adelaide, Adelaide, SA,
+Australia.
+(2)Cancer Theme, South Australian Health & Medical Research Institute, Adelaide, 
+SA, Australia.
+(3)Molecular Diagnostics Program, Children's Cancer Institute, Lowy Cancer
+Research Centre, UNSW Sydney, NSW, Australia.
+(4)Department of Genetic Pathology, SA Pathology, Adelaide, SA, Australia.
+(5)SA Pathology at Women's & Children's Hospital, Adelaide, SA, Australia;
+Australian Genomic Health Alliance, Adelaide, SA, Australia.
+(6)SA Pathology at Women's & Children's Hospital, Adelaide, SA, Australia.
+(7)The University of Queensland Diamantina Institute, UQ Child Health Research
+Centre, The University of Queensland, Brisbane, QLD, Australia; Oncology Services
+Group, Children's Health Queensland Hospital and Health Service, Brisbane, QLD,
+Australia.
+(8)Cancer Theme, South Australian Health & Medical Research Institute, Adelaide, 
+SA, Australia; Discipline of Medicine, University of Adelaide, Adelaide, SA,
+Australia; Department of Haematology, SA Pathology, Adelaide, SA, Australia.
+(9)Department of Haematology, SA Pathology, Adelaide, SA, Australia.
+(10)Molecular Diagnostics Program, Children's Cancer Institute, Lowy Cancer
+Research Centre, UNSW Sydney, NSW, Australia; Australian Genomic Health Alliance,
+Adelaide, SA, Australia; School of Women's and Children's Health, Medicine,
+University of NSW, Sydney, NSW, Australia.
+(11)Cancer Theme, South Australian Health & Medical Research Institute, Adelaide,
+SA, Australia; Discipline of Medicine, University of Adelaide, Adelaide, SA,
+Australia; Australian Genomic Health Alliance, Adelaide, SA, Australia.
+Electronic address: deborah.white@sahmri.com.","CRLF2-rearrangements (CRLF2-r) occur frequently in Ph-like B-ALL, a high-risk ALL
+sub-type characterized by a signaling profile similar to Ph + ALL, however
+accumulating evidence indicates genetic heterogeneity within CRLF2-r ALL. We
+performed thorough genomic characterization of 35 CRLF2-r cases (P2RY8-CRLF2
+n = 18; IGH-CRLF2 n = 17). Activating JAK2 mutations were present in 34% of
+patients, and a CRLF2-F232C mutation was identified in an additional 17%. IKZF1
+deletions were detected in 63% of cases. The majority of patients (26/35)
+classified as Ph-like, and these were characterized by significantly higher
+levels of MUC4, GPR110 and IL2RA/CD25. In addition, Ph-like CRLF2-r samples were 
+significantly enriched for IKZF1 deletions, JAK2/CRLF2 mutations and increased
+expression of JAK/STAT target genes (CISH, SOCS1), suggesting that
+mutation-driven CRLF2/JAK2 activation is more frequent in this sub-group. Less is
+known about the genomics of CRLF2-r cases lacking JAK2-pathway mutations, but
+KRAS/NRAS mutations were identified in 4/9 non-Ph-like samples. This work
+highlights the heterogeneity of secondary lesions which may arise and influence
+intracellular-pathway activation in CRLF2-r patients, and importantly presents
+distinct therapeutic targets within a group of patients harboring identical
+primary translocations, for whom efficient directed therapies are currently
+lacking.",Copyright © 2017 Elsevier B.V. All rights reserved.,"DOI: 10.1016/j.canlet.2017.08.034 
+PMID: 28866095  [Indexed for MEDLINE]"
+"14. Genes Chromosomes Cancer. 2017 Oct;56(10):730-749. doi: 10.1002/gcc.22477. Epub
+2017 Jul 1.","Copy number alterations determined by single nucleotide polymorphism array
+testing in the clinical laboratory are indicative of gene fusions in pediatric
+cancer patients.","Busse TM(1), Roth JJ(2), Wilmoth D(3), Wainwright L(3), Tooke L(3), Biegel
+JA(1)(4).","Author information: 
+(1)Department of Pathology and Laboratory Medicine Children's Hospital of Los
+Angeles, Center for Personalized Medicine, Los Angeles, California.
+(2)Department of Pathology and Laboratory Medicine, Hospital of the University of
+Pennsylvania, Philadelphia, Pennsylvania.
+(3)Department of Pathology and Laboratory Medicine, The Children's Hospital of
+Philadelphia, Philadelphia, Pennsylvania.
+(4)Department of Pathology, USC Keck School of Medicine, Los Angeles, California.","Gene fusions resulting from structural rearrangements are an established
+mechanism of tumorigenesis in pediatric cancer. In this clinical cohort, 1,350
+single nucleotide polymorphism (SNP)-based chromosomal microarrays from 1,211
+pediatric cancer patients were evaluated for copy number alterations (CNAs)
+associated with gene fusions. Karyotype or fluorescence in situ hybridization
+studies were performed in 42% of the patients. Ten percent of the bone marrow or 
+solid tumor specimens had SNP array-associated CNAs suggestive of a gene fusion. 
+Alterations involving ETV6, ABL1-NUP214, EBF1-PDGFRB, KMT2A(MLL), LMO2-RAG,
+MYH11-CBFB, NSD1-NUP98, PBX1, STIL-TAL1, ZNF384-TCF3, P2RY8-CRLF2, and
+RUNX1T1-RUNX1 fusions were detected in the bone marrow samples. The most common
+alteration among the low-grade gliomas was a 7q34 tandem duplication resulting in
+a KIAA1549-BRAF fusion. Additional fusions identified in the pediatric brain
+tumors included FAM131B-BRAF and RAF1-QKI. COL1A1-PDGFB, CRTC1-MAML2, EWSR1,
+HEY1, PAX3- and PAX7-FOXO1, and PLAG1 fusions were determined in a variety of
+solid tumors and a novel potential gene fusion, FGFR1-USP6, was detected in an
+aneurysmal bone cyst. The identification of these gene fusions was instrumental
+in tumor diagnosis. In contrast to hematologic and solid tumors in adults that
+are predominantly driven by mutations, the majority of hematologic and solid
+tumors in children are characterized by CNAs and gene fusions. Chromosomal
+microarray analysis is therefore a robust platform to identify diagnostic and
+prognostic markers in the clinical setting.","© 2017 Wiley Periodicals, Inc.","DOI: 10.1002/gcc.22477 
+PMID: 28597942  [Indexed for MEDLINE]"
+"15. Blood. 2017 Jun 22;129(25):3352-3361. doi: 10.1182/blood-2016-12-758979. Epub
+2017 Apr 13.","Targetable kinase gene fusions in high-risk B-ALL: a study from the Children's
+Oncology Group.","Reshmi SC(1)(2), Harvey RC(3), Roberts KG(4), Stonerock E(1), Smith A(5), Jenkins
+H(1), Chen IM(3), Valentine M(6), Liu Y(7), Li Y(7), Shao Y(4), Easton J(7),
+Payne-Turner D(4), Gu Z(4), Tran TH(8), Nguyen JV(8), Devidas M(9), Dai Y(9),
+Heerema NA(2), Carroll AJ 3rd(10), Raetz EA(11), Borowitz MJ(12), Wood BL(13),
+Angiolillo AL(14), Burke MJ(15), Salzer WL(16), Zweidler-McKay PA(17), Rabin
+KR(18), Carroll WL(19), Zhang J(7), Loh ML(8), Mullighan CG(4), Willman CL(3),
+Gastier-Foster JM(1)(2)(20), Hunger SP(21).","Author information: 
+(1)Institute for Genomic Medicine, Nationwide Children's Hospital, Columbus, OH.
+(2)Department of Pathology, The Ohio State University College of Medicine,
+Columbus, OH.
+(3)University of New Mexico Cancer Center, Albuquerque, NM.
+(4)Department of Pathology, St. Jude Children's Research Hospital, Memphis, TN.
+(5)Comprehensive Cancer Center, The Ohio State University College of Medicine,
+Columbus, OH.
+(6)Department of Cytogenetics and.
+(7)Department of Computational Biology, St. Jude Children's Research Hospital,
+Memphis, TN.
+(8)Department of Pediatrics, UCSF Benioff Children's Hospital and Helen Diller
+Family Comprehensive Cancer Center, University of California, San Francisco, San 
+Francisco, CA.
+(9)Department of Biostatistics, University of Florida, Gainesville, FL.
+(10)Department of Genetics, University of Alabama at Birmingham, Birmingham, AL.
+(11)Department of Pediatrics, University of Utah, Salt Lake City, UT.
+(12)Department of Pathology, Johns Hopkins University, Baltimore, MD.
+(13)Seattle Children's Hospital, Seattle, WA.
+(14)Children's National Medical Center, Washington, DC.
+(15)Department of Pediatrics, Medical College of Wisconsin, Milwaukee, WI.
+(16)US Army Medical Research and Materiel Command, Fort Detrick, MD.
+(17)Department of Pediatrics, MD Anderson Cancer Center, Houston, TX.
+(18)Department of Pediatrics, Baylor College of Medicine, Houston, TX.
+(19)Perlmutter Cancer Center, NYU Langone Medical Center, New York, NY.
+(20)Department of Pediatrics, The Ohio State University College of Medicine,
+Columbus, OH; and.
+(21)Department of Pediatrics, Children's Hospital of Philadelphia and Perelman
+School of Medicine, University of Pennsylvania, Philadelphia, PA.","Comment in
+    Blood. 2017 Jun 22;129(25):3280-3282.","Philadelphia chromosome-like (Ph-like) acute lymphoblastic leukemia (ALL) is a
+high-risk subtype characterized by genomic alterations that activate cytokine
+receptor and kinase signaling. We examined the frequency and spectrum of
+targetable genetic lesions in a retrospective cohort of 1389 consecutively
+diagnosed patients with childhood B-lineage ALL with high-risk clinical features 
+and/or elevated minimal residual disease at the end of remission induction
+therapy. The Ph-like gene expression profile was identified in 341 of 1389
+patients, 57 of whom were excluded from additional analyses because of the
+presence of BCR-ABL1 (n = 46) or ETV6-RUNX1 (n = 11). Among the remaining 284
+patients (20.4%), overexpression and rearrangement of CRLF2 (IGH-CRLF2 or
+P2RY8-CRLF2) were identified in 124 (43.7%), with concomitant genomic alterations
+activating the JAK-STAT pathway (JAK1, JAK2, IL7R) identified in 63 patients
+(50.8% of those with CRLF2 rearrangement). Among the remaining patients, using
+reverse transcriptase polymerase chain reaction or transcriptome sequencing, we
+identified targetable ABL-class fusions (ABL1, ABL2, CSF1R, and PDGFRB) in 14.1%,
+EPOR rearrangements or JAK2 fusions in 8.8%, alterations activating other
+JAK-STAT signaling genes (IL7R, SH2B3, JAK1) in 6.3% or other kinases (FLT3,
+NTRK3, LYN) in 4.6%, and mutations involving the Ras pathway (KRAS, NRAS, NF1,
+PTPN11) in 6% of those with Ph-like ALL. We identified 8 new rearrangement
+partners for 4 kinase genes previously reported to be rearranged in Ph-like ALL. 
+The current findings provide support for the precision-medicine testing and
+treatment approach for Ph-like ALL implemented in Children's Oncology Group ALL
+trials.","DOI: 10.1182/blood-2016-12-758979 
+PMCID: PMC5482101
+PMID: 28408464  [Indexed for MEDLINE]"
+"16. Genes Chromosomes Cancer. 2017 Aug;56(8):608-616. doi: 10.1002/gcc.22464. Epub
+2017 May 5.","ETV6/RUNX1-like acute lymphoblastic leukemia: A novel B-cell precursor leukemia
+subtype associated with the CD27/CD44 immunophenotype.","Zaliova M(1)(2)(3), Kotrova M(1)(2)(3), Bresolin S(4), Stuchly J(1)(2), Stary
+J(2)(3), Hrusak O(1)(2)(3), Te Kronnie G(4), Trka J(1)(2)(3), Zuna J(1)(2)(3),
+Vaskova M(1)(2).","Author information: 
+(1)CLIP-Childhood Leukaemia Investigation Prague, Czech Republic.
+(2)Department of Paediatric Haematology and Oncology, Second Faculty of Medicine,
+Charles University, Prague, Czech Republic.
+(3)University Hospital Motol, Prague, Czech Republic.
+(4)Department of Women's and Children's Health, University of Padova, Italy.","We have shown previously that ETV6/RUNX1-positive acute lymphoblastic leukemia
+(ALL) is distinguishable from other ALL subtypes by CD27pos /CD44low-neg
+immunophenotype. During diagnostic immunophenotyping of 573 childhood B-cell
+precursor ALL (BCP-ALL), we identified eight cases with this immunophenotype
+among ""B-other ALL"" (BCP-ALL cases negative for routinely tested
+chromosomal/genetic aberrations). We aimed to elucidate whether these cases
+belong to the recently described ETV6/RUNX1-like ALL defined by the
+ETV6/RUNX1-specific gene expression profile (GEP), harboring concurrent ETV6 and 
+IKZF1 lesions. We performed comprehensive genomic analysis using single
+nucleotide polymorphism arrays, whole exome and transcriptome sequencing and GEP 
+on microarrays. In unsupervised hierarchical clustering based on GEP, five out of
+seven analyzed CD27pos /CD44low-neg B-other cases clustered with
+ETV6/RUNX1-positive ALL and were thus classified as ETV6/RUNX1-like ALL. The two 
+cases clustering outside ETV6/RUNX1-positive ALL harbored a P2RY8/CRLF2 fusion
+with activating JAK2 mutations and a TCF3/ZNF384 fusion, respectively, assigning 
+them to other ALL subtypes. All five ETV6/RUNX1-like cases harbored ETV6
+deletions; uniform intragenic ARPP21 deletions and various IKZF1 lesions were
+each found in three ETV6/RUNX1-like cases. The frequency of ETV6 and ARPP21
+deletions was significantly higher in ETV6/RUNX1-like ALL compared with a
+reference cohort of 42 B-other ALL. In conclusion, we show that ETV6/RUNX1-like
+ALL is associated with CD27pos /CD44low-neg immunophenotype and identify ARPP21
+deletions to contribute to its specific genomic profile enriched for ETV6 and
+IKZF1 lesions. In conjunction with previously published data, our study
+identifies the ETV6 lesion as the only common genetic aberration and thus the
+most likely key driver of ETV6/RUNX1-like ALL.","© 2017 Wiley Periodicals, Inc.","DOI: 10.1002/gcc.22464 
+PMID: 28395118  [Indexed for MEDLINE]"
+17. Pediatr Blood Cancer. 2017 Oct;64(10). doi: 10.1002/pbc.26539. Epub 2017 Apr 1.,"Molecular characterization of acute lymphoblastic leukemia with high CRLF2 gene
+expression in childhood.","Schmäh J(1), Fedders B(1), Panzer-Grümayer R(2), Fischer S(2), Zimmermann M(3),
+Dagdan E(3), Bens S(4)(5), Schewe D(1), Moericke A(1), Alten J(1), Bleckmann
+K(1), Siebert R(4)(5), Schrappe M(1), Stanulla M(3), Cario G(1).","Author information: 
+(1)Department of Pediatrics, University Medical Center Schleswig-Holstein, Kiel, 
+Germany.
+(2)Children's Cancer Research Institute, St. Anna Kinderkrebsforschung, Vienna,
+Austria.
+(3)Department of Pediatric Hematology and Oncology, Hannover Medical School,
+Hannover, Germany.
+(4)Institute of Human Genetics, Christian-Albrechts-University Kiel & University 
+Medical Center Schleswig-Holstein, Kiel, Germany.
+(5)Institute of Human Genetics, University of Ulm, Ulm, Germany.","BACKGROUND: A high-level expression of the CRLF2 gene is frequent in precursor
+B-cell acute lymphoblastic leukemia (pB-ALL) and can be caused by different
+genetic aberrations. The presence of the most frequent alteration, the
+P2RY8/CRLF2 fusion, was shown to be associated with a high relapse incidence in
+children treated according to ALL-Berlin-Frankfurt-Münster (BFM) protocols, which
+is poorly understood. Moreover, the frequency of other alterations has not been
+systematically analyzed yet.
+PROCEDURE: CRLF2 mRNA expression and potential genetic aberrations causing a
+CRLF2 high expression were prospectively assessed in 1,105 patients treated
+according to the Associazione Italiana Ematologia Oncologia Pediatrica
+(AIEOP)-BFM ALL 2009 protocol. Additionally, we determined copy number
+alterations in selected B-cell differentiation genes for all CRLF2
+high-expressing pB-ALL cases, as well as JAK2 and CRLF2 mutations.
+RESULTS: A CRLF2 high expression was detected in 26/178 (15%) T-cell acute
+lymphoblastic leukemia (T-ALL) cases, 21 of them (81%) had been stratified as
+high-risk patients by treatment response. In pB-ALL, a CRLF2 high expression was 
+determined in 91/927 (10%) cases; the P2RY8/CRLF2 rearrangement in 44/91 (48%) of
+them, supernumerary copies of CRLF2 in 18/91 (20%), and, notably, the IGH/CRLF2
+translocation was detected in 16/91 (18%). Remarkably, 7 of 16 (44%) patients
+with IGH/CRLF2 translocation had already relapsed. P2RY8/CRLF2- and
+IGH/CRLF2-positive samples (70 and 94%, respectively) were characterized by a
+high frequency of additional deletions in B-cell differentiation genes such as
+IKZF1 or PAX5.
+CONCLUSION: Our data suggest that this high frequency of genetic aberrations in
+the context of a high CRLF2 expression could contribute to the high risk of
+relapse in P2RY8/CRLF2- and IGH/CRLF2-positive ALL.","© 2017 Wiley Periodicals, Inc.","DOI: 10.1002/pbc.26539 
+PMID: 28371317  [Indexed for MEDLINE]"
+"18. Genes Chromosomes Cancer. 2017 May;56(5):363-372. doi: 10.1002/gcc.22439. Epub
+2017 Jan 18.","Characterisation of the genomic landscape of CRLF2-rearranged acute lymphoblastic
+leukemia.","Russell LJ(1), Jones L(1), Enshaei A(1), Tonin S(1), Ryan SL(1), Eswaran J(1),
+Nakjang S(2), Papaemmanuil E(3)(4), Tubio JM(4), Fielding AK(5), Vora A(6),
+Campbell PJ(4), Moorman AV(1), Harrison CJ(1).","Author information: 
+(1)Leukaemia Research Cytogenetics Group, Northern Institute for Cancer Research,
+Newcastle University, Newcastle-upon-Tyne, UK.
+(2)Bioinformatics Support Unit, Newcastle University, Newcastle-upon-Tyne, UK.
+(3)Department of Epidemiology-Biostatistics, Memorial Sloan Kettering Cancer
+Center, USA.
+(4)Cancer Genome Project, Wellcome Trust Sanger Institute, Hinxton, UK.
+(5)Research Department of Haemaoloty, UCL Cancer Institute, London, UK.
+(6)Department of Haematology, Sheffield Children's Hospital, Sheffield, UK.","Deregulated expression of the type I cytokine receptor, CRLF2, is observed in
+5-15% of precursor B-cell acute lymphoblastic leukaemia (B-ALL). We aimed to
+determine the clinical and genetic landscape of those with IGH-CRLF2 or
+P2RY8-CRLF2 (CRLF2-r) using multiple genomic approaches. Clinical and demographic
+features of CRLF2-r patients were characteristic of B-ALL. Patients with
+IGH-CRLF2 were older (14 y vs. 4 y, P < .001), while the incidence of CRLF2-r
+among Down syndrome patients was high (50/161, 31%). CRLF2-r co-occurred with
+primary chromosomal rearrangements but the majority (111/161, 69%) had B-other
+ALL. Copy number alteration (CNA) profiles were similar to B-other ALL, although 
+CRLF2-r patients harbored higher frequencies of IKZF1 (60/138, 43% vs. 77/1351,
+24%) and BTG1 deletions (20/138, 15% vs. 3/1351, 1%). There were significant
+differences in CNA profiles between IGH-CRLF2 and P2RY8-CRLF2 patients: IKZF1
+(25/35, 71% vs. 36/108, 33%, P < .001), BTG1 (11/35, 31% vs. 10/108, 9%, P
+=.004), and ADD3 deletions (9/19, 47% vs. 5/38, 13%, P =.008). A novel gene
+fusion, USP9X-DDX3X, was discovered in 10/54 (19%) of patients. Pathway analysis 
+of the mutational profile revealed novel involvement for focal adhesion. Although
+the functional relevance of many of these abnormalities are unknown, they likely 
+activate additional pathways, which may represent novel therapeutic targets.","© 2017 The Authors Genes, Chromosomes and Cancer Published byWiley Periodicals,
+Inc.","DOI: 10.1002/gcc.22439 
+PMCID: PMC5396319
+PMID: 28033648  [Indexed for MEDLINE]"
+"19. PLoS Med. 2016 Dec 13;13(12):e1002197. doi: 10.1371/journal.pmed.1002197.
+eCollection 2016 Dec.","Histological Transformation and Progression in Follicular Lymphoma: A Clonal
+Evolution Study.","Kridel R(1), Chan FC(1)(2), Mottok A(1)(3), Boyle M(1), Farinha P(1), Tan K(1),
+Meissner B(1), Bashashati A(4), McPherson A(4), Roth A(2)(4), Shumansky K(4), Yap
+D(4), Ben-Neriah S(1), Rosner J(4), Smith MA(2)(4), Nielsen C(4), Giné E(1),
+Telenius A(1), Ennishi D(1), Mungall A(5), Moore R(5), Morin RD(5)(6), Johnson
+NA(7), Sehn LH(1), Tousseyn T(8)(9), Dogan A(10)(11), Connors JM(1), Scott DW(1),
+Steidl C(1)(3), Marra MA(5), Gascoyne RD(1)(3), Shah SP(3)(4).","Author information: 
+(1)Centre for Lymphoid Cancer, BC Cancer Agency, Vancouver, British Columbia,
+Canada.
+(2)Bioinformatics Graduate Program, University of British Columbia, Vancouver,
+British Columbia, Canada.
+(3)Department of Pathology and Laboratory Medicine, University of British
+Columbia, Vancouver, British Columbia, Canada.
+(4)Department of Molecular Oncology, BC Cancer Agency, Vancouver, British
+Columbia, Canada.
+(5)Michael Smith Genome Sciences Centre, BC Cancer Agency, Vancouver, British
+Columbia, Canada.
+(6)Department of Molecular Biology and Biochemistry, Simon Fraser University,
+Burnaby, British Columbia, Canada.
+(7)Jewish General Hospital, Montreal, Quebec, Canada.
+(8)Translational Cell and Tissue Research Lab, Department for Imaging and
+Pathology, University of Leuven (KU Leuven), Leuven, Belgium.
+(9)Department of Pathology, Universitaire Ziekenhuizen Leuven (UZ Leuven),
+Leuven, Belgium.
+(10)Department of Laboratory and Pathology, Mayo Clinic, Rochester, Minnesota,
+United States of America.
+(11)Departments of Pathology and Laboratory Medicine, Memorial Sloan Kettering
+Cancer Center, New York, New York, United States of America.","BACKGROUND: Follicular lymphoma (FL) is an indolent, yet incurable B cell
+malignancy. A subset of patients experience an increased mortality rate driven by
+two distinct clinical end points: histological transformation and early
+progression after immunochemotherapy. The nature of tumor clonal dynamics leading
+to these clinical end points is poorly understood, and previously determined
+genetic alterations do not explain the majority of transformed cases or
+accurately predict early progressive disease. We contend that detailed knowledge 
+of the expansion patterns of specific cell populations plus their associated
+mutations would provide insight into therapeutic strategies and disease biology
+over the time course of FL clinical histories.
+METHODS AND FINDINGS: Using a combination of whole genome sequencing, targeted
+deep sequencing, and digital droplet PCR on matched diagnostic and relapse
+specimens, we deciphered the constituent clonal populations in 15 transformation 
+cases and 6 progression cases, and measured the change in clonal population
+abundance over time. We observed widely divergent patterns of clonal dynamics in 
+transformed cases relative to progressed cases. Transformation specimens were
+generally composed of clones that were rare or absent in diagnostic specimens,
+consistent with dramatic clonal expansions that came to dominate the
+transformation specimens. This pattern was independent of time to transformation 
+and treatment modality. By contrast, early progression specimens were composed of
+clones that were already present in the diagnostic specimens and exhibited only
+moderate clonal dynamics, even in the presence of immunochemotherapy. Analysis of
+somatic mutations impacting 94 genes was undertaken in an extension cohort
+consisting of 395 samples from 277 patients in order to decipher disrupted
+biology in the two clinical end points. We found 12 genes that were more commonly
+mutated in transformed samples than in the preceding FL tumors, including TP53,
+B2M, CCND3, GNA13, S1PR2, and P2RY8. Moreover, ten genes were more commonly
+mutated in diagnostic specimens of patients with early progression, including
+TP53, BTG1, MKI67, and XBP1.
+CONCLUSIONS: Our results illuminate contrasting modes of evolution shaping the
+clinical histories of transformation and progression. They have implications for 
+interpretation of evolutionary dynamics in the context of treatment-induced
+selective pressures, and indicate that transformation and progression will
+require different clinical management strategies.","DOI: 10.1371/journal.pmed.1002197 
+PMCID: PMC5154502
+PMID: 27959929  [Indexed for MEDLINE]","Conflict of interest statement: I have read the journal's policy and the authors 
+of this manuscript have the following competing interests: SPS is a founder and
+shareholder of Contextual Genomics Inc., developer of clinical genomic tests for 
+cancer."
+20. Leukemia. 2017 Jul;31(7):1491-1501. doi: 10.1038/leu.2016.365. Epub 2016 Nov 30.,"Genomic and transcriptional landscape of P2RY8-CRLF2-positive childhood acute
+lymphoblastic leukemia.","Vesely C(1), Frech C(1), Eckert C(2), Cario G(3), Mecklenbräuker A(1), Zur Stadt 
+U(4), Nebral K(1), Kraler F(1), Fischer S(1), Attarbaschi A(5), Schuster M(6),
+Bock C(6), Cavé H(7), von Stackelberg A(2), Schrappe M(3), Horstmann MA(4), Mann 
+G(5), Haas OA(1)(5), Panzer-Grümayer R(1).","Author information: 
+(1)Children's Cancer Research Institute (CCRI), Leukemia Biology Group, Vienna,
+Austria.
+(2)Department of Pediatric Oncology/Hematology, Charité Universitätsmedizin
+Berlin, Campus Virchow Klinikum, Berlin, Germany.
+(3)Department of Pediatrics, Medical University of Schleswig Holstein, Kiel,
+Germany.
+(4)Clinic of Pediatric Hematology and Oncology, University Medical Center
+Hamburg-Eppendorf, Hamburg, Germany.
+(5)St Anna Kinderspital, Medical University Vienna, Vienna, Austria.
+(6)Research Center for Molecular Medicine (CeMM), Vienna, Austria.
+(7)UFR de Médecine Paris-Diderot, INSERM UMR_S1131-Institute Universitaire
+d'hématologie, Département de Génétique-UF de Génétique Moléculaire, Hôpital
+Robert Debré, Paris, France.","Children with P2RY8-CRLF2-positive acute lymphoblastic leukemia have an increased
+relapse risk. Their mutational and transcriptional landscape, as well as the
+respective patterns at relapse remain largely elusive. We, therefore, performed
+an integrated analysis of whole-exome and RNA sequencing in 41 major clone
+fusion-positive cases including 19 matched diagnosis/relapse pairs. We detected a
+variety of frequently subclonal and highly instable JAK/STAT but also RTK/Ras
+pathway-activating mutations in 76% of cases at diagnosis and virtually all
+relapses. Unlike P2RY8-CRLF2 that was lost in 32% of relapses, all other genomic 
+alterations affecting lymphoid development (58%) and cell cycle (39%) remained
+stable. Only IKZF1 alterations predominated in relapsing cases (P=0.001) and
+increased from initially 36 to 58% in matched cases. IKZF1's critical role is
+further corroborated by its specific transcriptional signature comprising stem
+cell features with signs of impaired lymphoid differentiation, enhanced focal
+adhesion, activated hypoxia pathway, deregulated cell cycle and increased drug
+resistance. Our findings support the notion that P2RY8-CRLF2 is dispensable for
+relapse development and instead highlight the prominent rank of IKZF1 for relapse
+development by mediating self-renewal and homing to the bone marrow niche.
+Consequently, reverting aberrant IKAROS signaling or its disparate programs
+emerges as an attractive potential treatment option in these leukemias.","DOI: 10.1038/leu.2016.365 
+PMCID: PMC5508072
+PMID: 27899802  [Indexed for MEDLINE]",
+"
+1. Leuk Lymphoma. 2017 Apr;58(4):950-958. doi: 10.1080/10428194.2016.1219902. Epub
+2016 Nov 17.","Diagnostic evaluation of RNA sequencing for the detection of genetic
+abnormalities associated with Ph-like acute lymphoblastic leukemia (ALL).","Yap KL(1), Furtado LV(2), Kiyotani K(1), Curran E(1), Stock W(1), McNeer JL(3),
+Kadri S(2), Segal JP(2), Nakamura Y(1), Le Beau MM(1), Gurbuxani S(2), Raca G(1).","Author information: 
+(1)a Department of Medicine, Section of Hematology/Oncology , The University of
+Chicago , Chicago , IL , USA.
+(2)b Department of Pathology , The University of Chicago , Chicago , IL , USA.
+(3)c Department of Pediatrics, Section of Pediatric Hematology/Oncology , The
+University of Chicago , Chicago , IL , USA.","Philadelphia (Ph)-like acute lymphoblastic leukemia (ALL) is a molecular subtype 
+of high-risk B-cell ALL characterized by formation of abnormal gene fusions
+involving tyrosine kinase (TK) and cytokine receptor genes and activation of TK
+signaling. Because of the diversity of associated genetic changes, the detection 
+of Ph-like ALL cases currently requires multiple cytogenetic and molecular
+assays; thus, our goal was to develop a consolidated workflow for detecting
+genetic abnormalities in Ph-like ALL. We found that total and targeted RNA
+sequencing (RNAseq)-based approach allowed the detection of abnormal fusion
+transcripts (EBF1-PDGFRB, P2RY8-CRLF2, RCSD1-ABL1, and RCSD1-ABL2). The
+bioinformatics algorithm accurately detected the fusion transcripts without prior
+input about possible events. Additionally, we showed that RNAseq analysis enabled
+evaluation for disease-associated sequence variants in expressed transcripts.
+While total RNAseq can be a second tier approach allowing discovery of novel
+genetic alterations, the targeted RNAseq workflow offers a clinically applicable 
+method for the detection of fusion transcripts.","DOI: 10.1080/10428194.2016.1219902 
+PMCID: PMC6077981
+PMID: 27855558  [Indexed for MEDLINE]"
+2. Oncotarget. 2016 Dec 6;7(49):80664-80679. doi: 10.18632/oncotarget.13025.,"Integrative analysis of DNA copy number, DNA methylation and gene expression in
+multiple myeloma reveals alterations related to relapse.","Krzeminski P(1)(2), Corchete LA(1), García JL(2), López-Corral L(1)(2), Fermiñán 
+E(3), García EM(3), Martín AA(1), Hernández-Rivas JM(1)(2), García-Sanz R(1)(2), 
+San Miguel JF(4), Gutiérrez NC(1)(2).","Author information: 
+(1)Departamento de Hematología, Hospital Universitario, IBSAL, IBMCC (USAL-CSIC),
+Salamanca, Spain.
+(2)Centro de Investigación del Cáncer-IBMCC (USAL-CSIC), Salamanca, Spain.
+(3)Unidad de Genómica y Proteómica, Centro de Investigación del Cáncer-IBMCC
+(USAL-CSIC), Salamanca, Spain.
+(4)Clínica Universidad de Navarra, Centro de Investigaciones Médicas Aplicadas
+(CIMA), Pamplona, Spain.","Multiple myeloma (MM) remains incurable despite the introduction of novel agents,
+and a relapsing course is observed in most patients. Although the development of 
+genomic technologies has greatly improved our understanding of MM pathogenesis,
+the mechanisms underlying relapse have been less thoroughly investigated. In this
+study, an integrative analysis of DNA copy number, DNA methylation and gene
+expression was conducted in matched diagnosis and relapse samples from MM
+patients. Overall, the acquisition of abnormalities at relapse was much more
+frequent than the loss of lesions present at diagnosis, and DNA losses were
+significantly more frequent in relapse than in diagnosis samples. Interestingly, 
+copy number abnormalities involving more than 100 Mb of DNA at relapse
+significantly affect the gene expression of these samples, provoking a particular
+deregulation of the IL-8 pathway. On the other hand, no significant modifications
+of gene expression were observed in those samples with less than 100 Mb affected 
+by chromosomal changes. Although several statistical approaches were used to
+identify genes whose abnormal expression at relapse was regulated by methylation,
+only two genes that were significantly deregulated in relapse samples (SORL1 and 
+GLT1D1) showed a negative correlation between methylation and expression. Further
+analysis revealed that DNA methylation was involved in regulating SORL1
+expression in MM. Finally, relevant changes in gene expression observed in
+relapse samples, such us downregulation of CD27 and P2RY8, were most likely not
+preceded by alterations in the corresponding DNA. Taken together, these results
+suggest that the genomic heterogeneity described at diagnosis remains at relapse.","DOI: 10.18632/oncotarget.13025 
+PMCID: PMC5348347
+PMID: 27811368  [Indexed for MEDLINE]"
+"3. Genes Chromosomes Cancer. 2017 Feb;56(2):135-146. doi: 10.1002/gcc.22421. Epub
+2016 Nov 5.","Prognostic significance of P2RY8-CRLF2 and CRLF2 overexpression may vary across
+risk subgroups of childhood B-cell acute lymphoblastic leukemia.","Dou H(1)(2), Chen X(3), Huang Y(4), Su Y(5), Lu L(6), Yu J(5), Yin Y(1)(2)(7),
+Bao L(3)(8).","Author information: 
+(1)Department of Clinical Laboratory, Ministry of Education Key Laboratory of
+Child Development and Disorders, Children's Hospital of Chongqing Medical
+University, Chongqing, China.
+(2)Key Laboratory of Pediatrics in Chongqing, Chongqing International Science and
+Technology Cooperation Center for Child Development and Disorders, Children's
+Hospital of Chongqing Medical University, Chongqing, China.
+(3)Center for Clinical Molecular Medicine, Ministry of Education Key Laboratory
+of Child Development and Disorders, Chongqing Key Laboratory of Pediatrics,
+Children's Hospital of Chongqing Medical University, Chongqing, China.
+(4)Research Center for Immunity and Infectious Diseases, Ministry of Education
+Key Laboratory of Child Development and Disorders, Chongqing Key Laboratory of
+Pediatrics, Children's Hospital of Chongqing Medical University, Chongqing,
+China.
+(5)Department of Hematology and Oncology, Ministry of Education Key Laboratory of
+Child Development and Disorders, Chongqing Key Laboratory of Pediatrics,
+Children's Hospital of Chongqing Medical University, Chongqing, China.
+(6)Department of Rheumatology, Huashan Hospital, Fudan University, Shanghai,
+China.
+(7)Ministry of Education Key Laboratory of Clinical Laboratory Diagnostics,
+College of Laboratory Medicine, Chongqing Medical University, Chongqing, China.
+(8)Department of Pathology and Laboratory Medicine, Geisel School of Medicine
+Dartmouth College, New Hampshire, USA.","The cytokine receptor-like factor 2 (CRLF2) gene plays an important role in early
+B-cell development. Aberrations in CRLF2 activate the JAK-STAT signaling pathway 
+that contributes to B-cell acute lymphoblastic leukemia (B-ALL). The prognostic
+significance of CRLF2 overexpression and P2RY8-CRLF2 fusion in various B-ALL risk
+subgroups has not been well established. Two hundred seventy-one patients with
+newly diagnosed childhood B-ALL were enrolled from a Chinese population. The
+prevalence of CRLF2 overexpression, CRLF2-P2RY8 fusion, CRLF2 F232C mutation, and
+JAK2 and IL7R mutational status were analyzed, and the prognostic impact of CRLF2
+overexpression and P2RY8-CRLF2 on B-ALL was evaluated by assessing their
+influence on overall survival and event-free survival. CRLF2 overexpression and
+P2RY8-CRLF2 were found in 19% and 10%, respectively, in the whole cohort. No
+correlation between CRLF2 overexpression and P2RY8-CRLF2 was observed. CRLF2
+F322C and IL7R mutations were not detected in B-ALL cases overexpressing CRLF2,
+and no JAK2 mutations were found in the whole cohort either. The results showed
+that CRLF2 overexpression and P2RY8-CRLF2 were associated with a poor outcome in 
+unselected B-ALL. Moreover, in an intermediate risk B-ALL subgroup P2RY8-CRLF2
+was correlated with worse survival, whereas in high- and low-risk subgroups,
+CRLF2 overexpression predicted a poor outcome. Our findings suggest that
+P2RY8-CRLF2 is an independent prognostic indicator in intermediate risk B-ALL,
+while CRLF2 overexpression is correlated with an inferior outcome in high- or
+low-risk B-ALL. Our study demonstrates that the impact of P2RY8-CRLF2 and CRLF2
+overexpression on B-ALL survival may differ across risk subgroups. © 2016 Wiley
+Periodicals, Inc.","© 2016 Wiley Periodicals, Inc.","DOI: 10.1002/gcc.22421 
+PMID: 27637012  [Indexed for MEDLINE]"
+"4. J Mol Diagn. 2016 Jul;18(4):595-603. doi: 10.1016/j.jmoldx.2016.03.004. Epub 2016
+May 6.","Genome-Wide Single-Nucleotide Polymorphism Array Analysis Improves
+Prognostication of Acute Lymphoblastic Leukemia/Lymphoma.","Wang Y(1), Miller S(2), Roulston D(2), Bixby D(3), Shao L(4).","Author information: 
+(1)Clinical Cytogenetics Laboratory, University of Michigan, Ann Arbor, Michigan;
+Department of Pathology, Peking University First Hospital, Beijing, China.
+(2)Clinical Cytogenetics Laboratory, University of Michigan, Ann Arbor, Michigan.
+(3)Department of Pathology, and the Department of Internal Medicine, University
+of Michigan, Ann Arbor, Michigan.
+(4)Clinical Cytogenetics Laboratory, University of Michigan, Ann Arbor, Michigan.
+Electronic address: linashao@med.umich.edu.","Chromosomal abnormalities are important for the risk stratification of acute
+lymphoblastic leukemia/lymphoma (ALL). However, approximately 30% of pediatric
+and 50% of adult patients lack abnormalities with clinical relevance by
+traditional cytogenetic analysis. We integrated cytogenetic, fluorescence in situ
+hybridization, and whole-genome single-nucleotide polymorphism array results from
+60 consecutive clinical ALL cases. By cytogenetic and/or fluorescence in situ
+hybridization analyses, recurring abnormalities with clinical relevance were
+observed in 33 B-cell ALL (B-ALL), including t(9;22), hyperdiploidy, KMT2A
+translocation, ETV6-RUNX1, intrachromosomal amplification of chromosome 21, near 
+haploidy or low hypodiploidy, and t(8;22). Single-nucleotide polymorphism array
+analysis found additional aberrations with prognostic or therapeutic implication 
+in 21 B-ALL and two T-cell ALL, including IKZF1 deletion, intrachromosomal
+amplification of chromosome 21 (one case with a normal karyotype), low
+hypodiploidy (two cases with a normal karyotype), and one case each with fusion
+genes ETV6-NTRK3, CRLF2-P2RY8, NUP214-ABL1, and SET-NUP214. IKZF1 deletion was
+noted in nine B-ALL with t(9;22), one B-ALL with t(4;11), five B-ALL with a
+normal karyotype, and three B-ALL with nonrecurring karyotypic abnormalities.
+Combining single-nucleotide polymorphism array with chromosome and fluorescence
+in situ hybridization assays, the detection rate for clinically significant
+abnormal results increased from 56% to 75%. Whole-genome single-nucleotide
+polymorphism array analysis detects cytogenetically undetectable
+clinically significant aberrations and should be routinely applied at diagnosis
+of ALL.",Published by Elsevier Inc.,"DOI: 10.1016/j.jmoldx.2016.03.004 
+PMID: 27161658  [Indexed for MEDLINE]"
+"5. Leuk Res. 2016 Feb;41:36-42. doi: 10.1016/j.leukres.2015.11.018. Epub 2015 Dec
+23.","CRLF2 overexpression identifies an unfavourable subgroup of adult B-cell
+precursor acute lymphoblastic leukemia lacking recurrent genetic abnormalities.","Chiaretti S(1), Brugnoletti F(1), Messina M(1), Paoloni F(2), Fedullo AL(1),
+Piciocchi A(2), Elia L(1), Vitale A(1), Mauro E(3), Ferrara F(4), De Fabritiis
+P(5), Luppi M(6), Ronco F(7), De Propris MS(1), Raponi S(1), Kronnie GT(8),
+Vignetti M(2), Guarini A(1), Foà R(9).","Author information: 
+(1)Hematology, Department of Cellular Biotechnologies and Hematology, ""Sapienza"" 
+University of Rome, Italy.
+(2)GIMEMA Data Center, Rome, Italy.
+(3)Division of Hematology, AOU Policlinico-OVE, University of Catania, Italy.
+(4)Division of Hematology and Stem Cell Transplantation Unit, Cardarelli
+Hospital, Naples, Italy.
+(5)Hematology, Sant'Eugenio Hospital, Rome, Italy.
+(6)Hematology Division, Department of Medical and Surgical Sciences, University
+of Modena and Reggio Emilia, Modena, Italy.
+(7)Hematology Unit, Azienda Ospedaliera Bianchi Melacrino Morelli, Reggio
+Calabria, Italy.
+(8)Laboratory of Oncohematology, Department of Women's and Children's Health,
+University of Padova, Italy.
+(9)Hematology, Department of Cellular Biotechnologies and Hematology, ""Sapienza"" 
+University of Rome, Italy. Electronic address: rfoa@bce.uniroma1.it.","BACKGROUND: A deregulated CRLF2 (d-CRLF2) expression was described in B-cell
+acute lymphoblastic leukemia without recurrent fusion genes (B-NEG ALL). While
+the role of d-CRLF2 in children has been extensively described, little is known
+about its role and impact in adult ALL.
+METHODS: Expression levels of CRLF2 were evaluated by quantitative real-time PCR 
+in 102 newly-diagnosed adult B-NEG ALL and correlated with the clinico-biological
+characteristics and outcome. Incidence and clinical impact of the P2RY8/CRLF2
+transcript was also assessed.
+RESULTS: High CRLF2 levels, as continuous variable, were significantly associated
+with hyperleucocytosis (p=0.0002) and thrombocytopenia (p=0.005); when a
+cut-point at ΔCt≤8 was applied, 35 cases (34.3%), mostly males (80%), proved
+positive for CRLF2 expression. High CRLF2 levels, as continuous or categorical
+variable, were associated with a worse disease-free (p=0.003 and p=0.015) and
+overall survival (p=0.017 and 0.0038). Furthermore, when CRLF2 was analyzed as a 
+categorical variable, a high statistical association was found with IKZF1
+deletion and mutations in the JAK/STAT pathway (p=0.001 and p<0.0001,
+respectively). Finally, the P2RY8/CRLF2 transcript, identified in 8/102 patients 
+(7.8%), was associated with a poor outcome.
+CONCLUSIONS: In adult B-NEG ALL, high CRLF2 expression is associated with
+distinct clinico-biological features and an unfavourable prognosis in both
+univariate and multivariate analysis; similarly, P2RY8/CRLF2 positivity
+correlates with a poor outcome. The quantification of CRLF2 is an important
+prognostic marker in adult B-lineage ALL without known genetic lesions.",Copyright © 2015 Elsevier Ltd. All rights reserved.,"DOI: 10.1016/j.leukres.2015.11.018 
+PMID: 26754556  [Indexed for MEDLINE]"
+"6. J Exp Med. 2015 Dec 14;212(13):2213-22. doi: 10.1084/jem.20151250. Epub 2015 Nov 
+16.","The G protein-coupled receptor P2RY8 and follicular dendritic cells promote
+germinal center confinement of B cells, whereas S1PR3 can contribute to their
+dissemination.","Muppidi JR(1), Lu E(2), Cyster JG(3).","Author information: 
+(1)Department of Microbiology and Immunology, University of California, San
+Francisco, San Francisco, CA 94143 Department of Medicine, University of
+California, San Francisco, San Francisco, CA 94143 Howard Hughes Medical
+Institute, University of California, San Francisco, San Francisco, CA 94143.
+(2)Department of Microbiology and Immunology, University of California, San
+Francisco, San Francisco, CA 94143 Howard Hughes Medical Institute, University of
+California, San Francisco, San Francisco, CA 94143.
+(3)Department of Microbiology and Immunology, University of California, San
+Francisco, San Francisco, CA 94143 Howard Hughes Medical Institute, University of
+California, San Francisco, San Francisco, CA 94143 Jason.Cyster@ucsf.edu.","The orphan Gα13-coupled receptor P2RY8 is mutated in human germinal center
+(GC)-derived lymphomas and was recently found to promote B cell association with 
+GCs in a mouse model. Here we establish that P2RY8 promotes clustering of
+activated B cells within follicles in a follicular dendritic cell (FDC)-dependent
+manner. Although mice lack a P2RY8 orthologue, we show that mouse GC B cell
+clustering is also dependent on FDCs acting to support the function of a
+Gα13-coupled receptor. Mutations in GNA13 and its downstream effector ARHGEF1 are
+associated with the development of disseminated GC-derived lymphomas. We find
+that egress of Gna13 mutant GC B cells from lymph nodes in the mouse depends on
+sphingosine-1-phosphate receptor-3. These findings provide evidence that FDCs
+promote GC confinement of both human and mouse GC B cells via Gα13-dependent
+pathways, and they show that dissemination of Gα13-deficient GC B cells
+additionally requires an egress-promoting receptor.",© 2015 Muppidi et al.,"DOI: 10.1084/jem.20151250 
+PMCID: PMC4689170
+PMID: 26573295  [Indexed for MEDLINE]"
+7. Br J Haematol. 2015 Sep;170(6):847-58. doi: 10.1111/bjh.13514. Epub 2015 May 27.,"The clinical impact of IKZF1 deletions in paediatric B-cell precursor acute
+lymphoblastic leukaemia is independent of minimal residual disease stratification
+in Nordic Society for Paediatric Haematology and Oncology treatment protocols
+used between 1992 and 2013.","Olsson L(1), Ivanov Öfverholm I(2), Norén-Nyström U(3), Zachariadis V(2),
+Nordlund J(4), Sjögren H(5), Golovleva I(6), Nordgren A(2), Paulsson K(1), Heyman
+M(7), Barbany G(2), Johansson B(1)(8).","Author information: 
+(1)Division of Clinical Genetics, Department of Laboratory Medicine, Lund
+University, Lund, Sweden.
+(2)Department of Molecular Medicine and Surgery and Centre for Molecular
+Medicine, Karolinska Institutet, Stockholm, Sweden.
+(3)Department of Clinical Sciences, Paediatrics, Umeå University, Umeå, Sweden.
+(4)Department of Medical Sciences, Molecular Medicine and Science for Life
+Laboratory, Uppsala University, Uppsala, Sweden.
+(5)Department of Clinical Chemistry and Transfusion Medicine, Institute of
+Biomedicine, The Sahlgrenska Academy, University of Gothenburg, Gothenburg,
+Sweden.
+(6)Department of Medical Biosciences, Medical and Clinical Genetics, Umeå
+University, Umeå, Sweden.
+(7)Department of Women's and Children's Health, Karolinska Institutet, Stockholm,
+Sweden.
+(8)Department of Clinical Genetics, University and Regional Laboratories Region
+Skåne, Lund, Sweden.","Paediatric B-cell precursor acute lymphoblastic leukaemias (BCP ALL) with IKZF1
+deletions (∆IKZF1) are associated with a poor outcome. However, there are
+conflicting data as to whether ∆IKZF1 is an independent risk factor if minimal
+residual disease (MRD) and other copy number alterations also are taken into
+account. We investigated 334 paediatric BCP ALL, diagnosed 1992-2013 and treated 
+according to Nordic Society for Paediatric Haematology and Oncology ALL
+protocols, with known IKZF1 status based on either single nucleotide polymorphism
+array (N = 218) or multiplex ligation-dependent probe amplification (N = 116)
+analyses. ∆IKZF1, found in 15%, was associated with inferior 10-year
+probabilities of event-free (60% vs. 83%; P < 0·001) and overall survival (pOS;
+73% vs. 89%; P = 0·001). Adjusting for known risk factors, including white blood 
+cell (WBC) count and MRD, ∆IKZF1 was the strongest independent factor for relapse
+and death. ∆IKZF1 was present in 27% of cases with non-informative cytogenetics
+('BCP-other') and a poor 10-year pOS was particularly pronounced in this group
+(58% vs. 90%; P < 0·001). Importantly, neither MRD nor WBC count predicted events
+in the ∆IKZF1-positive cases. Co-occurrence of pseudoautosomal region 1 (PAR1)
+deletions in Xp22.33/Yp11.32 (P2RY8-CRLF2) and ∆IKZF1 increased the risk of
+relapse (75% vs. 30% for cases with only ∆IKZF1; P = 0·045), indicating that
+BCP-other ALL with both P2RY8-CRLF2 and ∆IKZF1 constitutes a particularly
+high-risk group.",© 2015 John Wiley & Sons Ltd.,"DOI: 10.1111/bjh.13514 
+PMID: 26018335  [Indexed for MEDLINE]"
+"8. PLoS One. 2015 Apr 16;10(4):e0124246. doi: 10.1371/journal.pone.0124246.
+eCollection 2015.","Lymphocyte gene expression signatures from patients and mouse models of
+hereditary hemochromatosis reveal a function of HFE as a negative regulator of
+CD8+ T-lymphocyte activation and differentiation in vivo.","Costa M(1), Cruz E(2), Oliveira S(3), Benes V(4), Ivacevic T(4), Silva MJ(5),
+Vieira I(3), Dias F(5), Fonseca S(5), Gonçalves M(5), Lima M(5), Leitão C(6),
+Muckenthaler MU(7), Pinto J(3), Porto G(8).","Author information: 
+(1)I3S - Instituto de Investigação e Inovação em Saúde, Universidade do Porto,
+Porto, Portugal; Basic and Clinical Research on Iron Biology, IBMC-Instituto de
+Biologia Molecular e Celular, Universidade do Porto, Porto, Portugal; Doctoral
+Program in Biomedicine, Faculdade de Medicina, Universidade do Porto, Porto,
+Portugal.
+(2)I3S - Instituto de Investigação e Inovação em Saúde, Universidade do Porto,
+Porto, Portugal; Basic and Clinical Research on Iron Biology, IBMC-Instituto de
+Biologia Molecular e Celular, Universidade do Porto, Porto, Portugal; Clinical
+Hematology, Santo António Hospital-Centro Hospitalar do Porto, Porto, Portugal.
+(3)I3S - Instituto de Investigação e Inovação em Saúde, Universidade do Porto,
+Porto, Portugal; Basic and Clinical Research on Iron Biology, IBMC-Instituto de
+Biologia Molecular e Celular, Universidade do Porto, Porto, Portugal.
+(4)Genomics Core Facility, European Molecular Biology Laboratory, Heidelberg,
+Germany.
+(5)Clinical Hematology, Santo António Hospital-Centro Hospitalar do Porto, Porto,
+Portugal.
+(6)Advanced Flow Cytometry Unit, IBMC-Instituto de Biologia Molecular e Celular, 
+Universidade do Porto, Porto, Portugal.
+(7)Departments of Pediatric Hematology, Oncology and Immunology, University of
+Heidelberg and Molecular Medicine Partnership Unit, Heidelberg, Germany.
+(8)I3S - Instituto de Investigação e Inovação em Saúde, Universidade do Porto,
+Porto, Portugal; Basic and Clinical Research on Iron Biology, IBMC-Instituto de
+Biologia Molecular e Celular, Universidade do Porto, Porto, Portugal; Clinical
+Hematology, Santo António Hospital-Centro Hospitalar do Porto, Porto, Portugal;
+Molecular Immunology and Pathology, ICBAS-Instituto de Ciências Biomédicas Abel
+Salazar, Universidade do Porto, Porto, Portugal.","Abnormally low CD8+ T-lymphocyte numbers is characteristic of some patients with 
+hereditary hemochromatosis (HH), a MHC-linked disorder of iron overload. Both
+environmental and genetic components are known to influence CD8+ T-lymphocyte
+homeostasis but the role of the HH associated protein HFE is still insufficiently
+understood. Genome-wide expression profiling was performed in peripheral blood
+CD8+ T lymphocytes from HH patients selected according to CD8+ T-lymphocyte
+numbers and from Hfe-/- mice maintained either under normal or high iron diet
+conditions. In addition, T-lymphocyte apoptosis and cell cycle progression were
+analyzed by flow cytometry in HH patients. HH patients with low CD8+ T-lymphocyte
+numbers show a differential expression of genes related to lymphocyte
+differentiation and maturation namely CCR7, LEF1, ACTN1, NAA50, P2RY8 and FOSL2, 
+whose expression correlates with the relative proportions of naïve, central and
+effector memory subsets. In addition, expression levels of LEF1 and P2RY8 in
+memory cells as well as the proportions of CD8+ T cells in G2/M cell cycle phase 
+are significantly different in HH patients compared to controls. Hfe-/- mice do
+not show alterations in CD8+ T-lymphocyte numbers but differential gene response 
+patterns. We found an increased expression of S100a8 and S100a9 that is most
+pronounced in high iron diet conditions. Similarly, CD8+ T lymphocytes from HH
+patients display higher S100a9 expression both at the mRNA and protein level.
+Altogether, our results support a role for HFE as a negative regulator of CD8+
+T-lymphocyte activation. While the activation markers S100a8 and S100a9 are
+strongly increased in CD8+ T cells from both, Hfe-/- mice and HH patients, a
+differential profile of genes related to differentiation/maturation of CD8+ T
+memory cells is evident in HH patients only. This supports the notion that HFE
+contributes, at least in part, to the generation of low peripheral blood CD8+ T
+lymphocytes in HH.","DOI: 10.1371/journal.pone.0124246 
+PMCID: PMC4399836
+PMID: 25880808  [Indexed for MEDLINE]"
+9. Nature. 2014 Dec 11;516(7530):254-8. doi: 10.1038/nature13765. Epub 2014 Sep 28.,Loss of signalling via Gα13 in germinal centre B-cell-derived lymphoma.,"Muppidi JR(1), Schmitz R(2), Green JA(3), Xiao W(2), Larsen AB(4), Braun SE(5),
+An J(5), Xu Y(5), Rosenwald A(6), Ott G(7), Gascoyne RD(8), Rimsza LM(9), Campo
+E(10), Jaffe ES(11), Delabie J(12), Smeland EB(13), Braziel RM(14), Tubbs RR(15),
+Cook JR(15), Weisenburger DD(16), Chan WC(17), Vaidehi N(4), Staudt LM(2), Cyster
+JG(5).","Author information: 
+(1)1] Department of Microbiology and Immunology, University of California, San
+Francisco, California, 94143, USA [2] Department of Medicine, University of
+California, San Francisco, California 94143, USA [3] Howard Hughes Medical
+Institute, University of California, San Francisco, California 94143, USA.
+(2)Lymphoid Malignancies Branch, Center for Cancer Research, National Cancer
+Institute, National Institutes of Health, Bethesda, Maryland 20892, USA.
+(3)1] Department of Microbiology and Immunology, University of California, San
+Francisco, California, 94143, USA [2] Howard Hughes Medical Institute, University
+of California, San Francisco, California 94143, USA [3] Immunology Program,
+Memorial Sloan-Kettering Cancer Center, New York, New York 10065, USA.
+(4)Division of Immunology, Beckman Research Institute of the City of Hope,
+Duarte, California 91010, USA.
+(5)1] Department of Microbiology and Immunology, University of California, San
+Francisco, California, 94143, USA [2] Howard Hughes Medical Institute, University
+of California, San Francisco, California 94143, USA.
+(6)Department of Pathology, University of Würzburg, 97080 Würzburg, Germany.
+(7)1] Department of Clinical Pathology, Robert-Bosch-Krankenhaus, Auerbachstraße 
+110, 70376 Stuttgart, Germany [2] Dr. Margarete Fischer-Bosch Institute for
+Clinical Pharmacology, 70376 Stuttgart, Germany.
+(8)British Columbia Cancer Agency, Vancouver, British Columbia V5Z 1L3, Canada.
+(9)Department of Pathology, University of Arizona, Tucson, Arizona 85724, USA.
+(10)Hospital Clinic, University of Barcelona, 08036 Barcelona, Spain.
+(11)Laboratory of Pathology, Center for Cancer Research, National Cancer
+Institute, National Institutes of Health, Bethesda, Maryland 20892, USA.
+(12)Pathology Clinic, Rikshospitalet University Hospital, 0372 Oslo, Norway.
+(13)1] Institute for Cancer Research, Rikshospitalet University Hospital,
+University of Oslo, 0310 Oslo, Norway [2] Center for Cancer Biomedicine, Faculty 
+Division of the Norwegian Radium Hospital, University of Oslo, 0310 Oslo, Norway.
+(14)Oregon Health and Science University, Portland, Oregon 97239, USA.
+(15)Cleveland Clinic Pathology and Laboratory Medicine Institute, Cleveland, Ohio
+44195, USA.
+(16)Department of Pathology, City of Hope National Medical Center, Duarte,
+California 91010, USA.
+(17)1] Department of Pathology, University of Nebraska Medical Center, Omaha,
+Nebraska 68198, USA [2] Department of Microbiology, University of Nebraska
+Medical Center, Omaha, Nebraska 68198, USA.","Germinal centre B-cell-like diffuse large B-cell lymphoma (GCB-DLBCL) is a common
+malignancy, yet the signalling pathways that are deregulated and the factors
+leading to its systemic dissemination are poorly defined. Work in mice showed
+that sphingosine-1-phosphate receptor-2 (S1PR2), a Gα12 and Gα13 coupled
+receptor, promotes growth regulation and local confinement of germinal centre B
+cells. Recent deep sequencing studies of GCB-DLBCL have revealed mutations in
+many genes in this cancer, including in GNA13 (encoding Gα13) and S1PR2 (refs
+5,6, 7). Here we show, using in vitro and in vivo assays, that
+GCB-DLBCL-associated mutations occurring in S1PR2 frequently disrupt the
+receptor's Akt and migration inhibitory functions. Gα13-deficient mouse germinal 
+centre B cells and human GCB-DLBCL cells were unable to suppress pAkt and
+migration in response to S1P, and Gα13-deficient mice developed germinal centre
+B-cell-derived lymphoma. Germinal centre B cells, unlike most lymphocytes, are
+tightly confined in lymphoid organs and do not recirculate. Remarkably,
+deficiency in Gα13, but not S1PR2, led to germinal centre B-cell dissemination
+into lymph and blood. GCB-DLBCL cell lines frequently carried mutations in the
+Gα13 effector ARHGEF1, and Arhgef1 deficiency also led to germinal centre B-cell 
+dissemination. The incomplete phenocopy of Gα13- and S1PR2 deficiency led us to
+discover that P2RY8, an orphan receptor that is mutated in GCB-DLBCL and another 
+germinal centre B-cell-derived malignancy, Burkitt's lymphoma, also represses
+germinal centre B-cell growth and promotes confinement via Gα13. These findings
+identify a Gα13-dependent pathway that exerts dual actions in suppressing growth 
+and blocking dissemination of germinal centre B cells that is frequently
+disrupted in germinal centre B-cell-derived lymphoma.","DOI: 10.1038/nature13765 
+PMCID: PMC4267955
+PMID: 25274307  [Indexed for MEDLINE]"
+10. Nat Commun. 2014 Aug 8;5:4654. doi: 10.1038/ncomms5654.,"Frequent cases of RAS-mutated Down syndrome acute lymphoblastic leukaemia lack
+JAK2 mutations.","Nikolaev SI(1), Garieri M(2), Santoni F(3), Falconnet E(2), Ribaux P(2), Guipponi
+M(4), Murray A(5), Groet J(5), Giarin E(6), Basso G(6), Nizetic D(7), Antonarakis
+SE(8).","Author information: 
+(1)1] Department of Genetic Medicine and Development, University of Geneva
+Medical School, 1 rue Michel Servet, Geneva 1211, Switzerland [2].
+(2)Department of Genetic Medicine and Development, University of Geneva Medical
+School, 1 rue Michel Servet, Geneva 1211, Switzerland.
+(3)1] Department of Genetic Medicine and Development, University of Geneva
+Medical School, 1 rue Michel Servet, Geneva 1211, Switzerland [2] Geneva
+University Hospitals-HUG, Service of Genetic Medicine, 4 Rue
+Gabrielle-Perret-Gentil, Geneva 1211, Switzerland.
+(4)Geneva University Hospitals-HUG, Service of Genetic Medicine, 4 Rue
+Gabrielle-Perret-Gentil, Geneva 1211, Switzerland.
+(5)1] The Blizard Institute, Barts and The London School of Medicine, Queen Mary 
+University of London, 4 Newark Street, London E1 2AT, UK [2] LonDownS Consortium,
+The Wellcome Trust, London NW1 2BE, UK.
+(6)Dipartimento di Salute della Donna e del Bambino, University of Padua,
+IRP-Istituto di Ricerca Pediatrica-Fondazione Città della Speranza, Via N.
+Giustiniani 3, 35129 Padua, Italy.
+(7)1] The Blizard Institute, Barts and The London School of Medicine, Queen Mary 
+University of London, 4 Newark Street, London E1 2AT, UK [2] LonDownS Consortium,
+The Wellcome Trust, London NW1 2BE, UK [3] Lee Kong Chian School of Medicine,
+Nanyang Technological University, Unit 04-11, Proteos Building, 61 Biopolis
+Drive, Singapore 138673, Singapore [4].
+(8)1] Department of Genetic Medicine and Development, University of Geneva
+Medical School, 1 rue Michel Servet, Geneva 1211, Switzerland [2] IGE3 institute 
+of Genetics and Genomics of Geneva, 1 rue Michel Servet, Geneva 1211, Switzerland
+[3].","Children with Down syndrome (DS) and acute lymphoblastic leukaemia (ALL) have
+poorer survival and more relapses than non-DS children with ALL, highlighting an 
+urgent need for deeper mechanistic understanding of DS-ALL. Here, using
+full-exome or cancer genes-targeted sequencing of 42 ALL samples from 39 DS
+patients, we uncover driver mutations in RAS, (KRAS and NRAS) recurring to a
+similar extent (15/42) as JAK2 (12/42) mutations or P2RY8-CRLF2 fusions (14/42). 
+RAS mutations are almost completely mutually exclusive with JAK2 mutations
+(P=0.016), driving a combined total of two-thirds of analysed cases. Clonal
+architecture analysis reveals that both RAS and JAK2 drove sub-clonal expansions 
+primarily initiated by CRLF2 rearrangements, and/or mutations in chromatin
+remodellers and lymphocyte differentiation factors. Remarkably, in 2/3 relapsed
+cases, there is a switch from a primary JAK2- or PTPN11-mutated sub-clone to a
+RAS-mutated sub-clone in relapse. These results provide important new insights
+informing the patient stratification strategies for targeted therapeutic
+approaches for DS-ALL.","DOI: 10.1038/ncomms5654 
+PMCID: PMC4665216
+PMID: 25105841  [Indexed for MEDLINE]"
+"11. Genes Chromosomes Cancer. 2014 Nov;53(11):902-10. doi: 10.1002/gcc.22201. Epub
+2014 Jul 16.","Gene alterations involving the CRLF2-JAK pathway and recurrent gene deletions in 
+Down syndrome-associated acute lymphoblastic leukemia in Japan.","Hanada I(1), Terui K, Ikeda F, Toki T, Kanezaki R, Sato T, Kamio T, Kudo K,
+Sasaki S, Takahashi Y, Hayashi Y, Inukai T, Kojima S, Koike K, Kosaka Y,
+Kobayashi M, Imaizumi M, Mitsui T, Hori H, Hara J, Horibe K, Nagai J, Goto H, Ito
+E.","Author information: 
+(1)Department of Pediatrics, Hirosaki University Graduate School of Medicine,
+Hirosaki, Japan.","In Western countries, gene alterations involving the CRLF2-JAK signaling pathway 
+are identified in approximately 50-60% of patients with Down syndrome-associated 
+acute lymphoblastic leukemia (DS-ALL), and this pathway is considered a potential
+therapeutic target. The frequency of BTG1 deletions in DS-ALL is controversial.
+IKZF1 deletions, found in 20-30% of DS-ALL patients, are associated with a poor
+outcome and EBF1 deletions are very rare (∼2%). We analyzed 38 patients to
+determine the frequencies and clinical implications of CRLF2-JAK pathway genetic 
+alterations and recurrent gene deletions in Japanese DS-ALL patients. We
+confirmed a high incidence of P2RY8-CRLF2 (29%) and JAK2 mutations (16%), though 
+the frequency of P2RY8-CRLF2 was slightly lower than that in Western countries
+(∼50%). BTG1 deletions were common in our cohort (25%). IKZF1 deletions were
+detected in 25% of patients and associated with shorter overall survival (OS).
+EBF1 deletions were found at an unexpectedly high frequency (16%), and at a
+significantly higher level in P2RY8-CRLF2-positive patients than in
+P2RY8-CRLF2-negative patients (44% vs. 4%, P=0.015). Deletions of CDKN2A/B and
+PAX5 were common in P2RY8-CRLF2-negative patients (48 and 39%, respectively) but 
+not in P2RY8-CRLF2-positive patients (11% each). Associations between these
+genetic alterations and clinical characteristics were not observed except for
+inferior OS in patients with IKZF1 deletions. These results suggest that
+differences exist between the genetic profiles of DS-ALL patients in Japan and in
+Western countries, and that P2RY8-CRLF2 and EBF1 deletions may cooperate in
+leukemogenesis in a subset of Japanese DS-ALL patients.","© 2014 Wiley Periodicals, Inc.","DOI: 10.1002/gcc.22201 
+PMID: 25044358  [Indexed for MEDLINE]"
+"12. Genes Chromosomes Cancer. 2014 Oct;53(10):815-23. doi: 10.1002/gcc.22190. Epub
+2014 Jun 17.","An overall characterization of pediatric acute lymphoblastic leukemia with CRLF2 
+overexpression.","Yano M(1), Imamura T, Asai D, Moriya-Saito A, Suenobu S, Hasegawa D, Deguchi T,
+Hashii Y, Kawasaki H, Hori H, Kosaka Y, Kato K, Horibe K, Yumura-Yagi K, Hara J, 
+Matsumoto K, Kiyokawa N, Oda M, Sato A; Japan Association of Childhood Leukemia
+Study.","Author information: 
+(1)Department of Pediatrics, Kyoto Prefectural University of Medicine, Graduate
+School of Medical Science, Kyoto, Japan.","For an overall characterization of pediatric B-cell precursor acute lymphoblastic
+leukemia (BCPALL) with CRLF2 overexpression (OE), we conducted genetic analysis
+of CRLF2 in 167 pediatric BCPALL patients. CRLF2 OE was detected in 30 (18%) of
+167 patients, the P2RY8-CRLF2 fusion was identified in only 3 (1.8%) of 167
+patients, all of which demonstrated CRLF2 OE. Moreover, CRLF2 gain was identified
+in 18 (11%) of 167 patients. Messenger RNA sequencing revealed a novel fusion
+transcript, CSF2RA-CRLF2, in a case with CRLF2 OE, suggesting that this fusion is
+associated with CRLF2 OE. In survival analysis, no significant differences in
+5-year event-free survival (EFS) and overall survival were observed between
+patients with and without CRLF2 OE (70.7 vs. 75.4%, log rank P = 0.68 and 96.4
+vs. 82.1%, log rank P = 0.11, respectively). However, a significant difference in
+5-year EFS between CRLF2 OE patients with and without IKZF1 deletion was observed
+(44.4 vs. 83.1%, log rank P = 0.02). In multivariate analysis, only IKZF1
+deletion was a significant predictor of inferior OS (hazard ratio: 2.427, P =
+0.04).These findings suggest that CRLF2 OE is not an independent prognostic
+factor in pediatric BCPALL.","© 2014 Wiley Periodicals, Inc.","DOI: 10.1002/gcc.22190 
+PMID: 24935070  [Indexed for MEDLINE]"
+"13. Immunobiology. 2013 Nov;218(11):1345-53. doi: 10.1016/j.imbio.2013.07.001. Epub
+2013 Jul 15.","An mRNA atlas of G protein-coupled receptor expression during primary human
+monocyte/macrophage differentiation and lipopolysaccharide-mediated activation
+identifies targetable candidate regulators of inflammation.","Hohenhaus DM(1), Schaale K, Le Cao KA, Seow V, Iyer A, Fairlie DP, Sweet MJ.","Author information: 
+(1)Institute for Molecular Bioscience, The University of Queensland, Brisbane,
+Qld 4072, Australia; Australian Infectious Disease Research Centre, The
+University of Queensland, Brisbane, Qld 4072, Australia.","G protein-coupled receptors (GPCRs) are among the most important targets in drug 
+discovery. In this study, we used TaqMan Low Density Arrays to profile the full
+GPCR repertoire of primary human macrophages differentiated from monocytes using 
+either colony stimulating factor-1 (CSF-1/M-CSF) (CSF-1 Mϕ) or granulocyte
+macrophage colony stimulating factor (GM-CSF) (GM-CSF Mϕ). The overall trend was 
+a downregulation of GPCRs during monocyte to macrophage differentiation, but a
+core set of 10 genes (e.g. LGR4, MRGPRF and GPR143) encoding seven transmembrane 
+proteins were upregulated, irrespective of the differentiating agent used.
+Several of these upregulated GPCRs have not previously been studied in the
+context of macrophage biology and/or inflammation. As expected, CSF-1 Mϕ and
+GM-CSF Mϕ exhibited differential inflammatory cytokine profiles in response to
+the Toll-like Receptor (TLR)4 agonist lipopolysaccharide (LPS). Moreover, 15
+GPCRs were differentially expressed between these cell populations in the basal
+state. For example, EDG1 was expressed at elevated levels in CSF-1 Mϕ versus
+GM-CSF Mϕ, whereas the reverse was true for EDG6. 101 GPCRs showed differential
+regulation over an LPS time course, with 65 of these profiles being impacted by
+the basal differentiation state (e.g. GPRC5A, GPRC5B). Only 14 LPS-regulated
+GPCRs showed asynchronous behavior (divergent LPS regulation) with respect to
+differentiation status. Thus, the differentiation state primarily affects the
+magnitude of LPS-regulated expression, rather than causing major reprogramming of
+GPCR gene expression profiles. Several GPCRs showing differential profiles
+between CSF-1 Mϕ and GM-CSF Mϕ (e.g. P2RY8, GPR92, EMR3) have not been widely
+investigated in macrophage biology and inflammation. Strikingly, several closely 
+related GPCRs displayed completely opposing patterns of regulation during
+differentiation and/or activation (e.g. EDG1 versus EDG6, LGR4 versus LGR7,
+GPRC5A versus GPRC5B). We propose that selective regulation of GPCR5A and GPCR5B 
+in CSF-1 Mϕ contributes to skewing toward the M2 macrophage phenotype. Our
+analysis of the GPCR repertoire expressed during primary human monocyte to
+macrophage differentiation and TLR4-mediated activation provides a valuable new
+platform for conducting future functional analyses of individual GPCRs in human
+macrophage inflammatory pathways.",Copyright © 2013 Elsevier GmbH. All rights reserved.,"DOI: 10.1016/j.imbio.2013.07.001 
+PMID: 23948647  [Indexed for MEDLINE]"
+14. Cancer Med. 2013 Jun;2(3):412-9. doi: 10.1002/cam4.87. Epub 2013 May 9.,"IKZF1 deletion is associated with a poor outcome in pediatric B-cell precursor
+acute lymphoblastic leukemia in Japan.","Asai D(1), Imamura T, Suenobu S, Saito A, Hasegawa D, Deguchi T, Hashii Y,
+Matsumoto K, Kawasaki H, Hori H, Iguchi A, Kosaka Y, Kato K, Horibe K,
+Yumura-Yagi K, Hara J, Oda M; Japan Association of Childhood Leukemia Study
+(JACLS).","Author information: 
+(1)Department of Pediatrics, Kyoto Prefectural University of Medicine, Graduate
+School of Medical Science, Kyoto, Japan.","Genetic alterations of Ikaros family zinc finger protein 1 (IKZF1), point
+mutations in Janus kinase 2 (JAK2), and overexpression of cytokine receptor-like 
+factor 2 (CRLF2) were recently reported to be associated with poor outcomes in
+pediatric B-cell precursor (BCP)-ALL. Herein, we conducted genetic analyses of
+IKZF1 deletion, point mutation of JAK2 exon 16, 17, and 21, CRLF2 expression, the
+presence of P2RY8-CRLF2 fusion and F232C mutation in CRLF2 in 202 pediatric
+BCP-ALL patients newly diagnosed and registered in Japan Childhood Leukemia Study
+ALL02 protocol to find out if alterations in these genes are determinants of poor
+outcome. All patients showed good response to initial prednisolone (PSL)
+treatment. Ph⁺, infantile, and Down syndrome-associated ALL were excluded.
+Deletion of IKZF1 occurred in 19/202 patients (9.4%) and CRLF2 overexpression
+occurred in 16/107 (15.0%), which are similar to previous reports. Patients with 
+IKZF1 deletion had reduced event-free survival (EFS) and overall survival (OS)
+compared to those in patients without IKZF1 deletion (5-year EFS, 62.7% vs.
+88.8%, 5-year OS, 71.8% vs. 90.2%). Our data also showed significantly inferior
+5-year EFS (48.6% vs. 84.7%, log rank P = 0.0003) and 5-year OS (62.3% vs. 85.4%,
+log rank P = 0.009) in NCI-HR patients (n = 97). JAK2 mutations and P2RY8-CRLF2
+fusion were rarely detected. IKZF1 deletion was identified as adverse prognostic 
+factor even in pediatric BCP-ALL in NCI-HR showing good response to PSL.","DOI: 10.1002/cam4.87 
+PMCID: PMC3699852
+PMID: 23930217  [Indexed for MEDLINE]"
+"15. Haematologica. 2014 Jan;99(1):103-10. doi: 10.3324/haematol.2013.090225. Epub
+2013 Aug 2.","High CD45 surface expression determines relapse risk in children with precursor
+B-cell and T-cell acute lymphoblastic leukemia treated according to the ALL-BFM
+2000 protocol.","Cario G(1), Rhein P, Mitlöhner R, Zimmermann M, Bandapalli OR, Romey R, Moericke 
+A, Ludwig WD, Ratei R, Muckenthaler MU, Kulozik AE, Schrappe M, Stanulla M,
+Karawajew L.","Author information: 
+(1)g.cario@pediatrics.uni-kiel.de.","Further improvement of outcome in childhood acute lymphoblastic leukemia could be
+achieved by identifying additional high-risk patients who may benefit from
+intensified treatment. We earlier identified PTPRC (CD45) gene expression as a
+potential new stratification marker and now analyzed the prognostic relevance of 
+CD45 protein expression. CD45 was measured by flow cytometry in 1065 patients
+treated according to the ALL-BFM-2000 protocol. The 75(th) percentile was used as
+cut-off to distinguish a CD45-high from a CD45-low group. As mean CD45 expression
+was significantly higher in T-cell acute lymphoblastic leukemia than in
+B-cell-precursor acute lymphoblastic leukemia (P<0.0001), the analysis was
+performed separately in both groups. In B-cell-precursor acute lymphoblastic
+leukemia we observed a significant association of a high CD45 expression with
+older age, high initial white blood cell count, ETV6/RUNX1 negativity, absence of
+high hyperdiploidy (P<0.0001), MLL/AF4 positivity (P=0.002), BCR/ABL1 positivity 
+(P=0.007), prednisone poor response (P=0.002) and minimal residual disease
+(P<0.0001). In T-cell acute lymphoblastic leukemia we observed a significant
+association with initial white blood cell count (P=0.0003), prednisone poor
+response (P=0.01), and minimal residual disease (P=0.02). Compared to CD45-low
+patients, CD45-high patients had a lower event-free survival rate
+(B-cell-precursor acute lymphoblastic leukemia: 72 ± 3% versus 86 ± 1%, P<0.0001;
+T-cell acute lymphoblastic leukemia: 60 ± 8% versus 78 ± 4%, P=0.02), which was
+mainly attributable to a higher cumulative relapse incidence (B-cell-precursor
+acute lymphoblastic leukemia: 22 ± 3% versus 11 ± 1%, P<0.0001; T-cell acute
+lymphoblastic leukemia: 31 ± 8% versus 11 ± 3%, P=0.003) and kept its
+significance in multivariate analysis considering sex, age, initial white blood
+cell count, and minimal residual disease in B-cell-precursor- and T-cell acute
+lymphoblastic leukemia, and additionally presence of ETV6/RUNX1, MLL/AF4 and
+BCR/ABL1 rearrangements in B-cell-precursor acute lymphoblastic leukemia (P=0.002
+and P=0.025, respectively). Consideration of CD45 expression may serve as an
+additional stratification tool in BFM-based protocols. (ClinicalTrials.gov
+identifier: NCT00430118).","DOI: 10.3324/haematol.2013.090225 
+PMCID: PMC4007934
+PMID: 23911702  [Indexed for MEDLINE]"
+"16. Blood. 2013 Jan 17;121(3):485-8. doi: 10.1182/blood-2012-04-422691. Epub 2012 Dec
+4.","Tyrosine kinome sequencing of pediatric acute lymphoblastic leukemia: a report
+from the Children's Oncology Group TARGET Project.","Loh ML(1), Zhang J, Harvey RC, Roberts K, Payne-Turner D, Kang H, Wu G, Chen X,
+Becksfort J, Edmonson M, Buetow KH, Carroll WL, Chen IM, Wood B, Borowitz MJ,
+Devidas M, Gerhard DS, Bowman P, Larsen E, Winick N, Raetz E, Smith M, Downing
+JR, Willman CL, Mullighan CG, Hunger SP.","Author information: 
+(1)Department of Pediatrics and the Helen Diller Family Cancer Center, University
+of California-San Francisco, CA, USA.","One recently identified subtype of pediatric B-precursor acute lymphoblastic
+leukemia (ALL) has been termed BCR-ABL1-like or Ph-like because of similarity of 
+the gene expression profile to BCR-ABL1 positive ALL suggesting the presence of
+lesions activating tyrosine kinases, frequent alteration of IKZF1, and poor
+outcome. Prior studies demonstrated that approximately half of these patients had
+genomic lesions leading to CRLF2 overexpression, with half of such cases
+harboring somatic mutations in the Janus kinases JAK1 and JAK2. To determine
+whether mutations in other tyrosine kinases might also occur in ALL, we sequenced
+the tyrosine kinome and downstream signaling genes in 45 high-risk pediatric ALL 
+cases with either a Ph-like gene expression profile or other alterations
+suggestive of activated kinase signaling. Aside from JAK mutations and 1 FLT3
+mutation, no somatic mutations were found in any other tyrosine kinases,
+suggesting that alternative mechanisms are responsible for activated kinase
+signaling in high-risk ALL.","DOI: 10.1182/blood-2012-04-422691 
+PMCID: PMC3548168
+PMID: 23212523  [Indexed for MEDLINE]"
+17. Br J Haematol. 2013 Feb;160(4):555-6. doi: 10.1111/bjh.12130. Epub 2012 Nov 12.,"No prognostic impact of P2RY8-CRLF2 fusion in intermediate cytogenetic risk
+childhood B-cell acute lymphoblastic leukaemia.","Krawczyk J, Haslam K, Lynam P, Kelly J, Storey L, O'Marcaigh A, Langabeer SE,
+Smith OP.","DOI: 10.1111/bjh.12130 
+PMID: 23145900  [Indexed for MEDLINE]"
+"18. Blood. 2012 Dec 20;120(26):5134-42. doi: 10.1182/blood-2012-07-443218. Epub 2012 
+Oct 22.","Small sizes and indolent evolutionary dynamics challenge the potential role of
+P2RY8-CRLF2-harboring clones as main relapse-driving force in childhood ALL.","Morak M(1), Attarbaschi A, Fischer S, Nassimbeni C, Grausenburger R, Bastelberger
+S, Krentz S, Cario G, Kasper D, Schmitt K, Russell LJ, Pötschger U, Stanulla M,
+Eckert C, Mann G, Haas OA, Panzer-Grümayer R.","Author information: 
+(1)Children's Cancer Research Institute, St Anna Kinderkrebsforschung, Vienna,
+Austria.","Erratum in
+    Blood. 2013 Aug 15;122(7):1328.","The P2RY8-CRLF2 fusion defines a particular relapse-prone subset of childhood
+acute lymphoblastic leukemia (ALL) in Italian Association of Pediatric Hematology
+and Oncology Berlin-Frankfurt-Münster (AIEOP-BFM) 2000 protocols. To investigate 
+whether and to what extent different clone sizes influence disease and relapse
+development, we quantified the genomic P2RY8-CRLF2 fusion product and correlated 
+it with the corresponding CRLF2 expression levels in patients enrolled in the
+BFM-ALL 2000 protocol in Austria. Of 268 cases without recurrent chromosomal
+translocations and high hyperdiploidy, representing approximately 50% of all
+cases, 67 (25%) were P2RY8-CRLF2 positive. The respective clone sizes were ≥ 20% 
+in 27% and < 20% in 73% of them. The cumulative incidence of relapse of the
+entire fusion-positive group was clone size independent and significantly higher 
+than that of the fusion-negative group (35% ± 8% vs 13% ± 3%, P = .008) and
+primarily confined to the non-high-risk group. Of 22 P2RY8-CRLF2-positive
+diagnosis/relapse pairs, only 4/8 had the fusion-positive dominant clone
+conserved at relapse, whereas none of the original 14 fusion-positive small
+clones reappeared as the dominant relapse clone. We conclude that the majority of
+P2RY8-CRLF2-positive clones are small at diagnosis and virtually never generate a
+dominant relapse clone. Our findings therefore suggest that P2RY8-CRLF2-positive 
+clones do not have the necessary proliferative or selective advantage to evolve
+into a disease-relevant relapse clone.","DOI: 10.1182/blood-2012-07-443218 
+PMCID: PMC4194314
+PMID: 23091296  [Indexed for MEDLINE]"
+"19. Haematologica. 2013 Mar;98(3):428-32. doi: 10.3324/haematol.2011.056135. Epub
+2012 Aug 8.","IKZF1 deletion is an independent predictor of outcome in pediatric acute
+lymphoblastic leukemia treated according to the ALL-BFM 2000 protocol.","Dörge P(1), Meissner B, Zimmermann M, Möricke A, Schrauder A, Bouquin JP, Schewe 
+D, Harbott J, Teigler-Schlegel A, Ratei R, Ludwig WD, Koehler R, Bartram CR,
+Schrappe M, Stanulla M, Cario G.","Author information: 
+(1)Department of Pediatrics, University Medical Centre Schleswig-Holstein, Kiel, 
+Germany.","IKZF1 gene deletions have been associated with a poor outcome in pediatric
+precursor B-cell acute lymphoblastic leukemia. To assess the prognostic relevance
+of IKZF1 deletions for patients treated on Berlin-Frankfurt-Münster Study Group
+trial ALL-BFM 2000, we screened 694 diagnostic acute lymphoblastic leukemia
+samples by Multiplex Ligation-dependent Probe Amplification. Patients whose
+leukemic cells bore IKZF1 deletions had a lower 5-year event-free survival
+(0.69±0.05 vs. 0.85±0.01; P<0.0001) compared to those without, mainly due to a
+higher cumulative incidence of relapses (0.21±0.04 vs. 0.10±0.01; P=0.001).
+Although IKZF1 deletions were significantly associated with the P2RY8-CRLF2
+rearrangement, their prognostic value was found to be independent from this
+association. Thus, IKZF1 deletion is an independent predictor of treatment
+outcome and a strong candidate marker for integration in future treatment
+stratification strategies on ALL-BFM protocols. Clinicaltrials.gov identifier:
+NCT00430118.","DOI: 10.3324/haematol.2011.056135 
+PMCID: PMC3659952
+PMID: 22875627  [Indexed for MEDLINE]"
+"20. J Clin Oncol. 2012 Sep 1;30(25):3100-8. doi: 10.1200/JCO.2011.40.3907. Epub 2012 
+Jul 30.","IGH@ translocations, CRLF2 deregulation, and microdeletions in adolescents and
+adults with acute lymphoblastic leukemia.","Moorman AV(1), Schwab C, Ensor HM, Russell LJ, Morrison H, Jones L, Masic D,
+Patel B, Rowe JM, Tallman M, Goldstone AH, Fielding AK, Harrison CJ.","Author information: 
+(1)Leukaemia Research Cytogenetics Group, Northern Institute for Cancer Research,
+Level 5, Sir James Spence Institute, Royal Victoria Infirmary, Queen Victoria Rd,
+Newcastle-upon-Tyne, NE1 4LP, United Kingdom. anthony.moorman@ncl.ac.uk","PURPOSE: To determine the prevalence and prognostic impact of significant acute
+lymphoblastic leukemia (ALL) -related genes: CRLF2 deregulation (CRLF2-d), IGH@
+translocations (IGH@-t), and deletions of CDKN2A/B, IKZF1, PAX5, ETV6, RB1, BTG1,
+and EBF1 in adolescents and adults.
+PATIENTS AND METHODS: The cohort comprised 454 patients (age 15 to 60 years old) 
+treated on the multicenter United Kingdom Acute Lymphoblastic Leukaemia Trial
+XII/Eastern Cooperative Oncology Group 2993 trial (UKALLXII/ECOG2993) with
+Philadelphia-negative B-cell precursor ALL. Fluorescent in situ hybridization and
+multiplex ligation-dependent probe amplification were used to detect these
+genetic alterations.
+RESULTS: Twenty patients (5%) had CRLF2-d (P2RY8-CRLF2, n = 7; IGH@-CRLF2, n =
+13), and 36 patients (8%) harbored an IGH@-t with a different partner gene. There
+was little overlap between IGH@-t, CRLF2-d, and established chromosomal
+abnormalities. Deletions of CDKN2A/B, IKZF1, PAX5, ETV6, RB1, BTG1, or EBF1 were 
+prevalent with 101 (33%) of 304 patients harboring one and 102 (33%) harboring
+two or more alterations, occurring with varying frequency in all cytogenetic
+subgroups. The 5-year event-free survival, relapse-free survival (RFS), and
+overall survival (OS) rates for the whole cohort were 40%, 55%, and 43%,
+respectively. Patients with CRLF2-d, IGH@-t, and IKZF1 deletions were associated 
+with an inferior outcome in univariate but not multivariate analysis. In
+particular, CRLF2-d patients had a lower RFS compared with other patients (30%), 
+whereas those with IGH@-t or IKZF1 deletions had a lower OS (27% and 35%,
+respectively).
+CONCLUSION: CRLF2-d and IGH@-t represent distinct subtypes of adolescent and
+adult ALL. Deletions of key B-cell differentiation and cell cycle control genes
+are highly prevalent but vary in frequency by cytogenetic subgroup. CRLF2-d,
+IGH@-t, and IKZF1 deletions are associated with poor outcome in adolescent and
+adult ALL.","DOI: 10.1200/JCO.2011.40.3907 
+PMID: 22851563  [Indexed for MEDLINE]",
+"
+1. Br J Haematol. 2012 Sep;158(6):772-7. doi: 10.1111/j.1365-2141.2012.09221.x. Epub
+2012 Jul 23.","Treatment outcome of CRLF2-rearranged childhood acute lymphoblastic leukaemia: a 
+comparative analysis of the AIEOP-BFM and UK NCRI-CCLG study groups.","Attarbaschi A(1), Morak M, Cario G, Cazzaniga G, Ensor HM, te Kronnie T, Bradtke 
+J, Mann G, Vendramini E, Palmi C, Schwab C, Russell LJ, Schrappe M, Conter V,
+Mitchell CD, Strehl S, Zimmermann M, Pötschger U, Harrison CJ, Stanulla M,
+Panzer-Grümayer R, Haas OA, Moorman AV; Associazione Italiana di Ematologia ed
+Oncologia Pediatrica (AIEOP)-Berlin-Frankfurt-Münster (BFM) Study Group and
+National Cancer Research Institute (NCRI)-Children's Cancer and Leukaemia (CCLG) 
+Study Group.","Author information: 
+(1)Paediatric Haematology and Oncology, Department of Paediatrics, St. Anna
+Children's Hospital, Medical University of Vienna, Vienna, Austria.
+andishe.attarbaschi@stanna.at","The prognostic relevance of CRLF2 -rearrangements in childhood acute B-cell
+precursor lymphoblastic leukaemia (ALL), was assessed by a comparative analysis
+of 114 non-Down-syndrome patients (99 P2RY8-CRLF2+ , 15 IGH@-CRLF2+ ), 76 from
+the AIEOP-BFM ALL 2000 and 38 from the MRC ALL97 trials. The 6-year cumulative
+relapse incidence of P2RY8-CRLF2+ patients treated on the two trials was not
+statistically different: 0·37 ± 0·06 vs. 0·25 ± 0·08 (P = 0·194). In contrast,
+0/9 IGH@-CRLF2+ AIEOP-BFM, but 5/6 ALL97 patients relapsed. Conclusively,
+P2RY8-CRLF2+ patients had an intermediate protocol-independent outcome while the 
+different prognosis of IGH@-CRLF2+ patients could be related to the different
+structures of the applied treatment protocols.",© 2012 Blackwell Publishing Ltd.,"DOI: 10.1111/j.1365-2141.2012.09221.x 
+PMID: 22816614  [Indexed for MEDLINE]"
+2. Leukemia. 2012 Oct;26(10):2245-53. doi: 10.1038/leu.2012.101. Epub 2012 Apr 9.,"Poor prognosis for P2RY8-CRLF2 fusion but not for CRLF2 over-expression in
+children with intermediate risk B-cell precursor acute lymphoblastic leukemia.","Palmi C(1), Vendramini E, Silvestri D, Longinotti G, Frison D, Cario G, Shochat
+C, Stanulla M, Rossi V, Di Meglio AM, Villa T, Giarin E, Fazio G, Leszl A,
+Schrappe M, Basso G, Biondi A, Izraeli S, Conter V, Valsecchi MG, Cazzaniga G, Te
+Kronnie G.","Author information: 
+(1)Centro Ricerca Tettamanti, Clinica Pediatrica, Università di Milano Bicocca,
+Ospedale San Gerardo, Monza, Italy.","Pediatric B-cell precursor acute lymphoblastic leukemia (BCP-ALL) has achieved an
+80% cure rate as a result of a risk-adapted therapy largely based on minimal
+residual disease (MRD) monitoring. However, relapse is still the most frequent
+adverse event, occurring mainly in the patients with intermediate MRD levels
+(intermediate risk, IR), emphasizing the need for new prognostic markers. We
+analyzed the prognostic impact of cytokine receptor-like factor 2 (CRLF2)
+over-expression and P2RY8-CRLF2 fusion in 464 BCP-ALL patients (not affected by
+Down syndrome and BCR-ABL negative) enrolled in the AIEOP-BFM ALL2000 study in
+Italy. In 22/464 (4.7%) samples, RQ-PCR showed CRLF2 over-expression (≥20 times
+higher than the overall median). P2RY8-CRLF2 fusion was detected in 22/365 (6%)
+cases, with 10/22 cases also showing CRLF2 over-expression. P2RY8-CRLF2 fusion
+was the most relevant prognostic factor independent of CRLF2 over-expression with
+a threefold increase in risk of relapse. Significantly, the cumulative incidence 
+of relapse of the P2RY8-CRLF2 + patients in the IR group was high (61.1% ± 12.9
+vs 17.6% ± 2.6, P<0.0001), similar to high-risk patients in AIEOP-BFM ALL2000
+study. These results were confirmed in a cohort of patients treated in Germany.
+In conclusion, P2RY8-CRLF2 identifies a subset of BCP-ALL patients currently
+stratified as IR that could be considered for treatment intensification.","DOI: 10.1038/leu.2012.101 
+PMID: 22484421  [Indexed for MEDLINE]"
+"3. Blood. 2012 Apr 12;119(15):3512-22. doi: 10.1182/blood-2011-11-394221. Epub 2012 
+Feb 24.","Outcome modeling with CRLF2, IKZF1, JAK, and minimal residual disease in
+pediatric acute lymphoblastic leukemia: a Children's Oncology Group study.","Chen IM(1), Harvey RC, Mullighan CG, Gastier-Foster J, Wharton W, Kang H,
+Borowitz MJ, Camitta BM, Carroll AJ, Devidas M, Pullen DJ, Payne-Turner D, Tasian
+SK, Reshmi S, Cottrell CE, Reaman GH, Bowman WP, Carroll WL, Loh ML, Winick NJ,
+Hunger SP, Willman CL.","Author information: 
+(1)Cancer Center and Department of Internal Medicine, University of New Mexico,
+Albuquerque, NM 87131-001, USA.","As controversy exists regarding the prognostic significance of genomic
+rearrangements of CRLF2 in pediatric B-precursor acute lymphoblastic leukemia
+(ALL) classified as standard/intermediate-risk (SR) or high-risk (HR), we
+assessed the prognostic significance of CRLF2 mRNA expression, CRLF2 genomic
+lesions (IGH@-CRLF2, P2RY8-CRLF2, CRLF2 F232C), deletion/mutation in genes
+frequently associated with high CRLF2 expression (IKZF1, JAK, IL7R), and minimal 
+residual disease (MRD) in 1061 pediatric ALL patients (499 HR and 562 SR) on COG 
+Trials P9905/P9906. Whereas very high CRLF2 expression was found in 17.5% of
+cases, only 51.4% of high CRLF2 expressors had CRLF2 genomic lesions. The
+mechanism underlying elevated CRLF2 expression in cases lacking known genomic
+lesions remains to be determined. All CRLF2 genomic lesions and virtually all JAK
+mutations were found in high CRLF2 expressors, whereas IKZF1 deletions/mutations 
+were distributed across the full cohort. In multivariate analyses, NCI risk
+group, MRD, high CRLF2 expression, and IKZF1 lesions were associated with
+relapse-free survival. Within HR ALL, only MRD and CRLF2 expression predicted a
+poorer relapse-free survival; no difference was seen between cases with or
+without CRLF2 genomic lesions. Thus, high CRLF2 expression is associated with a
+very poor outcome in high-risk, but not standard-risk, ALL. This study is
+registered at www.clinicaltrials.gov as NCT00005596 and NCT00005603.","DOI: 10.1182/blood-2011-11-394221 
+PMCID: PMC3325039
+PMID: 22368272  [Indexed for MEDLINE]"
+"4. Proc Natl Acad Sci U S A. 2012 Mar 6;109(10):3879-84. doi:
+10.1073/pnas.1121343109. Epub 2012 Feb 17.","Discovery and prioritization of somatic mutations in diffuse large B-cell
+lymphoma (DLBCL) by whole-exome sequencing.","Lohr JG(1), Stojanov P, Lawrence MS, Auclair D, Chapuy B, Sougnez C,
+Cruz-Gordillo P, Knoechel B, Asmann YW, Slager SL, Novak AJ, Dogan A, Ansell SM, 
+Link BK, Zou L, Gould J, Saksena G, Stransky N, Rangel-Escareño C,
+Fernandez-Lopez JC, Hidalgo-Miranda A, Melendez-Zajgla J, Hernández-Lemus E,
+Schwarz-Cruz y Celis A, Imaz-Rosshandler I, Ojesina AI, Jung J, Pedamallu CS,
+Lander ES, Habermann TM, Cerhan JR, Shipp MA, Getz G, Golub TR.","Author information: 
+(1)Eli and Edythe Broad Institute, Cambridge, MA 02412, USA.","To gain insight into the genomic basis of diffuse large B-cell lymphoma (DLBCL), 
+we performed massively parallel whole-exome sequencing of 55 primary tumor
+samples from patients with DLBCL and matched normal tissue. We identified
+recurrent mutations in genes that are well known to be functionally relevant in
+DLBCL, including MYD88, CARD11, EZH2, and CREBBP. We also identified somatic
+mutations in genes for which a functional role in DLBCL has not been previously
+suspected. These genes include MEF2B, MLL2, BTG1, GNA13, ACTB, P2RY8, PCLO, and
+TNFRSF14. Further, we show that BCL2 mutations commonly occur in patients with
+BCL2/IgH rearrangements as a result of somatic hypermutation normally occurring
+at the IgH locus. The BCL2 point mutations are primarily synonymous, and likely
+caused by activation-induced cytidine deaminase-mediated somatic hypermutation,
+as shown by comprehensive analysis of enrichment of mutations in WRCY target
+motifs. Those nonsynonymous mutations that are observed tend to be found outside 
+of the functionally important BH domains of the protein, suggesting that strong
+negative selection against BCL2 loss-of-function mutations is at play. Last, by
+using an algorithm designed to identify likely functionally relevant but
+infrequent mutations, we identify KRAS, BRAF, and NOTCH1 as likely drivers of
+DLBCL pathogenesis in some patients. Our data provide an unbiased view of the
+landscape of mutations in DLBCL, and this in turn may point toward new
+therapeutic strategies for the disease.","DOI: 10.1073/pnas.1121343109 
+PMCID: PMC3309757
+PMID: 22343534  [Indexed for MEDLINE]"
+"5. Genes Chromosomes Cancer. 2012 Feb;51(2):196-206. doi: 10.1002/gcc.20944. Epub
+2011 Nov 10.","High frequency of BTG1 deletions in acute lymphoblastic leukemia in children with
+down syndrome.","Lundin C(1), Hjorth L, Behrendtz M, Nordgren A, Palmqvist L, Andersen MK,
+Biloglav A, Forestier E, Paulsson K, Johansson B.","Author information: 
+(1)Department of Clinical Genetics, University and Regional Laboratories, Skåne
+University Hospital, Lund University, Sweden. catarina.lundin@med.lu.se","Previous cytogenetic studies of myeloid and acute lymphoblastic leukemias in
+children with Down syndrome (ML-DS and DS-ALL) have revealed significant
+differences in abnormality patterns between such cases and acute leukemias in
+general. Also, certain molecular genetic aberrations characterize DS-related
+leukemias, such as GATA1 mutations in ML-DS and deregulation of the CRLF2 gene in
+DS-ALL. Whether microdeletions/microduplications also vary between DS and non-DS 
+cases is presently unclear. To address this issue, we performed single nucleotide
+polymorphism array analyses of eight pediatric ML-DS and 17 B-cell precursor
+DS-ALL. In the ML-DS cases, a total of 29 imbalances (20 gains and nine losses)
+and two partial uniparental isodisomies (pUPDs) were detected. None of the 11
+small (defined as <10 Mb) imbalances were recurrent, nor were the pUPDs, whereas 
+of the 18 large aberrations, three were recurrent-dup(1q), +8 and +21. In
+contrast, several frequent changes were identified in the DS-ALL cases, which
+harbored 82 imbalances (30 gains and 52 losses) and four pUPDs. Of the 40 large
+changes, 28 were gains and 12 losses, with +X, dup(Xq), dup(1q), del(7p),
+dup(8q), del(9p), dup(9p), del(12p), dup(17q), and +21 being recurrent. Of the 40
+microdeletions identified, several targeted specific genes, with the following
+being repeatedly deleted: BTG1 and CDKN2A/B (29% of cases), ETV6, IKZF1, PAX5 and
+SERP2 (18%), and BTLA, INPP4B, P2RY8, and RB1 (12%). Loss of the SERP2 and INPP4B
+genes, encoding the stress-associated endoplasmic reticulum protein family member
+2 and the inositol polyphosphate 4-phosphatase-II, respectively, has previously
+never been implicated in leukemia. Although deletions of the other genes have
+been associated with ALL, the high frequency of BTG1 loss is a novel finding.
+Such deletions may characterize a clinical subgroup of DS-ALL, comprising mainly 
+boys with a high median age. In conclusion, ML-DS and DS-ALL are genetically
+distinct, with mainly gains in ML-DS and deletions in DS-ALL. Furthermore, DS-ALL
+is characterized by several recurrent gene deletions, with BTG1 loss being
+particularly frequent.","Copyright © 2011 Wiley-Liss, Inc.","DOI: 10.1002/gcc.20944 
+PMID: 22072402  [Indexed for MEDLINE]"
+"6. Blood. 2011 Jun 23;117(25):6848-55. doi: 10.1182/blood-2011-01-329961. Epub 2011 
+Apr 28.","Genomic characterization implicates iAMP21 as a likely primary genetic event in
+childhood B-cell precursor acute lymphoblastic leukemia.","Rand V(1), Parker H, Russell LJ, Schwab C, Ensor H, Irving J, Jones L, Masic D,
+Minto L, Morrison H, Ryan S, Robinson H, Sinclair P, Moorman AV, Strefford JC,
+Harrison CJ.","Author information: 
+(1)Northern Institute for Cancer Research, Newcastle University, Newcastle upon
+Tyne, UK.","Intrachromosomal amplification of chromosome 21 (iAMP21) defines a distinct
+subgroup of childhood B-cell precursor acute lymphoblastic leukemia (BCP-ALL)
+that has a dismal outcome when treated with standard therapy. For improved
+diagnosis and risk stratification, the initiating genetic events need to be
+elucidated. To investigate the genetic basis of BCP-ALL, genomes of 94 iAMP21
+patients were interrogated by arrays, FISH, and multiplex ligation-dependent
+probe amplification. Most copy number alterations targeted chromosome 21,
+reinforcing the complexity of this chromosome. The common region of amplification
+on chromosome 21 was refined to a 5.1-mb region that included RUNX1, miR-802, and
+genes mapping to the Down syndrome critical region. Recurrent abnormalities
+affecting genes in key pathways were identified: IKZF1 (22%), CDKN2A/B (17%),
+PAX5 (8%), ETV6 (19%), and RB1 (37%). Investigation of clonal architecture
+provided evidence that these abnormalities, and P2RY8-CRLF2, were secondary to
+chromosome 21 rearrangements. Patient outcome was uniformly poor with standard
+therapy irrespective of the presence or absence of these changes. This study has 
+provided evidence that chromosome 21 instability is the only anomaly among those 
+so far investigated that is common to all iAMP21 patients, and therefore the
+initiating event is likely to be found among the complex structural
+rearrangements of this abnormal chromosome.","DOI: 10.1182/blood-2011-01-329961 
+PMID: 21527530  [Indexed for MEDLINE]"
+"7. Blood. 2011 Feb 17;117(7):2129-36. doi: 10.1182/blood-2010-07-297135. Epub 2010
+Nov 24.","Demographic, clinical, and outcome features of children with acute lymphoblastic 
+leukemia and CRLF2 deregulation: results from the MRC ALL97 clinical trial.","Ensor HM(1), Schwab C, Russell LJ, Richards SM, Morrison H, Masic D, Jones L,
+Kinsey SE, Vora AJ, Mitchell CD, Harrison CJ, Moorman AV.","Author information: 
+(1)Leukaemia Research Cytogenetics Group, Northern Institute for Cancer Research,
+Newcastle University, Newcastle-upon-Tyne, UK.","Erratum in
+    Blood. 2011 May 5;117(18):5009.","Comment in
+    Blood. 2011 Feb 17;117(7):2081-2.","Deregulated expression of CRLF2 (CRLF2-d) arises via its juxtaposition to the
+IGH@ enhancer or P2RY8 promoter. Among 865 BCP-ALL children treated on MRC ALL97,
+52 (6%) had CRLF2-d, but it was more prevalent among Down syndrome patients
+(54%). P2RY8-CRLF2 (n = 43) was more frequent than IGH@-CRLF2 (n = 9). CRLF2-d
+was not associated with age, sex, or white cell count, but IGH@-CRLF2 patients
+were older than P2RY8-CRLF2 patients (median 8 vs 4 years, P = .0017). Patients
+with CRLF2-d were more likely to present with enlarged livers and spleens (38% vs
+18%, P < .001). CRLF2-d was not seen in conjunction with established chromosomal 
+translocations but 6 (12%) cases had high hyperdiploidy, and 5 (10%) had iAMP21. 
+Univariate analysis suggested that CRLF2-d was associated with an inferior
+outcome: (event-free survival [EFS] hazard ratio 2.27 [95% confidence interval
+1.48-3.47], P < .001; OS 3.69 [2.34-5.84], P < .001). However, multivariate
+analysis indicated that its effect was mediated by other risk factors such as
+cytogenetics and DS status (EFS 1.45 [0.88-2.39], P = .140; OS 1.90 [1.08-3.36], 
+P = .027). Although the outcome of IGH@-CRLF2 patients appeared inferior compared
+with P2RY8-CRLF2 patients, the result was not significant (EFS 2.69 [1.15-6.31], 
+P = .023; OS 2.86 [1.15-6.79], P = .021). Therefore, we concluded that patients
+with CRLF2-d should be classified into the intermediate cytogenetic risk group.","DOI: 10.1182/blood-2010-07-297135 
+PMID: 21106984  [Indexed for MEDLINE]"
+8. Blood. 2010 Sep 16;116(11):1993-4. doi: 10.1182/blood-2010-05-286492.,"t(X;14)(p22;q32)/t(Y;14)(p11;q32) CRLF2-IGH translocations from human B-lineage
+ALLs involve CpG-type breaks at CRLF2, but CRLF2/P2RY8 intrachromosomal deletions
+do not.","Tsai AG, Yoda A, Weinstock DM, Lieber MR.","DOI: 10.1182/blood-2010-05-286492 
+PMCID: PMC5773278
+PMID: 20847213  [Indexed for MEDLINE]"
+"9. Blood. 2010 Jul 1;115(26):5393-7. doi: 10.1182/blood-2009-11-256131. Epub 2010
+Apr 8.","Presence of the P2RY8-CRLF2 rearrangement is associated with a poor prognosis in 
+non-high-risk precursor B-cell acute lymphoblastic leukemia in children treated
+according to the ALL-BFM 2000 protocol.","Cario G(1), Zimmermann M, Romey R, Gesk S, Vater I, Harbott J, Schrauder A,
+Moericke A, Izraeli S, Akasaka T, Dyer MJ, Siebert R, Schrappe M, Stanulla M.","Author information: 
+(1)Department of Pediatrics, University Medical Center Schleswig-Holstein, Campus
+Kiel, Arnold-Heller-Strasse 3, Kiel, Germany. g.cario@pediatrics.uni-kiel.de","High-level expression of the cytokine receptor-like factor 2 gene, CRLF2, in
+precursor B-cell acute lymphoblastic leukemia (pB-ALL) was shown to be caused by 
+a translocation involving the IGH@ locus or a deletion juxtaposing CRLF2 with the
+P2RY8 promoter. To assess its possible prognostic value, CRLF2 expression was
+analyzed in 555 childhood pB-ALL patients treated according to the Acute
+Lymphoblastic Leukemia Berlin-Frankfurt-Münster 2000 (ALL-BFM 2000) protocol.
+Besides CRLF2 rearrangements, high-level CRLF2 expression was seen in cases with 
+supernumerary copies of the CRLF2 locus. On the basis of the detection of CRLF2
+rearrangements, a CRLF2 high-expression group (n = 49) was defined. This group
+had a 6-year relapse incidence of 31% plus or minus 8% compared with 11% plus or 
+minus 1% in the CRLF2 low-expression group (P = .006). This difference was mainly
+attributable to an extremely high incidence of relapse (71% +/- 19%) in
+non-high-risk patients with P2RY8-CRLF2 rearrangement. The assessment of CRLF2
+aberrations may therefore serve as new stratification tool in
+Berlin-Frankfurt-Münster-based protocols by identifying additional high-risk
+patients who may benefit from an intensified and/or targeted treatment.","DOI: 10.1182/blood-2009-11-256131 
+PMID: 20378752  [Indexed for MEDLINE]"
+"10. Blood. 2010 Jul 1;115(26):5312-21. doi: 10.1182/blood-2009-09-245944. Epub 2010
+Feb 4.","Rearrangement of CRLF2 is associated with mutation of JAK kinases, alteration of 
+IKZF1, Hispanic/Latino ethnicity, and a poor outcome in pediatric B-progenitor
+acute lymphoblastic leukemia.","Harvey RC(1), Mullighan CG, Chen IM, Wharton W, Mikhail FM, Carroll AJ, Kang H,
+Liu W, Dobbin KK, Smith MA, Carroll WL, Devidas M, Bowman WP, Camitta BM, Reaman 
+GH, Hunger SP, Downing JR, Willman CL.","Author information: 
+(1)University of New Mexico Cancer Center and Departments of Pathology and
+Internal Medicine, University of New Mexico, Albuquerque, NM, USA.","Gene expression profiling of 207 uniformly treated children with high-risk
+B-progenitor acute lymphoblastic leukemia revealed 29 of 207 cases (14%) with
+markedly elevated expression of CRLF2 (cytokine receptor-like factor 2). Each of 
+the 29 cases harbored a genomic rearrangement of CRLF2: 18 of 29 (62%) had a
+translocation of the immunoglobulin heavy chain gene IGH@ on 14q32 to CRLF2 in
+the pseudoautosomal region 1 of Xp22.3/Yp11.3, whereas 10 (34%) cases had a
+320-kb interstitial deletion centromeric of CRLF2, resulting in a P2RY8-CRLF2
+fusion. One case had both IGH@-CRLF2 and P2RY8-CRLF2, and another had a novel
+CRLF2 rearrangement. Only 2 of 29 cases were Down syndrome. CRLF2 rearrangements 
+were significantly associated with activating mutations of JAK1 or JAK2, deletion
+or mutation of IKZF1, and Hispanic/Latino ethnicity (Fisher exact test, P < .001 
+for each). Within this cohort, patients with CRLF2 rearrangements had extremely
+poor treatment outcomes compared with those without CRLF2 rearrangements (35.3%
+vs 71.3% relapse-free survival at 4 years; P < .001). Together, these
+observations suggest that activation of CRLF2 expression, mutation of JAK
+kinases, and alterations of IKZF1 cooperate to promote B-cell leukemogenesis and 
+identify these pathways as important therapeutic targets in this disease.","DOI: 10.1182/blood-2009-09-245944 
+PMCID: PMC2902132
+PMID: 20139093  [Indexed for MEDLINE]"
+"11. Blood. 2010 Feb 4;115(5):1006-17. doi: 10.1182/blood-2009-08-235408. Epub 2009
+Nov 24.","Down syndrome acute lymphoblastic leukemia, a highly heterogeneous disease in
+which aberrant expression of CRLF2 is associated with mutated JAK2: a report from
+the International BFM Study Group.","Hertzberg L(1), Vendramini E, Ganmore I, Cazzaniga G, Schmitz M, Chalker J,
+Shiloh R, Iacobucci I, Shochat C, Zeligson S, Cario G, Stanulla M, Strehl S,
+Russell LJ, Harrison CJ, Bornhauser B, Yoda A, Rechavi G, Bercovich D, Borkhardt 
+A, Kempski H, te Kronnie G, Bourquin JP, Domany E, Izraeli S.","Author information: 
+(1)Department of Medical Oncology, Dana-Farber Cancer Institute, Harvard Medical 
+School, Boston, MA, USA.","We report gene expression and other analyses to elucidate the molecular
+characteristics of acute lymphoblastic leukemia (ALL) in children with Down
+syndrome (DS). We find that by gene expression DS-ALL is a highly heterogeneous
+disease not definable as a unique entity. Nevertheless, 62% (33/53) of the DS-ALL
+samples analyzed were characterized by high expression of the type I cytokine
+receptor CRLF2 caused by either immunoglobulin heavy locus (IgH@) translocations 
+or by interstitial deletions creating chimeric transcripts P2RY8-CRLF2. In 3 of
+these 33 patients, a novel activating somatic mutation, F232C in CRLF2, was
+identified. Consistent with our previous research, mutations in R683 of JAK2 were
+identified in 10 specimens (19% of the patients) and, interestingly, all 10 had
+high CRLF2 expression. Cytokine receptor-like factor 2 (CRLF2) and mutated Janus 
+kinase 2 (Jak2) cooperated in conferring cytokine-independent growth to BaF3
+pro-B cells. Intriguingly, the gene expression signature of DS-ALL is enriched
+with DNA damage and BCL6 responsive genes, suggesting the possibility of B-cell
+lymphocytic genomic instability. Thus, DS confers increased risk for genetically 
+highly diverse ALLs with frequent overexpression of CRLF2, associated with
+activating mutations in the receptor itself or in JAK2. Our data also suggest
+that the majority of DS children with ALL may benefit from therapy blocking the
+CRLF2/JAK2 pathways.","DOI: 10.1182/blood-2009-08-235408 
+PMID: 19965641  [Indexed for MEDLINE]"
+12. Nat Genet. 2009 Nov;41(11):1243-6. doi: 10.1038/ng.469. Epub 2009 Oct 18.,"Rearrangement of CRLF2 in B-progenitor- and Down syndrome-associated acute
+lymphoblastic leukemia.","Mullighan CG, Collins-Underwood JR, Phillips LA, Loudin MG, Liu W, Zhang J, Ma J,
+Coustan-Smith E, Harvey RC, Willman CL, Mikhail FM, Meyer J, Carroll AJ, Williams
+RT, Cheng J, Heerema NA, Basso G, Pession A, Pui CH, Raimondi SC, Hunger SP,
+Downing JR, Carroll WL, Rabin KR.","Aneuploidy and translocations are hallmarks of B-progenitor acute lymphoblastic
+leukemia (ALL), but many individuals with this cancer lack recurring chromosomal 
+alterations. Here we report a recurring interstitial deletion of the
+pseudoautosomal region 1 of chromosomes X and Y in B-progenitor ALL that
+juxtaposes the first, noncoding exon of P2RY8 with the coding region of CRLF2. We
+identified the P2RY8-CRLF2 fusion in 7% of individuals with B-progenitor ALL and 
+53% of individuals with ALL associated with Down syndrome. CRLF2 alteration was
+associated with activating JAK mutations, and expression of human P2RY8-CRLF2
+together with mutated mouse Jak2 resulted in constitutive Jak-Stat activation and
+cytokine-independent growth of Ba/F3 cells overexpressing interleukin-7 receptor 
+alpha. Our findings indicate that these two genetic lesions together contribute
+to leukemogenesis in B-progenitor ALL.","DOI: 10.1038/ng.469 
+PMCID: PMC2783810
+PMID: 19838194  [Indexed for MEDLINE]"
+13. Leukemia. 2007 Oct;21(10):2221-5. Epub 2007 Jun 7.,"Upregulation of the SOX5 by promoter swapping with the P2RY8 gene in primary
+splenic follicular lymphoma.","Storlazzi CT, Albano F, Lo Cunsolo C, Doglioni C, Guastadisegni MC, Impera L,
+Lonoce A, Funes S, Macrì E, Iuzzolino P, Panagopoulos I, Specchia G, Rocchi M.","DOI: 10.1038/sj.leu.2404784 
+PMID: 17554380  [Indexed for MEDLINE]"
+14. Leuk Lymphoma. 2007 May;48(5):978-86.,"Transforming activity of purinergic receptor P2Y, G protein coupled, 8 revealed
+by retroviral expression screening.","Fujiwara S(1), Yamashita Y, Choi YL, Watanabe H, Kurashina K, Soda M, Enomoto M, 
+Hatanaka H, Takada S, Ozawa K, Mano H.","Author information: 
+(1)Divisions of Functional Genomics, Jichi Medical University, Tochigi, Japan.","Biphenotypic acute leukemia (BAL) is a relatively rare subtype of acute leukemia 
+characterized by the presence of both myeloid and lymphoid cell surface antigens.
+We have now screened for transforming genes in BAL blasts with the use of the
+focus formation assay with a retroviral cDNA expression library constructed from 
+malignant blasts isolated from a BAL patient. Some of the retroviral inserts
+recovered from transformed foci were found to encode wild-type purinergic
+receptor P2Y, G protein coupled, 8 (P2RY8). The oncogenic potential of P2RY8 was 
+confirmed with the in vitro focus formation assay as well as with an in vivo
+tumorigenicity assay in nude mice. A variety of luciferase-based reporter assays 
+revealed that P2RY8 increased both the trans-activation activities of CREB and
+Elk-1 as well as the transcriptional activities of the serum response element and
+enhancer-promoter fragments of the c-Fos and c-Myc genes. Quantitation of P2RY8
+mRNA in CD34(+) cells of bone marrow showed that P2RY8 expression is frequently
+increased in leukemia patients, especially in those with refractory disease. Our 
+data thus reveal an abundant expression of P2RY8 in leukemic cells and its
+unexpected role in the pathogenesis of acute leukemia.","DOI: 10.1080/10428190701225882 
+PMID: 17487742  [Indexed for MEDLINE]"
+15. J Med Genet. 2004 Oct;41(10):736-42.,"Disruption of a new X linked gene highly expressed in brain in a family with two 
+mentally retarded males.","Cantagrel V(1), Lossi AM, Boulanger S, Depetris D, Mattei MG, Gecz J, Schwartz
+CE, Van Maldergem L, Villard L.","Author information: 
+(1)Inserm U491, Faculté de Médecine de La Timone, 27, Bd. Jean Moulin, 13385
+Marseille Cedex 5, France.","BACKGROUND: Mental retardation (MR) affects 2-3% of the human population and some
+of these cases are genetically determined. Although several genes responsible for
+MR have been identified, many cases have still not been explained.
+METHODS: We have identified a pericentric inversion of the X chromosome
+inv(X)(p22.3;q13.2) segregating in a family where two male carriers have severe
+MR while female carriers are not affected.
+RESULTS: The molecular characterisation of this inversion led us to identify two 
+new genes which are disrupted by the breakpoints: KIAA2022 in Xq13.2 and P2RY8 in
+Xp22.3. These genes were not previously fully characterised in humans. KIAA2022
+encodes a protein which lacks significant homology to any other known protein and
+is highly expressed in the brain. P2RY8 is a member of the purine nucleotide
+G-protein coupled receptor gene family. It is located in the pseudo-autosomal
+region of the X chromosome and is not expressed in brain.
+CONCLUSIONS: Because the haploinsufficiency of P2RY8 in carrier mothers does not 
+have a phenotypic consequence, we propose that the severe MR of the affected
+males in this family is due to the absence of the KIAA2022 gene product. However,
+screening 20 probands from X linked MR families did not reveal mutations in
+KIAA2022. Nonetheless, the high expression of this gene in fetal brain and in the
+adult cerebral cortex could be consistent with a role in brain development and/or
+cognitive function.","DOI: 10.1136/jmg.2004.021626 
+PMCID: PMC1735597
+PMID: 15466006  [Indexed for MEDLINE]"
+16. J Biol Chem. 1997 May 9;272(19):12583-90.,"Early expression of a novel nucleotide receptor in the neural plate of Xenopus
+embryos.","Bogdanov YD(1), Dale L, King BF, Whittock N, Burnstock G.","Author information: 
+(1)Department of Anatomy and Developmental Biology, University College London,
+Gower Street, London WC1E 6BT, United Kingdom.","Extracellular ATP functions as a neurotransmitter and neuromodulator in the adult
+nervous system, and a signaling molecule in non-neural tissue, acting either via 
+ligand-gated ion channels (P2X) or G-protein-coupled receptors (P2Y). ATP can
+cause an increase in intracellular Ca2+ (Ca2+i) in embryonic cells and so
+regulate cell proliferation, migration, and differentiation. We have isolated a
+Xenopus cDNA encoding a novel P2Y receptor, XlP2Y, which is expressed abundantly 
+in developing embryos. Recombinant XlP2Y responds equally to all five naturally
+occurring nucleoside triphosphates (ATP, UTP, CTP, GTP, and ITP), which elicit a 
+biphasic Ca2+-dependent Cl- current (ICl,Ca) where the second phase persists for 
+up to 60 min. XlP2Y also causes a continuous release of Ca2+i and a low level
+persistent activation of ICl,Ca in Xenopus oocytes through the spontaneous efflux
+of ATP. mRNAs for XlP2Y are expressed transiently in the neural plate and tailbud
+during Xenopus development, coincident with neurogenesis. This restricted pattern
+of expression and novel pharmacological features confer unique properties to
+XlP2Y, which may play a key role in the early development of neural tissue.","DOI: 10.1074/jbc.272.19.12583 
+PMID: 9139711  [Indexed for MEDLINE]",

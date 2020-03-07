@@ -1,7 +1,17 @@
 
 # Extracting Pubmed abstracts by scripting NCBI E-utilities in Python
 
-Here, I will show you how NCBI E-Utilities can be used to search for and download Pubmed abstracts. I use Python in conjunction with the NCBI E-Utilities in order to download all the abstracts corresponding to a given search term and simultaneously parse the information contained in each abstract into a data science-friendly format.
+Erick Lu
+
+March 6, 2020
+
+* [Introduction](#introduction)
+* [How the NCBI E-utilities work](#how-the-ncbi-e-utilities-work)
+* [Using the E-utilities in Python](#using-the-e-utilities-in-python)
+* [Writing a loop to fetch all abstracts](#writing-a-loop-to-fetch-all-abstracts)
+* [Conclusion](#conclusion)
+
+Here, I will show you how NCBI E-Utilities can be used to search for and download Pubmed abstracts. I use Python in conjunction with the NCBI E-Utilities to download all the abstracts corresponding to a given search term and simultaneously parse the information contained in each abstract into a data science-friendly format.
 
 ## Introduction
 
@@ -13,7 +23,8 @@ We can automate the download process by programming a script in Python to constr
 
 Below, I will give a brief tutorial about how the tools work, and the code needed to automate the process using Python.
 
-## How the tools work:
+
+## How the NCBI E-utilities work
 
 The two main E-util functions you will use are ```esearch``` and ```efetch```.
 
@@ -64,9 +75,9 @@ Now, I can simply ctrl-F to sift through over three hundred abstracts. You can a
 
 Below, I show you how to perform this process in Python.
 
-## Using the tools in Python
+## Using the E-utilities in Python
 
-The packages that you will need include ```csv``` to write to a csv file, ```re``` in order to use regular expressions to extract information from esearch results, ```urllib``` to open and read urls, and ```time``` in order to sleep for a couple seconds between requests so we don't get blocked.
+The packages we need include `csv` to write to a csv file, `re` in order to use regular expressions to extract information from `esearch` results, `urllib` to open and read urls, and `time` in order to sleep for a couple seconds between requests so we don't get blocked.
 
 
 ```python
@@ -76,7 +87,7 @@ import urllib
 from time import sleep
 ```
 
-Now, we need to specify our parameters for the esearch and efetch calls. We can store each of the settings in their own individual variables in order to make it easy to customize the calls in the future.
+Now, we need to specify our parameters for the `esearch` and `efetch` calls. We can store each of the settings in their own individual variables in order to make it easy to customize the calls in the future.
 
 
 ```python
@@ -104,7 +115,7 @@ print(search_url)
     http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=P2RY8&usehistory=y&rettype=json
 
 
-Now that we have the full esearch url constructed, we can open the url using ```urllib.request.urlopen()```:
+Now that we have the full `esearch` url constructed, we can open the url using `urllib.request.urlopen()`:
 
 
 ```python
@@ -120,11 +131,11 @@ search_data
 
 
 
-    '<?xml version="1.0" encoding="UTF-8" ?>\n<!DOCTYPE eSearchResult PUBLIC "-//NLM//DTD esearch 20060628//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20060628/esearch.dtd">\n<eSearchResult><Count>56</Count><RetMax>20</RetMax><RetStart>0</RetStart><QueryKey>1</QueryKey><WebEnv>NCID_1_5579798_130.14.18.48_9001_1579842017_1501765481_0MetA0_S_MegaStore</WebEnv><IdList>\n<Id>31496804</Id>\n<Id>30977196</Id>\n<Id>30859636</Id>\n<Id>30842656</Id>\n<Id>30487598</Id>\n<Id>29982439</Id>\n<Id>29786757</Id>\n<Id>29507076</Id>\n<Id>29407587</Id>\n<Id>29228539</Id>\n<Id>29194562</Id>\n<Id>29140408</Id>\n<Id>28866095</Id>\n<Id>28597942</Id>\n<Id>28408464</Id>\n<Id>28395118</Id>\n<Id>28371317</Id>\n<Id>28033648</Id>\n<Id>27959929</Id>\n<Id>27899802</Id>\n</IdList><TranslationSet/><TranslationStack>   <TermSet>    <Term>P2RY8[All Fields]</Term>    <Field>All Fields</Field>    <Count>56</Count>    <Explode>N</Explode>   </TermSet>   <OP>GROUP</OP>  </TranslationStack><QueryTranslation>P2RY8[All Fields]</QueryTranslation></eSearchResult>\n'
+    '<?xml version="1.0" encoding="UTF-8" ?>\n<!DOCTYPE eSearchResult PUBLIC "-//NLM//DTD esearch 20060628//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20060628/esearch.dtd">\n<eSearchResult><Count>56</Count><RetMax>20</RetMax><RetStart>0</RetStart><QueryKey>1</QueryKey><WebEnv>NCID_1_115314692_130.14.18.97_9001_1583534241_328526540_0MetA0_S_MegaStore</WebEnv><IdList>\n<Id>31496804</Id>\n<Id>30977196</Id>\n<Id>30859636</Id>\n<Id>30842656</Id>\n<Id>30487598</Id>\n<Id>29982439</Id>\n<Id>29786757</Id>\n<Id>29507076</Id>\n<Id>29407587</Id>\n<Id>29228539</Id>\n<Id>29194562</Id>\n<Id>29140408</Id>\n<Id>28866095</Id>\n<Id>28597942</Id>\n<Id>28408464</Id>\n<Id>28395118</Id>\n<Id>28371317</Id>\n<Id>28033648</Id>\n<Id>27959929</Id>\n<Id>27899802</Id>\n</IdList><TranslationSet/><TranslationStack>   <TermSet>    <Term>P2RY8[All Fields]</Term>    <Field>All Fields</Field>    <Count>56</Count>    <Explode>N</Explode>   </TermSet>   <OP>GROUP</OP>  </TranslationStack><QueryTranslation>P2RY8[All Fields]</QueryTranslation></eSearchResult>\n'
 
 
 
-Above, you can compare the raw text output of the esearch result with the image of what it looks like in the browser. You can see that the same syntax is used for the webenv and query key sections. We will also need the total number of abstracts corresponding to the query, if we want to be able to retrieve all the abstracts. We can extract these items from the output using the regexes below:
+Above, you can compare the raw text output of the esearch result with the image of what it looks like in the browser. You can see that the same syntax is used for the `WebEnv` and `QueryKey` sections. We will also need the total number of abstracts corresponding to the query, if we want to be able to retrieve all the abstracts. We can extract these items from the output using the regexes below:
 
 
 ```python
@@ -147,6 +158,8 @@ total_abstract_count
     56
 
 
+
+We observe that there are 56 total abstracts that match the keyword "P2RY8".
 
 
 ```python
@@ -172,13 +185,13 @@ fetch_querykey
 
 
 
-Now, we can run an efetch command. In order to do so, we must assign values to each of the parameters in a similar manner as we did above for esearch.
+Now that we have the `WebEnv` and `QueryKey`, we can run an `efetch` command to obtain the abstracts. In order to do so, we must assign values to each of the parameters in a similar manner as we did above for esearch.
 
 
 ```python
 # other efetch settings
 fetch_eutil = 'efetch.fcgi?'
-retmax = 50
+retmax = 20
 retstart = 0
 fetch_retstart = "&retstart=" + str(retstart)
 fetch_retmax = "&retmax=" + str(retmax)
@@ -188,7 +201,7 @@ fetch_rettype = "&rettype=abstract"
 
 ```
 
-The fully constructed efetch command using the above parameters is below:
+The fully constructed efetch command using the above parameters, which should fetch 20 of the 56 total abstracts, is below:
 
 
 ```python
@@ -196,7 +209,7 @@ fetch_url = base_url+fetch_eutil+db+fetch_querykey+fetch_webenv+fetch_retstart+f
 print(fetch_url)
 ```
 
-    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_62178618_130.14.18.48_9001_1580542065_2057246523_0MetA0_S_MegaStore&retstart=0&retmax=50&retmode=text&rettype=abstract
+    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_115314692_130.14.18.97_9001_1583534241_328526540_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=text&rettype=abstract
 
 
 Now, we can open the url the same way we did for esearch:
@@ -205,7 +218,6 @@ Now, we can open the url the same way we did for esearch:
 ```python
 f = urllib.request.urlopen (fetch_url)
 fetch_data = f.read().decode('utf-8')
-
 ```
 
 
@@ -216,7 +228,7 @@ fetch_data[1:3000]
 
 
 
-    "1. Cancer Manag Res. 2019 Aug 6;11:7455-7472. doi: 10.2147/CMAR.S201177. eCollection\n2019.\n\nThe relevance between the immune response-related gene module and clinical traits\nin head and neck squamous cell carcinoma.\n\nSong Y(#)(1), Pan Y(#)(1), Liu J(1).\n\nAuthor information: \n(1)State Key Laboratory of Oral Diseases, National Clinical Research Center for\nOral Diseases, Department of Orthodontics, West China Hospital of Stomatology,\nSichuan University, Chengdu, 610041, People's Republic of China.\n(#)Contributed equally\n\nPurpose: Head and neck squamous cell carcinoma (HNSCC) is the sixth most\nprevalent cancer in the world, accounting for more than 90% of head and neck\nmalignant tumors. However, its molecular mechanism is largely unknown. To help\nelucidate the potential mechanism of HNSCC tumorigenesis, we investigated the\ngene interaction patterns associated with tumorigenesis.\nMethods: Weighted gene co-expression network analysis (WGCNA) can help us to\npredict the intrinsic relationship or correlation between gene expression.\nAdditionally, we further explored the combination of clinical information and\nmodule construction.\nResults: Sixteen modules were constructed, among which the key module most\nclosely associated with clinical information was identified. By analyzing the\ngenes in this module, we found that the latter may be related to the immune\nresponse, inflammatory response and formation of the tumor microenvironment.\nSixteen hub genes were identified-ARHGAP9, SASH3, CORO1A, ITGAL, PPP1R16B,\nTBC1D10C, IL10RA, ITK, AKNA, PRKCB, TRAF3IP3, GIMAP4, CCR7, P2RY8, GIMAP7, and\nSP140. We further validated these genes at the transcriptional and translation\nlevels.\nConclusion: The innovative use of a weighted network to analyze HNSCC samples\nprovides new insights into the molecular mechanism and prognosis of HNSCC.\nAdditionally, the hub genes we identified can be used as biomarkers and\ntherapeutic targets of HNSCC, laying the foundation for the accurate diagnosis\nand treatment of HNSCC in clinical and research in the future.\n\nDOI: 10.2147/CMAR.S201177 \nPMCID: PMC6689548\nPMID: 31496804 \n\nConflict of interest statement: The authors report no conflicts of interest in\nthis work.\n\n\n2. Immunol Rev. 2019 May;289(1):158-172. doi: 10.1111/imr.12743.\n\nG-protein coupled receptors and ligands that organize humoral immune responses.\n\nLu E(1), Cyster JG(1).\n\nAuthor information: \n(1)Howard Hughes Medical Institute and Department of Microbiology and Immunology,\nUniversity of California San Francisco, San Francisco, California.\n\nB-cell responses are dynamic processes that depend on multiple types of\ninteractions. Rare antigen-specific B cells must encounter antigen and\nspecialized systems are needed-unique to each lymphoid tissue type-to ensure this\nhappens efficiently. Lymphoid tissue barrier cells act to ensure that pathogens, \nwhile being permitted entry for B-cell recognition, are blocked from replication \nor dissemination. T follicular helper (Tfh) cells often need"
+    "1. Br J Haematol. 2012 Sep;158(6):772-7. doi: 10.1111/j.1365-2141.2012.09221.x. Epub\n2012 Jul 23.\n\nTreatment outcome of CRLF2-rearranged childhood acute lymphoblastic leukaemia: a \ncomparative analysis of the AIEOP-BFM and UK NCRI-CCLG study groups.\n\nAttarbaschi A(1), Morak M, Cario G, Cazzaniga G, Ensor HM, te Kronnie T, Bradtke \nJ, Mann G, Vendramini E, Palmi C, Schwab C, Russell LJ, Schrappe M, Conter V,\nMitchell CD, Strehl S, Zimmermann M, Pötschger U, Harrison CJ, Stanulla M,\nPanzer-Grümayer R, Haas OA, Moorman AV; Associazione Italiana di Ematologia ed\nOncologia Pediatrica (AIEOP)-Berlin-Frankfurt-Münster (BFM) Study Group and\nNational Cancer Research Institute (NCRI)-Children's Cancer and Leukaemia (CCLG) \nStudy Group.\n\nAuthor information: \n(1)Paediatric Haematology and Oncology, Department of Paediatrics, St. Anna\nChildren's Hospital, Medical University of Vienna, Vienna, Austria.\nandishe.attarbaschi@stanna.at\n\nThe prognostic relevance of CRLF2 -rearrangements in childhood acute B-cell\nprecursor lymphoblastic leukaemia (ALL), was assessed by a comparative analysis\nof 114 non-Down-syndrome patients (99 P2RY8-CRLF2+ , 15 IGH@-CRLF2+ ), 76 from\nthe AIEOP-BFM ALL 2000 and 38 from the MRC ALL97 trials. The 6-year cumulative\nrelapse incidence of P2RY8-CRLF2+ patients treated on the two trials was not\nstatistically different: 0·37 ± 0·06 vs. 0·25 ± 0·08 (P = 0·194). In contrast,\n0/9 IGH@-CRLF2+ AIEOP-BFM, but 5/6 ALL97 patients relapsed. Conclusively,\nP2RY8-CRLF2+ patients had an intermediate protocol-independent outcome while the \ndifferent prognosis of IGH@-CRLF2+ patients could be related to the different\nstructures of the applied treatment protocols.\n\n© 2012 Blackwell Publishing Ltd.\n\nDOI: 10.1111/j.1365-2141.2012.09221.x \nPMID: 22816614  [Indexed for MEDLINE]\n\n\n2. Leukemia. 2012 Oct;26(10):2245-53. doi: 10.1038/leu.2012.101. Epub 2012 Apr 9.\n\nPoor prognosis for P2RY8-CRLF2 fusion but not for CRLF2 over-expression in\nchildren with intermediate risk B-cell precursor acute lymphoblastic leukemia.\n\nPalmi C(1), Vendramini E, Silvestri D, Longinotti G, Frison D, Cario G, Shochat\nC, Stanulla M, Rossi V, Di Meglio AM, Villa T, Giarin E, Fazio G, Leszl A,\nSchrappe M, Basso G, Biondi A, Izraeli S, Conter V, Valsecchi MG, Cazzaniga G, Te\nKronnie G.\n\nAuthor information: \n(1)Centro Ricerca Tettamanti, Clinica Pediatrica, Università di Milano Bicocca,\nOspedale San Gerardo, Monza, Italy.\n\nPediatric B-cell precursor acute lymphoblastic leukemia (BCP-ALL) has achieved an\n80% cure rate as a result of a risk-adapted therapy largely based on minimal\nresidual disease (MRD) monitoring. However, relapse is still the most frequent\nadverse event, occurring mainly in the patients with intermediate MRD levels\n(intermediate risk, IR), emphasizing the need for new prognostic markers. We\nanalyzed the prognostic impact of cytokine receptor-like factor 2 (CRLF2)\nover-expression and P2RY8-CRLF2 fusion in 464 BCP-ALL patients (not affected by\nDown syndrome and BCR-ABL nega"
 
 
 
@@ -224,63 +236,30 @@ Examining the text output, we see that individual abstracts are separated by 3 n
 
 
 ```python
+# splits the data into individual abstracts
 abstracts = fetch_data.split("\n\n\n")
-abstracts[0:2]
-```
-
-
-
-
-    ["\n1. Cancer Manag Res. 2019 Aug 6;11:7455-7472. doi: 10.2147/CMAR.S201177. eCollection\n2019.\n\nThe relevance between the immune response-related gene module and clinical traits\nin head and neck squamous cell carcinoma.\n\nSong Y(#)(1), Pan Y(#)(1), Liu J(1).\n\nAuthor information: \n(1)State Key Laboratory of Oral Diseases, National Clinical Research Center for\nOral Diseases, Department of Orthodontics, West China Hospital of Stomatology,\nSichuan University, Chengdu, 610041, People's Republic of China.\n(#)Contributed equally\n\nPurpose: Head and neck squamous cell carcinoma (HNSCC) is the sixth most\nprevalent cancer in the world, accounting for more than 90% of head and neck\nmalignant tumors. However, its molecular mechanism is largely unknown. To help\nelucidate the potential mechanism of HNSCC tumorigenesis, we investigated the\ngene interaction patterns associated with tumorigenesis.\nMethods: Weighted gene co-expression network analysis (WGCNA) can help us to\npredict the intrinsic relationship or correlation between gene expression.\nAdditionally, we further explored the combination of clinical information and\nmodule construction.\nResults: Sixteen modules were constructed, among which the key module most\nclosely associated with clinical information was identified. By analyzing the\ngenes in this module, we found that the latter may be related to the immune\nresponse, inflammatory response and formation of the tumor microenvironment.\nSixteen hub genes were identified-ARHGAP9, SASH3, CORO1A, ITGAL, PPP1R16B,\nTBC1D10C, IL10RA, ITK, AKNA, PRKCB, TRAF3IP3, GIMAP4, CCR7, P2RY8, GIMAP7, and\nSP140. We further validated these genes at the transcriptional and translation\nlevels.\nConclusion: The innovative use of a weighted network to analyze HNSCC samples\nprovides new insights into the molecular mechanism and prognosis of HNSCC.\nAdditionally, the hub genes we identified can be used as biomarkers and\ntherapeutic targets of HNSCC, laying the foundation for the accurate diagnosis\nand treatment of HNSCC in clinical and research in the future.\n\nDOI: 10.2147/CMAR.S201177 \nPMCID: PMC6689548\nPMID: 31496804 \n\nConflict of interest statement: The authors report no conflicts of interest in\nthis work.",
-     '2. Immunol Rev. 2019 May;289(1):158-172. doi: 10.1111/imr.12743.\n\nG-protein coupled receptors and ligands that organize humoral immune responses.\n\nLu E(1), Cyster JG(1).\n\nAuthor information: \n(1)Howard Hughes Medical Institute and Department of Microbiology and Immunology,\nUniversity of California San Francisco, San Francisco, California.\n\nB-cell responses are dynamic processes that depend on multiple types of\ninteractions. Rare antigen-specific B cells must encounter antigen and\nspecialized systems are needed-unique to each lymphoid tissue type-to ensure this\nhappens efficiently. Lymphoid tissue barrier cells act to ensure that pathogens, \nwhile being permitted entry for B-cell recognition, are blocked from replication \nor dissemination. T follicular helper (Tfh) cells often need to be primed by\ndendritic cells before supporting B-cell responses. For most responses,\nantigen-specific helper T cells and B cells need to interact, first to initiate\nclonal expansion and the plasmablast response, and later to support the germinal \ncenter (GC) response. Newly formed plasma cells need to travel to supportive\nniches. GC B cells must become confined to the follicle center, organize into\ndark and light zones, and interact with Tfh cells. Memory B cells need to be\npositioned for rapid responses following reinfection. Each of these events\nrequires the actions of multiple G-protein coupled receptors (GPCRs) and their\nligands, including chemokines and lipid mediators. This review will focus on the \nguidance cue code underlying B-cell immunity, with an emphasis on findings from\nour laboratory and on newer advances in related areas. We will discuss our recent\nidentification of geranylgeranyl-glutathione as a ligand for P2RY8. Our goal is\nto provide the reader with a focused knowledge about the GPCRs guiding B-cell\nresponses and how they might be therapeutic targets, while also providing\nexamples of how multiple types of GPCRs can cooperate or act iteratively to\ncontrol cell behavior.\n\n© 2019 John Wiley & Sons A/S. Published by John Wiley & Sons Ltd.\n\nDOI: 10.1111/imr.12743 \nPMCID: PMC6464390 [Available on 2020-05-01]\nPMID: 30977196  [Indexed for MEDLINE]']
-
-
-
-
-```python
 len(abstracts)
 ```
 
 
 
 
-    50
+    16
 
 
 
-We confirm that there are indeed 50 abstracts.
-
-
-```python
-chunks[1]
-```
-
-
-    ---------------------------------------------------------------------------
-
-    NameError                                 Traceback (most recent call last)
-
-    <ipython-input-24-5b16f7e8505c> in <module>()
-    ----> 1 chunks[1]
-    
-
-    NameError: name 'chunks' is not defined
-
+Because we had set `retmax = 20`, we obtained 20 abstracts. Let's take a closer look at an individual abstract:
 
 
 ```python
-test_abstract = chunks[1]
-```
-
-
-```python
-test_abstract
+# print out the first abstract
+abstracts[0]
 ```
 
 
 
 
-    '2. Immunol Rev. 2019 May;289(1):158-172. doi: 10.1111/imr.12743.\n\nG-protein coupled receptors and ligands that organize humoral immune responses.\n\nLu E(1), Cyster JG(1).\n\nAuthor information: \n(1)Howard Hughes Medical Institute and Department of Microbiology and Immunology,\nUniversity of California San Francisco, San Francisco, California.\n\nB-cell responses are dynamic processes that depend on multiple types of\ninteractions. Rare antigen-specific B cells must encounter antigen and\nspecialized systems are needed-unique to each lymphoid tissue type-to ensure this\nhappens efficiently. Lymphoid tissue barrier cells act to ensure that pathogens, \nwhile being permitted entry for B-cell recognition, are blocked from replication \nor dissemination. T follicular helper (Tfh) cells often need to be primed by\ndendritic cells before supporting B-cell responses. For most responses,\nantigen-specific helper T cells and B cells need to interact, first to initiate\nclonal expansion and the plasmablast response, and later to support the germinal \ncenter (GC) response. Newly formed plasma cells need to travel to supportive\nniches. GC B cells must become confined to the follicle center, organize into\ndark and light zones, and interact with Tfh cells. Memory B cells need to be\npositioned for rapid responses following reinfection. Each of these events\nrequires the actions of multiple G-protein coupled receptors (GPCRs) and their\nligands, including chemokines and lipid mediators. This review will focus on the \nguidance cue code underlying B-cell immunity, with an emphasis on findings from\nour laboratory and on newer advances in related areas. We will discuss our recent\nidentification of geranylgeranyl-glutathione as a ligand for P2RY8. Our goal is\nto provide the reader with a focused knowledge about the GPCRs guiding B-cell\nresponses and how they might be therapeutic targets, while also providing\nexamples of how multiple types of GPCRs can cooperate or act iteratively to\ncontrol cell behavior.\n\n© 2019 John Wiley & Sons A/S. Published by John Wiley & Sons Ltd.\n\nDOI: 10.1111/imr.12743 \nPMCID: PMC6464390 [Available on 2020-05-01]\nPMID: 30977196  [Indexed for MEDLINE]'
+    "\n1. Br J Haematol. 2012 Sep;158(6):772-7. doi: 10.1111/j.1365-2141.2012.09221.x. Epub\n2012 Jul 23.\n\nTreatment outcome of CRLF2-rearranged childhood acute lymphoblastic leukaemia: a \ncomparative analysis of the AIEOP-BFM and UK NCRI-CCLG study groups.\n\nAttarbaschi A(1), Morak M, Cario G, Cazzaniga G, Ensor HM, te Kronnie T, Bradtke \nJ, Mann G, Vendramini E, Palmi C, Schwab C, Russell LJ, Schrappe M, Conter V,\nMitchell CD, Strehl S, Zimmermann M, Pötschger U, Harrison CJ, Stanulla M,\nPanzer-Grümayer R, Haas OA, Moorman AV; Associazione Italiana di Ematologia ed\nOncologia Pediatrica (AIEOP)-Berlin-Frankfurt-Münster (BFM) Study Group and\nNational Cancer Research Institute (NCRI)-Children's Cancer and Leukaemia (CCLG) \nStudy Group.\n\nAuthor information: \n(1)Paediatric Haematology and Oncology, Department of Paediatrics, St. Anna\nChildren's Hospital, Medical University of Vienna, Vienna, Austria.\nandishe.attarbaschi@stanna.at\n\nThe prognostic relevance of CRLF2 -rearrangements in childhood acute B-cell\nprecursor lymphoblastic leukaemia (ALL), was assessed by a comparative analysis\nof 114 non-Down-syndrome patients (99 P2RY8-CRLF2+ , 15 IGH@-CRLF2+ ), 76 from\nthe AIEOP-BFM ALL 2000 and 38 from the MRC ALL97 trials. The 6-year cumulative\nrelapse incidence of P2RY8-CRLF2+ patients treated on the two trials was not\nstatistically different: 0·37 ± 0·06 vs. 0·25 ± 0·08 (P = 0·194). In contrast,\n0/9 IGH@-CRLF2+ AIEOP-BFM, but 5/6 ALL97 patients relapsed. Conclusively,\nP2RY8-CRLF2+ patients had an intermediate protocol-independent outcome while the \ndifferent prognosis of IGH@-CRLF2+ patients could be related to the different\nstructures of the applied treatment protocols.\n\n© 2012 Blackwell Publishing Ltd.\n\nDOI: 10.1111/j.1365-2141.2012.09221.x \nPMID: 22816614  [Indexed for MEDLINE]"
 
 
 
@@ -288,12 +267,39 @@ We observe that the sections of the abstract are separated by 2 new lines in a r
 
 
 ```python
-split_abstract = test_abstract.split("\n\n")
+split_abstract = abstracts[1].split("\n\n")
+split_abstract
 ```
 
-Knowing this, we can construct a data frame in which each row represents an abstract, and each column represents a section of the abstract (journal, date, authors, etc.)
 
-There were 56 total abstracts corresponding to the keyword search P2RY8. We have only processed the first 20. In order to obtain all of the abstracts, we can construct a loop that will call ```efetch``` while incrementing ```retstart``` by 20 each iteration, until all the abstracts have been downloaded and added to the table.
+
+
+    ['2. Leukemia. 2012 Oct;26(10):2245-53. doi: 10.1038/leu.2012.101. Epub 2012 Apr 9.',
+     'Poor prognosis for P2RY8-CRLF2 fusion but not for CRLF2 over-expression in\nchildren with intermediate risk B-cell precursor acute lymphoblastic leukemia.',
+     'Palmi C(1), Vendramini E, Silvestri D, Longinotti G, Frison D, Cario G, Shochat\nC, Stanulla M, Rossi V, Di Meglio AM, Villa T, Giarin E, Fazio G, Leszl A,\nSchrappe M, Basso G, Biondi A, Izraeli S, Conter V, Valsecchi MG, Cazzaniga G, Te\nKronnie G.',
+     'Author information: \n(1)Centro Ricerca Tettamanti, Clinica Pediatrica, Università di Milano Bicocca,\nOspedale San Gerardo, Monza, Italy.',
+     'Pediatric B-cell precursor acute lymphoblastic leukemia (BCP-ALL) has achieved an\n80% cure rate as a result of a risk-adapted therapy largely based on minimal\nresidual disease (MRD) monitoring. However, relapse is still the most frequent\nadverse event, occurring mainly in the patients with intermediate MRD levels\n(intermediate risk, IR), emphasizing the need for new prognostic markers. We\nanalyzed the prognostic impact of cytokine receptor-like factor 2 (CRLF2)\nover-expression and P2RY8-CRLF2 fusion in 464 BCP-ALL patients (not affected by\nDown syndrome and BCR-ABL negative) enrolled in the AIEOP-BFM ALL2000 study in\nItaly. In 22/464 (4.7%) samples, RQ-PCR showed CRLF2 over-expression (≥20 times\nhigher than the overall median). P2RY8-CRLF2 fusion was detected in 22/365 (6%)\ncases, with 10/22 cases also showing CRLF2 over-expression. P2RY8-CRLF2 fusion\nwas the most relevant prognostic factor independent of CRLF2 over-expression with\na threefold increase in risk of relapse. Significantly, the cumulative incidence \nof relapse of the P2RY8-CRLF2 + patients in the IR group was high (61.1% ± 12.9\nvs 17.6% ± 2.6, P<0.0001), similar to high-risk patients in AIEOP-BFM ALL2000\nstudy. These results were confirmed in a cohort of patients treated in Germany.\nIn conclusion, P2RY8-CRLF2 identifies a subset of BCP-ALL patients currently\nstratified as IR that could be considered for treatment intensification.',
+     'DOI: 10.1038/leu.2012.101 \nPMID: 22484421  [Indexed for MEDLINE]']
+
+
+
+
+```python
+len(split_abstract)
+```
+
+
+
+
+    6
+
+
+
+We see that the abstract has been split into 7 different items of information, corresponding to the journal name, date, authors, etc. Knowing this, we can construct a data frame in which each row represents an abstract, and each column represents a section of the abstract (journal, date, authors, etc.).
+
+## Writing a loop to fetch all abstracts
+
+There were 56 total abstracts corresponding to the keyword search P2RY8. Above, we have only processed the first 20. In order to obtain all of the abstracts, we can construct a loop that will call ```efetch``` while incrementing ```retstart``` by 20 each iteration, until all the abstracts have been downloaded and added to the table.
 
 
 ```python
@@ -310,7 +316,7 @@ search_usehistory = '&usehistory=y'
 search_rettype = '&rettype=json'
 
 search_url = base_url+search_eutil+db+search_term+search_usehistory+search_rettype
-print(search_url)
+print("this is the esearch command:\n" + search_url + "\n")
 f = urllib.request.urlopen (search_url)
 search_data = f.read().decode('utf-8')
     
@@ -318,7 +324,7 @@ total_abstract_count = int(re.findall("<Count>(\d+?)</Count>",search_data)[0])
 
 # efetch settings
 fetch_eutil = 'efetch.fcgi?'
-retmax = 25
+retmax = 20
 retstart = 0
 fetch_retmode = "&retmode=text"
 fetch_rettype = "&rettype=abstract"
@@ -331,7 +337,7 @@ run = True
 all_abstracts = list()
 loop_counter = 1
 while run:
-    print("this is run number " + str(loop_counter))
+    print("this is efetch run number " + str(loop_counter))
     loop_counter += 1
 
     fetch_retstart = "&retstart=" + str(retstart)
@@ -347,6 +353,7 @@ while run:
     abstracts = fetch_data.split("\n\n\n")
     
     all_abstracts = all_abstracts+abstracts
+    print("a total of " + str(len(all_abstracts)) + " abstracts have been downloaded.\n")
     
     sleep(2)
     retstart = retstart + retmax
@@ -356,14 +363,26 @@ while run:
     
 ```
 
+    this is the esearch command:
     http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=P2RY8&usehistory=y&rettype=json
-    this is run number 1
-    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_75523455_130.14.22.33_9001_1580020945_657320164_0MetA0_S_MegaStore&retstart=0&retmax=25&retmode=text&rettype=abstract
-    this is run number 2
-    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_75523455_130.14.22.33_9001_1580020945_657320164_0MetA0_S_MegaStore&retstart=25&retmax=25&retmode=text&rettype=abstract
-    this is run number 3
-    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_75523455_130.14.22.33_9001_1580020945_657320164_0MetA0_S_MegaStore&retstart=50&retmax=25&retmode=text&rettype=abstract
+    
+    this is efetch run number 1
+    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_116727027_130.14.22.76_9001_1583557901_1846499759_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=text&rettype=abstract
+    a total of 20 abstracts have been downloaded.
+    
+    this is efetch run number 2
+    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_116727027_130.14.22.76_9001_1583557901_1846499759_0MetA0_S_MegaStore&retstart=20&retmax=20&retmode=text&rettype=abstract
+    a total of 40 abstracts have been downloaded.
+    
+    this is efetch run number 3
+    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_116727027_130.14.22.76_9001_1583557901_1846499759_0MetA0_S_MegaStore&retstart=40&retmax=20&retmode=text&rettype=abstract
+    a total of 56 abstracts have been downloaded.
+    
 
+
+The script above should display the esearch command, as well as each individual efetch command used to download the data. We observe that 3 efetch commands were called, and that a total of 56 abstracts were downloaded and stored in the list `all_abstracts`.
+
+You might be wondering, why did we need a loop in the first place? Couldn't we have just set `retmax` to 56 and just run `efetch` only once? For this particular example, yes. However, the maximum value for `retmax` is 500. For other keyword searches with over 500 abstracts, we must set retmax to 500 and loop until all the abstracts are downloaded.
 
 
 ```python
@@ -376,6 +395,26 @@ len(all_abstracts)
     56
 
 
+
+
+```python
+with open("abstracts.csv", "wt") as abstracts_file:
+    abstract_writer = csv.writer(abstracts_file)
+    abstract_writer.writerow(['Journal', 'Title', 'Authors', 'Author_Information', 'Abstract', 'DOI', 'Misc'])
+    #For each abstract, split into categories and write it to the csv file
+    for abstract in all_abstracts:
+        #To obtain categories, split every double newline.
+        split_abstract = abstract.split("\n\n")
+        abstract_writer.writerow(split_abstract)
+```
+
+Next, we will split each abstract from all_abstracts into the categories:
+
+and write the information to a csv file for downstream analysis.
+
+Examining the resulting csv file, we notice that some abstracts are missing information. Some lack author information, and some lack the abstract text entirely. Since we are interested in abstracts with complete information, we should segregate the incomplete abstracts from the complete ones. To do this, we can just include a simple if/else clause and write to two files.
+
+## Conclusion
 
 ### References
 Sayers E. The E-utilities In-Depth: Parameters, Syntax and More. 2009 May 29. In: Entrez Programming Utilities Help. Bethesda (MD): National Center for Biotechnology Information (US); 2010-.Available from: http://www.ncbi.nlm.nih.gov/books/NBK25499/
