@@ -303,6 +303,11 @@ There were 56 total abstracts corresponding to the keyword search P2RY8. Above, 
 
 
 ```python
+import csv
+import re
+import urllib
+from time import sleep
+
 query = "P2RY8"
 
 # common settings between esearch and efetch
@@ -367,15 +372,15 @@ while run:
     http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=P2RY8&usehistory=y&rettype=json
     
     this is efetch run number 1
-    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_116727027_130.14.22.76_9001_1583557901_1846499759_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=text&rettype=abstract
+    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_195179562_130.14.22.33_9001_1583903319_1852705490_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=text&rettype=abstract
     a total of 20 abstracts have been downloaded.
     
     this is efetch run number 2
-    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_116727027_130.14.22.76_9001_1583557901_1846499759_0MetA0_S_MegaStore&retstart=20&retmax=20&retmode=text&rettype=abstract
+    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_195179562_130.14.22.33_9001_1583903319_1852705490_0MetA0_S_MegaStore&retstart=20&retmax=20&retmode=text&rettype=abstract
     a total of 40 abstracts have been downloaded.
     
     this is efetch run number 3
-    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_116727027_130.14.22.76_9001_1583557901_1846499759_0MetA0_S_MegaStore&retstart=40&retmax=20&retmode=text&rettype=abstract
+    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_195179562_130.14.22.33_9001_1583903319_1852705490_0MetA0_S_MegaStore&retstart=40&retmax=20&retmode=text&rettype=abstract
     a total of 56 abstracts have been downloaded.
     
 
@@ -396,6 +401,8 @@ len(all_abstracts)
 
 
 
+Next, we will split each abstract from all_abstracts into the categories: 'Journal', 'Title', 'Authors', 'Author_Information', 'Abstract', 'DOI', and 'Misc', and write the information to a csv file for downstream analysis.
+
 
 ```python
 with open("abstracts.csv", "wt") as abstracts_file:
@@ -408,11 +415,25 @@ with open("abstracts.csv", "wt") as abstracts_file:
         abstract_writer.writerow(split_abstract)
 ```
 
-Next, we will split each abstract from all_abstracts into the categories:
+Examining the resulting csv file, we notice that some abstracts are missing information. Some lack author information, and some lack the abstract text entirely. Since we are interested in abstracts with complete information, we should segregate the incomplete abstracts from the complete ones. To do this, we can just include a simple if/else clause and write to two files. The code below should do so:
 
-and write the information to a csv file for downstream analysis.
 
-Examining the resulting csv file, we notice that some abstracts are missing information. Some lack author information, and some lack the abstract text entirely. Since we are interested in abstracts with complete information, we should segregate the incomplete abstracts from the complete ones. To do this, we can just include a simple if/else clause and write to two files.
+```python
+with open("abstracts.csv", "wt") as abstracts_file, open ("partial_abstracts.csv", "wt") as partial_abstracts:
+    # csv writer for full abstracts
+    abstract_writer = csv.writer(abstracts_file)
+    abstract_writer.writerow(['Journal', 'Title', 'Authors', 'Author_Information', 'Abstract', 'DOI', 'Misc'])
+    # csv writer for partial abstracts
+    partial_abstract_writer = csv.writer(partial_abstracts)
+    #For each abstract, split into categories and write it to the csv file
+    for abstract in all_abstracts:
+        #To obtain categories, split every double newline.
+        split_abstract = abstract.split("\n\n")
+        if len(split_abstract) > 5:
+            abstract_writer.writerow(split_abstract)
+        else:
+            partial_abstract_writer.writerow(split_abstract)
+```
 
 ## Conclusion
 
