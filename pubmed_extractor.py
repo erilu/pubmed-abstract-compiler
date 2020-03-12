@@ -1,10 +1,13 @@
 import csv
 import re
-import urllib
+import urllib.request
 from time import sleep
 
-# change this to what you want to search pubmed for
-query = "P2RY8"
+# user inputs what you want to search pubmed for
+query = input ("What would you like to download PubMed abstracts for? Enter your keyword(s):")
+
+# if spaces were entered, replace them with %20 to make compatible with PubMed search
+query = query.replace(" ", "%20")
 
 # common settings between esearch and efetch
 base_url = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/'
@@ -66,11 +69,17 @@ while run:
         run = False
 
 # write all_abstracts to a csv file for downstream data analysis
-with open("abstracts.csv", "wt") as abstracts_file:
+with open("abstracts.csv", "wt") as abstracts_file, open ("partial_abstracts.csv", "wt") as partial_abstracts:
+    # csv writer for full abstracts
     abstract_writer = csv.writer(abstracts_file)
     abstract_writer.writerow(['Journal', 'Title', 'Authors', 'Author_Information', 'Abstract', 'DOI', 'Misc'])
+    # csv writer for partial abstracts
+    partial_abstract_writer = csv.writer(partial_abstracts)
     #For each abstract, split into categories and write it to the csv file
     for abstract in all_abstracts:
         #To obtain categories, split every double newline.
         split_abstract = abstract.split("\n\n")
-        abstract_writer.writerow(split_abstract)
+        if len(split_abstract) > 5:
+            abstract_writer.writerow(split_abstract)
+        else:
+            partial_abstract_writer.writerow(split_abstract)

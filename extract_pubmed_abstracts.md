@@ -320,11 +320,13 @@ search_term = '&term=' + query
 search_usehistory = '&usehistory=y'
 search_rettype = '&rettype=json'
 
+# call the esearch command for the query and read the web result
 search_url = base_url+search_eutil+db+search_term+search_usehistory+search_rettype
 print("this is the esearch command:\n" + search_url + "\n")
 f = urllib.request.urlopen (search_url)
 search_data = f.read().decode('utf-8')
-    
+
+# extract the total abstract count
 total_abstract_count = int(re.findall("<Count>(\d+?)</Count>",search_data)[0])
 
 # efetch settings
@@ -333,34 +335,35 @@ retmax = 20
 retstart = 0
 fetch_retmode = "&retmode=text"
 fetch_rettype = "&rettype=abstract"
+
 # obtain webenv and querykey settings from the esearch results
 fetch_webenv = "&WebEnv=" + re.findall ("<WebEnv>(\S+)<\/WebEnv>", search_data)[0]
 fetch_querykey = "&query_key=" + re.findall("<QueryKey>(\d+?)</QueryKey>",search_data)[0]
 
-
+# call efetch commands using a loop until all abstracts are obtained
 run = True
 all_abstracts = list()
 loop_counter = 1
+
 while run:
     print("this is efetch run number " + str(loop_counter))
     loop_counter += 1
-
     fetch_retstart = "&retstart=" + str(retstart)
     fetch_retmax = "&retmax=" + str(retmax)
-    
+    # create the efetch url
     fetch_url = base_url+fetch_eutil+db+fetch_querykey+fetch_webenv+fetch_retstart+fetch_retmax+fetch_retmode+fetch_rettype
     print(fetch_url)
-    sleep(2)
-    
+    # open the efetch url
     f = urllib.request.urlopen (fetch_url)
     fetch_data = f.read().decode('utf-8')
-    
+    # split the data into individual abstracts
     abstracts = fetch_data.split("\n\n\n")
-    
+    # append to the list all_abstracts
     all_abstracts = all_abstracts+abstracts
     print("a total of " + str(len(all_abstracts)) + " abstracts have been downloaded.\n")
-    
+    # wait 2 seconds so we don't get blocked
     sleep(2)
+    # update retstart to download the next chunk of abstracts
     retstart = retstart + retmax
     if retstart > total_abstract_count:
         run = False
@@ -372,15 +375,15 @@ while run:
     http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=P2RY8&usehistory=y&rettype=json
     
     this is efetch run number 1
-    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_195179562_130.14.22.33_9001_1583903319_1852705490_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=text&rettype=abstract
+    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_152822836_130.14.22.76_9001_1583987885_215208972_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=text&rettype=abstract
     a total of 20 abstracts have been downloaded.
     
     this is efetch run number 2
-    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_195179562_130.14.22.33_9001_1583903319_1852705490_0MetA0_S_MegaStore&retstart=20&retmax=20&retmode=text&rettype=abstract
+    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_152822836_130.14.22.76_9001_1583987885_215208972_0MetA0_S_MegaStore&retstart=20&retmax=20&retmode=text&rettype=abstract
     a total of 40 abstracts have been downloaded.
     
     this is efetch run number 3
-    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_195179562_130.14.22.33_9001_1583903319_1852705490_0MetA0_S_MegaStore&retstart=40&retmax=20&retmode=text&rettype=abstract
+    http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_152822836_130.14.22.76_9001_1583987885_215208972_0MetA0_S_MegaStore&retstart=40&retmax=20&retmode=text&rettype=abstract
     a total of 56 abstracts have been downloaded.
     
 
@@ -436,6 +439,8 @@ with open("abstracts.csv", "wt") as abstracts_file, open ("partial_abstracts.csv
 ```
 
 ## Conclusion
+
+Here, I have shown you how to use the NCBI E-Utilities `esearch` and `efetch` to download abstracts from PubMed, as well as how to write a Python script to batch download all abstracts corresponding to a keyword search. The file `pubmed_extractor.py` in this repository contains the Python script that we wrote above. Running the script by typing `python pubmed_extractor.py` into your terminal should prompt you for a keyword to download PubMed abstracts for. The script will then dump your abstracts into `abstracts.csv`.
 
 ### References
 Sayers E. The E-utilities In-Depth: Parameters, Syntax and More. 2009 May 29. In: Entrez Programming Utilities Help. Bethesda (MD): National Center for Biotechnology Information (US); 2010-.Available from: http://www.ncbi.nlm.nih.gov/books/NBK25499/
