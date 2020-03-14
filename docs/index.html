@@ -11794,11 +11794,11 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><a href="#introduction">Introduction</a></li>
-<li><a href="#how-the-ncbi-e-utilities-work">How the NCBI E-utilities work</a></li>
-<li><a href="#using-the-e-utilities-in-python">Using the E-utilities in Python</a></li>
-<li><a href="#writing-a-loop-to-fetch-all-abstracts">Writing a loop to fetch all abstracts</a></li>
-<li><a href="#conclusion">Conclusion</a></li>
+<li><a href="#Introduction">Introduction</a></li>
+<li><a href="#How-the-NCBI-E-utilities-work">How the NCBI E-utilities work</a></li>
+<li><a href="#Using-the-E-utilities-in-Python">Using the E-utilities in Python</a></li>
+<li><a href="#Writing-a-loop-to-fetch-all-abstracts">Writing a loop to fetch all abstracts</a></li>
+<li><a href="#Conclusion">Conclusion</a></li>
 </ul>
 
 </div>
@@ -11861,7 +11861,7 @@ div#notebook {
 <li>The “&amp;” signs are just used to separate the different conditions. Make sure to include it starting from after the <code>db=pubmed</code> argument.</li>
 </ul>
 <p>Copying and pasting the full URL into my web browser results in a webpage that looks like this (XML output):</p>
-<p><img src="attachment:esearch_web_result.png" alt="esearch_web_result.png"></p>
+<p><img src="images/esearch_web_result.png" alt="esearch_web_result.png"></p>
 <h3 id="Step-2.-Craft-the-efetch-URL">Step 2. Craft the efetch URL<a class="anchor-link" href="#Step-2.-Craft-the-efetch-URL">&#182;</a></h3><p>The next step is to execute an efetch command by constructing a new URL. Using the webenv and querykey information given in the above esearch result, I will type the following efetch command into my browser:</p>
 <p><a href="https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;query_key=1&amp;WebEnv=NCID_1_5757184_130.14.18.48_9001_1579844644_2015135327_0MetA0_S_MegaStore&amp;retstart=0&amp;retmax=50&amp;retmode=text&amp;rettype=abstract">https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;query_key=1&amp;WebEnv=NCID_1_5757184_130.14.18.48_9001_1579844644_2015135327_0MetA0_S_MegaStore&amp;retstart=0&amp;retmax=50&amp;retmode=text&amp;rettype=abstract</a></p>
 <p>Note: If you’re trying this right now, your esearch will have given you a different webenv variable. Make sure to input YOUR webenv variable in the efetch URL for it to work!</p>
@@ -11875,7 +11875,7 @@ div#notebook {
 <li><code>rettype=abstract</code> specifies that I want abstracts shown, as opposed to other types of info that can be given from a PubMed search.</li>
 </ul>
 <p>After inputting this link, you should observe the following output as a plaintext webpage:</p>
-<p><img src="attachment:efetch_web_result.png" alt="efetch_web_result.png"></p>
+<p><img src="images/efetch_web_result.png" alt="efetch_web_result.png"></p>
 <p>Now, I can simply ctrl-F to sift through over three hundred abstracts. You can apply this simple two-step process whenever you’re tasked with searching through absurd amounts of Pubmed results.</p>
 <p>Below, I show you how to perform this process in Python.</p>
 
@@ -12190,7 +12190,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># other efetch settings</span>

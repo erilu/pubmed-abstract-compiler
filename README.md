@@ -5,11 +5,11 @@ Erick Lu
 
 March 6, 2020
 
-* [Introduction](#introduction)
-* [How the NCBI E-utilities work](#how-the-ncbi-e-utilities-work)
-* [Using the E-utilities in Python](#using-the-e-utilities-in-python)
-* [Writing a loop to fetch all abstracts](#writing-a-loop-to-fetch-all-abstracts)
-* [Conclusion](#conclusion)
+* [Introduction](#Introduction)
+* [How the NCBI E-utilities work](#How-the-NCBI-E-utilities-work)
+* [Using the E-utilities in Python](#Using-the-E-utilities-in-Python)
+* [Writing a loop to fetch all abstracts](#Writing-a-loop-to-fetch-all-abstracts)
+* [Conclusion](#Conclusion)
 
 Here, I will show you how NCBI E-Utilities can be used to search for and download Pubmed abstracts. I use Python in conjunction with the NCBI E-Utilities to download all the abstracts corresponding to a given search term and simultaneously parse the information contained in each abstract into a data science-friendly format.
 
@@ -49,7 +49,7 @@ This was crafted by putting the following parameters together:
 
 Copying and pasting the full URL into my web browser results in a webpage that looks like this (XML output):
 
-![esearch_web_result.png](attachment:esearch_web_result.png)
+![esearch_web_result.png](images/esearch_web_result.png)
 
 ### Step 2. Craft the efetch URL
 
@@ -69,7 +69,7 @@ Here is an explanation for each aspect of the link I constructed above:
 
 After inputting this link, you should observe the following output as a plaintext webpage:
 
-![efetch_web_result.png](attachment:efetch_web_result.png)
+![efetch_web_result.png](images/efetch_web_result.png)
 
 Now, I can simply ctrl-F to sift through over three hundred abstracts. You can apply this simple two-step process whenever you’re tasked with searching through absurd amounts of Pubmed results.
 
@@ -197,8 +197,6 @@ fetch_retstart = "&retstart=" + str(retstart)
 fetch_retmax = "&retmax=" + str(retmax)
 fetch_retmode = "&retmode=text"
 fetch_rettype = "&rettype=abstract"
-
-
 ```
 
 The fully constructed efetch command using the above parameters, which should fetch 20 of the 56 total abstracts, is below:
