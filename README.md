@@ -1,5 +1,5 @@
 
-# Batch download Pubmed abstracts using the NCBI E-Utilities and Python
+# Batch download Pubmed abstracts using the NCBI E-utilities and Python
 
 Erick Lu
 
@@ -11,13 +11,13 @@ March 14, 2020 - [Jupyter Notebook](https://erilu.github.io/pubmed-abstract-comp
 * [Writing a loop to fetch all abstracts](#Writing-a-loop-to-fetch-all-abstracts)
 * [Conclusion](#Conclusion)
 
-Here, I will show you how NCBI E-Utilities can be used to search for and download Pubmed abstracts. I use Python in conjunction with the NCBI E-Utilities to download all the abstracts corresponding to a given search term and simultaneously parse the information contained in each abstract into a data science-friendly format.
+Here, I will show you how NCBI E-utilities can be used to search for and download Pubmed abstracts. I use Python in conjunction with the NCBI E-utilities to download all the abstracts corresponding to a given search term and simultaneously parse the information contained in each abstract into a data science-friendly format.
 
 ## Introduction
 
 Depending on what you search for in PubMed, you could be presented with thousands of abstracts that contain the keyword you used for your query (for example, try searching "cancer"). Finding the information you’re looking for can get a bit tedious when you have to manually click through each page of search results.
 
-Using the NCBI E-Utilities (Entrez Programming Utilities, https://www.ncbi.nlm.nih.gov/books/NBK25499/), you can retrieve and download abstracts associated with a PubMed search without having to sift through the user interface. Even better, this tool doesn’t require any software–its completely URL based. You craft "search" and "fetch" commands as URLs and open them in your browser window to access the abstracts.
+Using the NCBI E-utilities (Entrez Programming Utilities, https://www.ncbi.nlm.nih.gov/books/NBK25499/), you can retrieve and download abstracts associated with a PubMed search without having to sift through the user interface. Even better, this tool doesn’t require any software–its completely URL based. You craft "search" and "fetch" commands as URLs and open them in your browser window to access the abstracts.
 
 We can automate the download process by programming a script in Python to construct the URLs, execute the "search" and "fetch" commands, and parse each part of the abstract (Authors, Journal, Date of publication, etc.) into a data file for downstream analysis. Text from each abstract can be analyzed to quickly extract numerical data or quantitative results.
 
@@ -453,9 +453,9 @@ with open("abstracts.csv", "wt") as abstracts_file, open ("partial_abstracts.csv
 
 ## Conclusion
 
-Here, I have shown you how to use the NCBI E-Utilities `esearch` and `efetch` to download abstracts from PubMed, as well as how to write a Python script to batch download all abstracts corresponding to a keyword search.
+Here, I have shown you how to use the NCBI E-utilities `esearch` and `efetch` to download abstracts from PubMed, as well as how to write a Python script to batch download all abstracts corresponding to a keyword search.
 
 The file `pubmed_extractor.py` in this repository contains the Python script that we wrote above, but will also allow the user to input their desired keyword search. Running the script by typing `python pubmed_extractor.py` into your terminal should prompt you for a keyword to download PubMed abstracts for. The script will then dump your abstracts into `abstracts.csv`.
 
 ### References
-Sayers E. The E-utilities In-Depth: Parameters, Syntax and More. 2009 May 29. In: Entrez Programming Utilities Help. Bethesda (MD): National Center for Biotechnology Information (US); 2010-.Available from: http://www.ncbi.nlm.nih.gov/books/NBK25499/
+Sayers E. The E-utilities In-Depth: Parameters, Syntax and More. 2009 May 29. In: Entrez Programming utilities Help. Bethesda (MD): National Center for Biotechnology Information (US); 2010-.Available from: http://www.ncbi.nlm.nih.gov/books/NBK25499/
