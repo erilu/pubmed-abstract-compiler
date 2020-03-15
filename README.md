@@ -3,7 +3,7 @@
 
 Erick Lu
 
-March 14, 2020 - [GitHub Repo](https://github.com/erilu/pubmed-abstract-compiler)
+March 14, 2020 - [Jupyter Notebook](https://erilu.github.io/pubmed-abstract-compiler/)
 
 * [Introduction](#Introduction)
 * [How the NCBI E-utilities work](#How-the-NCBI-E-utilities-work)
@@ -28,7 +28,7 @@ Below, I will give a brief tutorial about how the tools work, and the code neede
 
 The two main E-util functions you will use are `esearch` and `efetch`.
 
-First, `esearch` runs a keyword search command on the PubMed database and retrieves IDs for each of the abstracts corresponding to the search. The actual information associated with the abstracts does not show up, only the IDs. You’re also given a `query key` and `web environment ID`. 
+First, `esearch` runs a keyword search command on the PubMed database and retrieves IDs for each of the abstracts corresponding to the search. The actual information associated with the abstracts does not show up, only the IDs. You’re also given a `query key` and `web environment ID`.
 
 Then, you input the `query key` and `web environment ID` into an `efetch` call, which will “fetch” all the abstracts for that specific `esearch` query.
 
@@ -41,7 +41,7 @@ http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=P2RY8&r
 
 This was crafted by putting the following parameters together:
 * `http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?` is the backbone of the esearch function.
-* `db=pubmed` specifies that we will be searching the pubmed database. 
+* `db=pubmed` specifies that we will be searching the pubmed database.
 * `term=P2RY8` specifies what we will be searching pubmed for. Change this field to whatever you want to search for.
 * `retmax=50` specifies how many abstracts I want to return using the search.
 * `usehistory=y` will provide you with a QueryKey and WebEnv id that will let you fetch abstracts from this search.
@@ -63,8 +63,8 @@ Here is an explanation for each aspect of the link I constructed above:
 * `http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?` is the backbone for a efetch command. Notice that the only difference from this and an esearch command is the part after “/eutils/”.
 * `db=pubmed` specifies the database, again.
 * `query_key=1` specifies the number that was given in the “querykey” field in the esearch result.
-* `webenv=NCID_1_5757184_130.14.18.48_9001_1579844644_2015135327_0MetA0_S_MegaStore` specifies the ID that was given in the esearch result. 
-* `retmode=text` specifies that I want the abstracts to be written out in print. 
+* `webenv=NCID_1_5757184_130.14.18.48_9001_1579844644_2015135327_0MetA0_S_MegaStore` specifies the ID that was given in the esearch result.
+* `retmode=text` specifies that I want the abstracts to be written out in print.
 * `rettype=abstract` specifies that I want abstracts shown, as opposed to other types of info that can be given from a PubMed search.
 
 After inputting this link, you should observe the following output as a plaintext webpage:
@@ -112,6 +112,7 @@ We can construct the search url by simply combining together each of the variabl
 search_url = base_url+search_eutil+db+search_term+search_usehistory+search_rettype
 print(search_url)
 ```
+Output:
 
     http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=P2RY8&usehistory=y&rettype=json
 
@@ -128,6 +129,7 @@ search_data = f.read().decode('utf-8')
 ```python
 search_data
 ```
+Output:
 
 
 
@@ -152,6 +154,7 @@ fetch_querykey = "&query_key=" + re.findall("<QueryKey>(\d+?)</QueryKey>",search
 ```python
 total_abstract_count
 ```
+Output:
 
 
 
@@ -166,6 +169,7 @@ We observe that there are 56 total abstracts that match the keyword "P2RY8".
 ```python
 fetch_webenv
 ```
+Output:
 
 
 
@@ -178,6 +182,7 @@ fetch_webenv
 ```python
 fetch_querykey
 ```
+Output:
 
 
 
@@ -207,6 +212,7 @@ The fully constructed efetch command using the above parameters, which should fe
 fetch_url = base_url+fetch_eutil+db+fetch_querykey+fetch_webenv+fetch_retstart+fetch_retmax+fetch_retmode+fetch_rettype
 print(fetch_url)
 ```
+Output:
 
     http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_175144532_130.14.18.97_9001_1584244427_753025107_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=text&rettype=abstract
 
@@ -223,6 +229,7 @@ fetch_data = f.read().decode('utf-8')
 ```python
 fetch_data[1:3000]
 ```
+Output:
 
 
 
@@ -239,6 +246,7 @@ Examining the text output, we see that individual abstracts are separated by 3 n
 abstracts = fetch_data.split("\n\n\n")
 len(abstracts)
 ```
+Output:
 
 
 
@@ -254,6 +262,7 @@ Because we had set `retmax = 20`, we obtained 20 abstracts. Let's take a closer 
 # print out the first abstract
 abstracts[0]
 ```
+Output:
 
 
 
@@ -269,6 +278,7 @@ We observe that the sections of the abstract are separated by 2 new lines in a r
 split_abstract = abstracts[1].split("\n\n")
 split_abstract
 ```
+Output:
 
 
 
@@ -287,6 +297,7 @@ split_abstract
 ```python
 len(split_abstract)
 ```
+Output:
 
 
 
@@ -367,25 +378,26 @@ while run:
     retstart = retstart + retmax
     if retstart > total_abstract_count:
         run = False
-    
-    
+
+
 ```
+Output:
 
     this is the esearch command:
     http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=P2RY8&usehistory=y&rettype=json
-    
+
     this is efetch run number 1
     http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_175080094_130.14.22.76_9001_1584244456_873449445_0MetA0_S_MegaStore&retstart=0&retmax=20&retmode=text&rettype=abstract
     a total of 20 abstracts have been downloaded.
-    
+
     this is efetch run number 2
     http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_175080094_130.14.22.76_9001_1584244456_873449445_0MetA0_S_MegaStore&retstart=20&retmax=20&retmode=text&rettype=abstract
     a total of 40 abstracts have been downloaded.
-    
+
     this is efetch run number 3
     http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=NCID_1_175080094_130.14.22.76_9001_1584244456_873449445_0MetA0_S_MegaStore&retstart=40&retmax=20&retmode=text&rettype=abstract
     a total of 56 abstracts have been downloaded.
-    
+
 
 
 The script above should display the esearch command, as well as each individual efetch command used to download the data. We observe that 3 efetch commands were called, and that a total of 56 abstracts were downloaded and stored in the list `all_abstracts`.
@@ -396,6 +408,7 @@ You might be wondering, why did we need a loop in the first place? Couldn't we h
 ```python
 len(all_abstracts)
 ```
+Output:
 
 
 
